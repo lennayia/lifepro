@@ -20,6 +20,7 @@ import { motion } from 'framer-motion';
 import FlipCard from '@/shared/components/cards/FlipCard';
 import { CATEGORY_GRADIENTS } from '@/shared/styles/modernEffects';
 import { fadeInUp, staggerContainer, staggerItem } from '@/shared/styles/animations';
+import BORDER_RADIUS from '@/shared/styles/borderRadius';
 import {
   UserCircle,
   BookText,
@@ -211,7 +212,7 @@ export default function DemoPage() {
                 value={totalProgress}
                 sx={{
                   height: 8,
-                  borderRadius: 4,
+                  borderRadius: BORDER_RADIUS.compact,
                   background: (theme) =>
                     theme.palette.mode === 'dark'
                       ? 'rgba(255, 255, 255, 0.1)'
@@ -262,7 +263,7 @@ export default function DemoPage() {
             sx={{
               mt: 4,
               p: 3,
-              borderRadius: 3,
+              borderRadius: BORDER_RADIUS.card,
               background: (theme) =>
                 theme.palette.mode === 'dark'
                   ? 'rgba(255, 255, 255, 0.05)'
@@ -320,7 +321,7 @@ function CategoryFront({ title, subtitle, description, Icon, progress }: Categor
           value={progress}
           sx={{
             height: 6,
-            borderRadius: 3,
+            borderRadius: BORDER_RADIUS.compact,
             background: 'rgba(255, 255, 255, 0.2)',
             '& .MuiLinearProgress-bar': {
               background: 'rgba(255, 255, 255, 0.8)',
