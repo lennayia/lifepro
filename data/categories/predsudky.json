@@ -1,0 +1,100 @@
+{
+  "id": "predsudky",
+  "name": "Předsudky",
+  "description": "Přepisování omezujících přesvědčení a předsudků",
+  "icon": "psychology",
+  "color": "#D32F2F",
+  "motto": "Dnes se rozhoduji věřit, že je všechno možné",
+  "subcategories": [
+    {
+      "id": "kdysi-jsem-si-vytvoril",
+      "name": "Kdysi jsem si vytvořil/a",
+      "description": "Zdroje předsudků",
+      "sources": [
+        "moje",
+        "rodičů",
+        "učitelů",
+        "příbuzných",
+        "přátel"
+      ],
+      "items": [
+        "neumím",
+        "nevím",
+        "jsem",
+        "nemám",
+        "nemůžu"
+      ]
+    },
+    {
+      "id": "proc-nemuzu",
+      "name": "Proč nemůžu",
+      "description": "Omezující přesvědčení",
+      "items": [
+        "nevěřím si",
+        "nechce se mi",
+        "nemůžu proti tomu nic dělat"
+      ]
+    },
+    {
+      "id": "co-muzu-udelat",
+      "name": "Co můžu udělat, abych mohl/a?",
+      "description": "Aktivní kroky k překonání předsudků",
+      "items": [
+        "budovat komunitu",
+        "přidávat storýčka",
+        "spravovat FB skupinu",
+        "psát blog"
+      ]
+    },
+    {
+      "id": "verim-ze-je-to-tak",
+      "name": "Věřím, že je to tak",
+      "description": "Negativní přesvědčení o okolí",
+      "items": [
+        "závist",
+        "nezájem",
+        "pomluvy",
+        "hodnocení"
+      ]
+    },
+    {
+      "id": "pozitivni-prepis",
+      "name": "Pozitivní přepis",
+      "description": "Nová, pozitivní přesvědčení",
+      "items": [
+        "úspěch",
+        "přejícnost",
+        "inspirace",
+        "spolupráce"
+      ]
+    },
+    {
+      "id": "neumim-prodavat",
+      "name": "Neumím prodávat",
+      "description": "Omezení v oblasti prodeje",
+      "negative": [
+        "výstižnost",
+        "chytlavost",
+        "vtip"
+      ]
+    },
+    {
+      "id": "rozhodla-jsem-se-pro",
+      "name": "Rozhodl/a jsem se pro",
+      "description": "Aktivní rozhodnutí a kroky vpřed",
+      "items": [
+        "barvy",
+        "jednoduchost"
+      ]
+    },
+    {
+      "id": "inspirace",
+      "name": "Inspirace",
+      "description": "Zdroje inspirace a možností",
+      "items": [
+        "milionové zisky (prezentace)",
+        "já nic"
+      ]
+    }
+  ]
+}

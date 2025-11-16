@@ -1,0 +1,75 @@
+{
+  "id": "digitalni-kompetence",
+  "name": "Digitální kompetence",
+  "description": "Framework digitálních kompetencí podle EU DigComp",
+  "icon": "computer",
+  "color": "#6A1B9A",
+  "source": "Ministerstvo práce a sociálních věcí ČR - https://cdk.nsp.cz/digitalni-kompetence",
+  "levels": [
+    "základní",
+    "mírně pokročilý",
+    "pokročilý",
+    "specializovaný"
+  ],
+  "subcategories": [
+    {
+      "id": "informacni-gramotnost",
+      "name": "Informační a datová gramotnost",
+      "description": "Práce s informacemi a daty",
+      "items": [
+        "prohlížení",
+        "vyhledávání",
+        "filtrování",
+        "hodnocení",
+        "správa"
+      ]
+    },
+    {
+      "id": "komunikace-spoluprace",
+      "name": "Komunikace a spolupráce",
+      "description": "Digitální komunikace a týmová práce",
+      "items": [
+        "interakce",
+        "sdílení",
+        "spolupráce",
+        "netiketa"
+      ]
+    },
+    {
+      "id": "tvorba-obsahu",
+      "name": "Tvorba digitálního obsahu",
+      "description": "Vytváření a úprava digitálního obsahu",
+      "items": [
+        "tvorba",
+        "integrace",
+        "přepracování",
+        "autorská práva",
+        "licence"
+      ]
+    },
+    {
+      "id": "bezpecnost",
+      "name": "Bezpečnost",
+      "description": "Ochrana zařízení, dat a soukromí",
+      "items": [
+        "ochrana zařízení",
+        "ochrana osobních dat",
+        "ochrana soukromí",
+        "ochrana zdraví",
+        "ochrana duševní pohody",
+        "ochrana životního prostředí"
+      ]
+    },
+    {
+      "id": "reseni-problemu",
+      "name": "Řešení problémů",
+      "description": "Technické problémy a rozvoj digitálních kompetencí",
+      "items": [
+        "technické problémy",
+        "identifikace potřeb a výběr technologií",
+        "kreativní využívání digitálních technologií",
+        "identifikace nedostatků v digitálních kompetencích"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "zivotni-zkusenosti",
+  "name": "Životní zkušenosti",
+  "description": "Zkušenosti, znalosti a talenty získané během života",
+  "icon": "lightbulb",
+  "color": "#2E7D32",
+  "subcategories": [
+    {
+      "id": "znalosti",
+      "name": "Znalosti",
+      "description": "Získané znalosti a poznatky",
+      "items": [
+        "mateřství",
+        "odpuštění",
+        "milost",
+        "vnitřní harmonie",
+        "osobní růst",
+        "prosperita",
+        "přispění",
+        "rovnost",
+        "rozum",
+        "ticho",
+        "vyspělost",
+        "zralost",
+        "pravdivost",
+        "přítomnost",
+        "přijímání"
+      ]
+    },
+    {
+      "id": "talenty",
+      "name": "Talenty",
+      "description": "Přirozené nadání a schopnosti",
+      "subcategories": [
+        {
+          "id": "umelecke",
+          "name": "Umělecké talenty",
+          "items": [
+            "hudba",
+            "výtvarka",
+            "umění"
+          ]
+        },
+        {
+          "id": "sportovni",
+          "name": "Sportovní talenty",
+          "items": [
+            "sport"
+          ]
+        },
+        {
+          "id": "intelektualni",
+          "name": "Intelektuální talenty",
+          "items": [
+            "matematika a spol.",
+            "jazyky",
+            "komunikace"
+          ]
+        },
+        {
+          "id": "prakticke",
+          "name": "Praktické talenty",
+          "items": [
+            "technika",
+            "organizace",
+            "zručnost",
+            "manuální tvoření"
+          ]
+        },
+        {
+          "id": "kreativni",
+          "name": "Kreativní talenty",
+          "items": [
+            "kreativita",
+            "humor"
+          ]
+        }
+      ]
+    }
+  ]
+}
