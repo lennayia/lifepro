@@ -131,10 +131,10 @@ export default function HomePage() {
           >
             <Button
               component={Link}
-              href="/register"
+              href="/demo"
               variant="contained"
               size="large"
-              endIcon={<ArrowRight size={20} />}
+              endIcon={<Sparkles size={20} />}
               sx={{
                 px: 4,
                 py: 1.5,
@@ -145,6 +145,21 @@ export default function HomePage() {
                   background: (theme) =>
                     `linear-gradient(135deg, ${theme.palette.primary.dark} 0%, ${theme.palette.primary.main} 100%)`,
                 },
+              }}
+            >
+              Vyzkoušet Demo
+            </Button>
+
+            <Button
+              component={Link}
+              href="/register"
+              variant="contained"
+              size="large"
+              endIcon={<ArrowRight size={20} />}
+              sx={{
+                px: 4,
+                py: 1.5,
+                fontSize: '1.1rem',
               }}
             >
               Začít hned
