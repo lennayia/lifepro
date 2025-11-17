@@ -1,0 +1,19 @@
+{
+  "id": "kreativni-prumysly",
+  "name": "Kreativní průmysly",
+  "description": "Kreativní a kulturní průmysly",
+  "icon": "film",
+  "color": "#8B4513",
+  "categories": {
+    "kreativni_prumysly": ["architektura", "design", "móda", "reklama", "software", "gastronomie"],
+    "kulturni_prumysly": {
+      "tradicni_umeni": ["malířství", "sochařství", "fotografie", "řemesla"],
+      "scenicke": ["divadlo", "tanec", "cirkus", "hudební", "loutkové", "pohybové", "balet", "pantomima", "muzikál", "opera"],
+      "vytvarne": [],
+      "kulturni_dedictvi": ["muzea", "knihovny", "archivy", "archeologická naleziště", "galerie", "aukční síně", "památková péče"],
+      "media": ["video", "film", "televize", "videohry", "rozhlas", "zvukové záznamy", "hudba"],
+      "publikace": ["nakladatelství", "knihy a tisk", "digitální publikace"],
+      "ostatni": ["koncerty", "výstavy", "festivaly", "literatura", "choreografie", "drama", "animace"]
+    }
+  }
+}

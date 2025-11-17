@@ -1,0 +1,31 @@
+{
+  "id": "material",
+  "name": "Materiál",
+  "description": "Materiály a jejich vlastnosti",
+  "icon": "grid",
+  "color": "#8B4513",
+  "note": "Který materiál je Ti příjemný na dotyk? Nebo o něm teoreticky hodně víš? Nebo je Ti naopak nepříjemný a víš, čím je možné jej nahradit? Nebo máš řešení na množství plastového odpadu?",
+  "categories": {
+    "prirodni": {
+      "mekky": {
+        "textilni": ["látka", "kůže", "příze", "papír", "plátno", "kůra", "mech", "hlína", "kožešina", "dřevo", "větvičky", "jehličí", "květiny", "plody", "sláma", "seno", "tráva", "bambus", "obilí", "proutí"],
+        "provaz": ["sisal", "juta", "bavlna", "len"],
+        "potraviny": []
+      },
+      "tvrdy": {
+        "kamen": ["mramor", "vápenec", "porcelán", "keramika", "kamínky", "štěrk", "antuka"],
+        "kov": ["plech", "zlato", "stříbro", "měď", "drátky"],
+        "sklo": ["korálky", "sklíčka"],
+        "ostatni": ["guma", "beton", "asfalt", "diamanty"]
+      },
+      "tekuty": ["barvy", "voda", "alkohol", "šťávy", "olej", "nápoje"],
+      "pachy": ["vůně", "zápach"]
+    },
+    "nano_vlakno": [],
+    "umele": {
+      "polosyntetika": [],
+      "syntetika": ["plasty", "mikro vlákno", "velur", "umělé kůže"],
+      "ostatni": ["modurit", "modelína"]
+    }
+  }
+}

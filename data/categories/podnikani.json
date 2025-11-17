@@ -1,0 +1,25 @@
+{
+  "id": "podnikani",
+  "name": "Podnikání",
+  "description": "Struktury podnikání vs. zaměstnání",
+  "icon": "briefcase",
+  "color": "#228B22",
+  "categories": {
+    "forma": ["brigádník", "zaměstnanec", "OSVČ", "pronajímatel", "spekulant", "majitel", "rentiér", "sponzor", "mecenáš"],
+    "vlastnictvi": {
+      "typy": ["s.r.o.", "k.s.", "a.s.", "z.s.", "v.o.s.", "družstvo", "tichý společník"],
+      "podniky": ["výrobní podnik", "rukodělná dílna", "chráněná dílna", "obchodní podnik", "kamenný obchod", "e-shop", "přímý prodej", "telefonický prodej", "síťový prodej", "škola", "sociální ústav", "zdravotnictví", "kultura", "továrna"]
+    },
+    "sektor": {
+      "statni": ["státní podnik", "rozpočtová organizace", "příspěvková organizace", "státní fond"],
+      "soukromy": [],
+      "druzstevni": [],
+      "neziskovy": []
+    },
+    "sluzby": ["opravárenské", "péče o tělo", "terapeutické", "spirituální", "právní", "ekonomické", "asistenční"],
+    "pozice": ["GŘ", "ředitel", "vedoucí", "zástupce", "kancelářský pracovník", "řemeslný pracovník", "odborný pracovník", "řadový pracovník", "dělník", "pomocný pracovník", "externista", "specialista", "kontrolor", "asistent"],
+    "usek": ["příjem", "výroba", "obchod", "marketing", "propagace", "kreativa", "finance", "personalistika", "prodej", "administrativa", "technologie", "IT", "vzdělávání", "servis", "údržba", "úklid", "stravování", "sklad", "archiv", "doprava", "energetika", "právo", "péče o zaměst.", "výzkum", "věda", "bezpečnost"],
+    "cinnost": ["manuální", "tvůrčí", "duševní", "rutinní", "kreativní"],
+    "aktivita": ["informace", "konzultace", "motivace", "organizace", "koordinace", "inovace"]
+  }
+}
