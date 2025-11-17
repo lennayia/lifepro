@@ -318,52 +318,52 @@ export interface CategoryStats {
 export interface Database {
   public: {
     Tables: {
-      categories: {
+      lifepro_categories: {
         Row: Category
         Insert: Omit<Category, 'id' | 'created_at' | 'updated_at'>
         Update: Partial<Omit<Category, 'id' | 'created_at' | 'updated_at'>>
       }
-      sections: {
+      lifepro_sections: {
         Row: Section
         Insert: Omit<Section, 'id' | 'created_at' | 'updated_at'>
         Update: Partial<Omit<Section, 'id' | 'created_at' | 'updated_at'>>
       }
-      questions: {
+      lifepro_questions: {
         Row: Question
         Insert: Omit<Question, 'id' | 'created_at' | 'updated_at'>
         Update: Partial<Omit<Question, 'id' | 'created_at' | 'updated_at'>>
       }
-      question_options: {
+      lifepro_question_options: {
         Row: QuestionOption
         Insert: Omit<QuestionOption, 'id' | 'created_at'>
         Update: Partial<Omit<QuestionOption, 'id' | 'created_at'>>
       }
-      user_responses: {
+      lifepro_user_responses: {
         Row: UserResponse
         Insert: Omit<UserResponse, 'id' | 'created_at' | 'updated_at'>
         Update: Partial<Omit<UserResponse, 'id' | 'created_at' | 'updated_at'>>
       }
-      user_progress: {
+      lifepro_user_progress: {
         Row: UserProgress
         Insert: Omit<UserProgress, 'id' | 'last_visited_at' | 'updated_at'>
         Update: Partial<Omit<UserProgress, 'id' | 'last_visited_at' | 'updated_at'>>
       }
-      ai_analyses: {
+      lifepro_ai_analyses: {
         Row: AIAnalysis
         Insert: Omit<AIAnalysis, 'id' | 'generated_at'>
         Update: Partial<Omit<AIAnalysis, 'id' | 'generated_at'>>
       }
-      user_exports: {
+      lifepro_user_exports: {
         Row: UserExport
         Insert: Omit<UserExport, 'id' | 'created_at'>
         Update: Partial<Omit<UserExport, 'id' | 'created_at'>>
       }
-      admin_users: {
+      lifepro_admin_users: {
         Row: AdminUser
         Insert: Omit<AdminUser, 'id' | 'created_at'>
         Update: Partial<Omit<AdminUser, 'id' | 'created_at'>>
       }
-      audit_logs: {
+      lifepro_audit_logs: {
         Row: AuditLog
         Insert: Omit<AuditLog, 'id' | 'created_at'>
         Update: Partial<Omit<AuditLog, 'id' | 'created_at'>>

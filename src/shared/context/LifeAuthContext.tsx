@@ -80,7 +80,7 @@ export function LifeAuthProvider({ children }: { children: React.ReactNode }) {
   const checkAdminStatus = async (userId: string) => {
     try {
       const { data, error } = await supabase
-        .from('admin_users')
+        .from('lifepro_admin_users')
         .select('id, role')
         .eq('user_id', userId)
         .single();

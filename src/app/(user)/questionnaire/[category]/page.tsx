@@ -91,7 +91,7 @@ export default function QuestionnairePage() {
     try {
       // Načíst kategorii
       const { data: categoryData, error: categoryError } = await supabase
-        .from('categories')
+        .from('lifepro_categories')
         .select('*')
         .eq('slug', params.category)
         .single();
@@ -101,13 +101,13 @@ export default function QuestionnairePage() {
 
       // Načíst otázky pro tuto kategorii
       const { data: questionsData, error: questionsError } = await supabase
-        .from('questions')
+        .from('lifepro_questions')
         .select(`
           *,
-          sections!inner(title, category_id),
-          question_options(*)
+          lifepro_sections!inner(title, category_id),
+          lifepro_question_options(*)
         `)
-        .eq('sections.category_id', categoryData.id)
+        .eq('lifepro_sections.category_id', categoryData.id)
         .eq('is_published', true)
         .order('order', { ascending: true });
 
@@ -116,7 +116,7 @@ export default function QuestionnairePage() {
 
       // Načíst existující odpovědi
       const { data: responsesData } = await supabase
-        .from('user_responses')
+        .from('lifepro_user_responses')
         .select('question_id, answer_text, answer_single, answer_multiple, answer_number, answer_date, is_favorite')
         .eq('user_id', user!.id)
         .in(
@@ -151,7 +151,7 @@ export default function QuestionnairePage() {
     setSaving(true);
     try {
       const { error } = await supabase
-        .from('user_responses')
+        .from('lifepro_user_responses')
         .upsert({
           user_id: user.id,
           question_id: questionId,

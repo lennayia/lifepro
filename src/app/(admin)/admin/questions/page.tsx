@@ -73,16 +73,16 @@ export default function QuestionsAdmin() {
     try {
       const [questionsRes, sectionsRes] = await Promise.all([
         supabase
-          .from('questions')
+          .from('lifepro_questions')
           .select(`
             *,
-            sections(title, categories(title, icon)),
-            question_options(id, value, label, order)
+            lifepro_sections!inner(title, lifepro_categories!inner(title, icon)),
+            lifepro_question_options(id, value, label, order)
           `)
           .order('order', { ascending: true }),
         supabase
-          .from('sections')
-          .select('id, title, categories(title, icon)')
+          .from('lifepro_sections')
+          .select('id, title, lifepro_categories!inner(title, icon)')
           .order('order', { ascending: true }),
       ]);
 
@@ -102,7 +102,7 @@ export default function QuestionsAdmin() {
     if (!confirm('Opravdu chcete smazat tuto otázku?')) return;
 
     try {
-      const { error } = await supabase.from('questions').delete().eq('id', id);
+      const { error } = await supabase.from('lifepro_questions').delete().eq('id', id);
 
       if (error) throw error;
 

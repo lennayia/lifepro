@@ -54,7 +54,7 @@ export default function UserDashboard() {
     try {
       // Načíst kategorie
       const { data: categoriesData, error: categoriesError } = await supabase
-        .from('categories')
+        .from('lifepro_categories')
         .select('*')
         .eq('is_published', true)
         .order('order', { ascending: true });
@@ -65,7 +65,7 @@ export default function UserDashboard() {
       const categoriesWithProgress = await Promise.all(
         (categoriesData || []).map(async (category) => {
           const { data: progress } = await supabase
-            .from('user_progress')
+            .from('lifepro_user_progress')
             .select('*')
             .eq('user_id', user!.id)
             .eq('category_id', category.id)

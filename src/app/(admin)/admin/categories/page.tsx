@@ -47,7 +47,7 @@ export default function CategoriesAdmin() {
   const loadCategories = async () => {
     try {
       const { data, error } = await supabase
-        .from('categories')
+        .from('lifepro_categories')
         .select('*')
         .order('order', { ascending: true });
 
@@ -64,7 +64,7 @@ export default function CategoriesAdmin() {
     if (!confirm('Opravdu chcete smazat tuto kategorii?')) return;
 
     try {
-      const { error } = await supabase.from('categories').delete().eq('id', id);
+      const { error } = await supabase.from('lifepro_categories').delete().eq('id', id);
 
       if (error) throw error;
 

@@ -45,7 +45,7 @@ export const getSession = async () => {
 export const isAdmin = async (userId: string): Promise<boolean> => {
   const supabase = createServerClient();
   const { data, error } = await supabase
-    .from('admin_users')
+    .from('lifepro_admin_users')
     .select('id')
     .eq('user_id', userId)
     .single();

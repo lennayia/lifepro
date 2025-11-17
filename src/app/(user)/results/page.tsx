@@ -75,7 +75,7 @@ export default function ResultsPage() {
   const loadAnalysis = async () => {
     try {
       const { data, error } = await supabase
-        .from('ai_analyses')
+        .from('lifepro_ai_analyses')
         .select('*')
         .eq('user_id', user!.id)
         .order('generated_at', { ascending: false })

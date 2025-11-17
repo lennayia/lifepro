@@ -51,11 +51,11 @@ export default function AdminDashboard() {
         optionsRes,
         responsesRes,
       ] = await Promise.all([
-        supabase.from('categories').select('id', { count: 'exact', head: true }),
-        supabase.from('sections').select('id', { count: 'exact', head: true }),
-        supabase.from('questions').select('id', { count: 'exact', head: true }),
-        supabase.from('question_options').select('id', { count: 'exact', head: true }),
-        supabase.from('user_responses').select('id', { count: 'exact', head: true }),
+        supabase.from('lifepro_categories').select('id', { count: 'exact', head: true }),
+        supabase.from('lifepro_sections').select('id', { count: 'exact', head: true }),
+        supabase.from('lifepro_questions').select('id', { count: 'exact', head: true }),
+        supabase.from('lifepro_question_options').select('id', { count: 'exact', head: true }),
+        supabase.from('lifepro_user_responses').select('id', { count: 'exact', head: true }),
       ]);
 
       setStats({

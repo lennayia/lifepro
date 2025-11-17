@@ -35,11 +35,11 @@ export async function POST(request: NextRequest) {
 
     // Načíst všechny odpovědi uživatele
     const { data: responses, error: responsesError } = await supabase
-      .from('user_responses')
+      .from('lifepro_user_responses')
       .select(
         `
         *,
-        questions(question_text, question_type, sections(title, categories(title)))
+        lifepro_questions!inner(question_text, question_type, lifepro_sections!inner(title, lifepro_categories!inner(title)))
       `
       )
       .eq('user_id', userId);
@@ -55,7 +55,7 @@ export async function POST(request: NextRequest) {
 
     // Seskupit odpovědi podle kategorií
     const categorizedResponses = responses.reduce((acc: any, response: any) => {
-      const category = response.questions.sections.categories.title;
+      const category = response.lifepro_questions.lifepro_sections.lifepro_categories.title;
       if (!acc[category]) {
         acc[category] = [];
       }
@@ -69,7 +69,7 @@ export async function POST(request: NextRequest) {
         'N/A';
 
       acc[category].push({
-        question: response.questions.question_text,
+        question: response.lifepro_questions.question_text,
         answer,
         isFavorite: response.is_favorite,
       });
@@ -172,7 +172,7 @@ DŮLEŽITÉ: Vrať pouze validní JSON, bez dalšího textu.`;
 
     // Uložit analýzu do databáze
     const { data: analysis, error: analysisError } = await supabase
-      .from('ai_analyses')
+      .from('lifepro_ai_analyses')
       .insert({
         user_id: userId,
         patterns: analysisData.patterns,

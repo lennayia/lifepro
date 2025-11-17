@@ -57,11 +57,11 @@ export default function SectionsAdmin() {
     try {
       const [sectionsRes, categoriesRes] = await Promise.all([
         supabase
-          .from('sections')
-          .select('*, categories(title, icon)')
+          .from('lifepro_sections')
+          .select('*, lifepro_categories!inner(title, icon)')
           .order('order', { ascending: true }),
         supabase
-          .from('categories')
+          .from('lifepro_categories')
           .select('id, title, icon')
           .order('order', { ascending: true }),
       ]);
@@ -82,7 +82,7 @@ export default function SectionsAdmin() {
     if (!confirm('Opravdu chcete smazat tuto sekci?')) return;
 
     try {
-      const { error } = await supabase.from('sections').delete().eq('id', id);
+      const { error } = await supabase.from('lifepro_sections').delete().eq('id', id);
 
       if (error) throw error;
 
