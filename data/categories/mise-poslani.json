@@ -1,0 +1,222 @@
+{
+  "id": "mise-poslani",
+  "name": "Moje mise a poslání",
+  "description": "Proč jsem tady, co chci změnit, komu pomoci",
+  "icon": "compass",
+  "color": "#4CAF50",
+  "subcategories": [
+    {
+      "id": "muzu-vsechno",
+      "name": "Můžu všechno",
+      "description": "Moje mise, cesta a jak se chci cítit",
+      "aspects": {
+        "ja": ["si věřím", "jsem šťastný/á", "přeju druhým", "odpouštím", "se učím", "chválím", "si zasloužím", "jsem laskavý/á", "nepochybuji", "jsem vděčný/á"],
+        "moje_mise": ["můj záměr", "všechno je možné", "dokážu to", "vím, proč"],
+        "muzu_vsechno": ["mám plán", "mám vizi", "jdu do akce", "baví mě"],
+        "moje_cesta": ["nadšený/á", "vyrovnaný/á", "klidný/á", "oblíbený/á", "milovaný/á", "bohatý/á", "jsem usměvavý/á", "jsem přátelský/á", "prospěšný/á"],
+        "citim_se": []
+      },
+      "questions": [
+        "Co bys řešil/a, kdybys mohl/a vyřešit úplně všechno?",
+        "Co bys dělal/a, kdybys nepotřeboval/a peníze?",
+        "Proč?",
+        "Co je moje TOP?",
+        "Co z toho má vzniknout?",
+        "Jak se chci dál cítit?"
+      ]
+    },
+    {
+      "id": "nejsou-omezeni",
+      "name": "Nejsou omezení",
+      "description": "Co všechno můžu bez omezení",
+      "note": "Můžu cokoliv je jiné než CHCI. Chci je ovlivněno rozumem. Můžu cokoliv nemá hranice.",
+      "examples": {
+        "byt": [
+          "vyhledávaný/á kouč/ka",
+          "uznávaný/á malíř/ka",
+          "vynikající lektor/ka",
+          "vzor svým dětem",
+          "úspěšný/á manažer/ka",
+          "oblíbený/á ředitel/ka",
+          "šikovný/á pořadatel/ka",
+          "výborný/á táta/máma",
+          "vzor komunitě"
+        ],
+        "delat": [
+          "pořádat kurzy",
+          "najmout lektora",
+          "pronajmout si místo",
+          "kurz jak zvládat...",
+          "kurz jak skloubit děti a práci na home-office",
+          "6 rad pro začínající...",
+          "vylézt na K2",
+          "přespat pod širákem",
+          "cvičit tygry",
+          "řídit Boeing"
+        ],
+        "mit": [
+          "jachtu v Itálii",
+          "obrovský dům",
+          "7 psů"
+        ],
+        "studovat": [
+          "astrologii"
+        ],
+        "cestovat": [
+          "po Africe"
+        ],
+        "pomahat": [
+          "v nadaci"
+        ]
+      }
+    },
+    {
+      "id": "muj-vzor",
+      "name": "Můj vzor",
+      "description": "Kdo mě inspiruje a proč",
+      "aspects": [
+        "Co dokázal/a? A chci to taky? Proč?",
+        "Dovednosti a znalosti",
+        "Vzdělání",
+        "Vlastnosti",
+        "Chování",
+        "Jednání",
+        "Vzhled",
+        "Držení těla a gestikulace",
+        "Vyzařuje",
+        "Vlasy, oblečení",
+        "Styl",
+        "Image",
+        "Majetek",
+        "Zájmy",
+        "Postoje",
+        "Pomáhá"
+      ]
+    },
+    {
+      "id": "inspirace",
+      "name": "Kde čerpat inspiraci",
+      "sources": {
+        "lide": ["moje zkušenosti", "ostatních zkušenosti"],
+        "vyresene_problemy": ["moje", "ostatních"],
+        "lidske_potreby": ["potřeby", "problémy"],
+        "konicky": ["současné", "minulé", "z dětství", "z dospělosti"],
+        "uspechy": ["pracovní", "osobní"],
+        "sny_a_prani": ["dětské", "dospělé"],
+        "kompetence": ["vzdělání", "znalosti", "dovednosti", "zkušenosti", "schopnosti"],
+        "hodnoty_vlastnosti": ["uznávám", "vlastnosti", "můj vzor"],
+        "moznosti": [],
+        "sektory": ["lidské potřeby", "problémy"],
+        "media_kde": [
+          "lidé",
+          "tisk",
+          "internet",
+          "kluby",
+          "sociální sítě (Facebook, Twitter, LinkedIn, Instagram, YouTube, Pinterest, Snapchat, TikTok)"
+        ],
+        "z_knih": ["příběhy", "pohádky", "životopisy"]
+      }
+    },
+    {
+      "id": "obeti",
+      "name": "Oběti pro sen",
+      "description": "Čeho se můžu vzdát na cestě za snem",
+      "categories": {
+        "cas": [
+          "volné večery",
+          "volné víkendy",
+          "TV",
+          "FB",
+          "kávička s přáteli",
+          "páteční pivečko v hospůdce",
+          "lenošení"
+        ],
+        "penize": [
+          "dárky",
+          "všechny kromě těch na základní potřeby",
+          "úspory"
+        ],
+        "profese": ["rekvalifikace", "doplnění znalostí"],
+        "majetek": ["prodat nepotřebný", "vyhodit opotřebovaný"],
+        "cinnosti": ["koníčky které mají menší smysl než můj záměr"],
+        "vyuziti_casu": {
+          "v": ["MHD", "čekárne", "autě", "frontě", "pauze"],
+          "pro": ["telefonování", "maily", "studium", "úkoly", "nápady"]
+        }
+      }
+    },
+    {
+      "id": "muzu-pomahat",
+      "name": "Můžu pomáhat",
+      "description": "Jak a komu můžu pomoci",
+      "komu": ["sobě", "lidem", "zvířatům", "rostlinám", "planetě", "společnosti"],
+      "jak": {
+        "lidem": [
+          "růst",
+          "najít cestu",
+          "být šťastnější",
+          "být klidnější",
+          "předávat zkušenosti",
+          "sdílet",
+          "učit se",
+          "spolupracovat",
+          "poznávání",
+          "sebedůvěra",
+          "být lepší"
+        ],
+        "sobe": [
+          "strava",
+          "výživa",
+          "hubnout",
+          "doplňky",
+          "spánek",
+          "rozvoj",
+          "pečovat"
+        ],
+        "spolecnosti": [
+          "sociologie",
+          "ekonomika",
+          "charita",
+          "politika"
+        ],
+        "zviratum": [
+          "penězi",
+          "doplňky",
+          "ochrana",
+          "strava"
+        ],
+        "rostlinam": [
+          "penězi",
+          "činnosti"
+        ],
+        "planete": [
+          "napravovat problémy",
+          "omezit spotřebu",
+          "šetřit energie",
+          "nechat tu lepší místo k životu",
+          "osvěta",
+          "ochrana",
+          "třídit",
+          "šetřit",
+          "neplýtvat"
+        ]
+      },
+      "typy_pomoci": [
+        "charita",
+        "cílená",
+        "komunitní",
+        "anonymní",
+        "nezištná",
+        "sousedská",
+        "přátelská",
+        "samozřejmá"
+      ],
+      "konkretni": [
+        "dát, co nepotřebuji",
+        "půjčit, co nepoužívám",
+        "koupit jídlo potřebným",
+        "penězi"
+      ]
+    }
+  ]
+}
