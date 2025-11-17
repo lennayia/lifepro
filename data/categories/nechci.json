@@ -1,0 +1,70 @@
+{
+  "id": "nechci",
+  "name": "Nechci",
+  "description": "Co nechci být, mít, dělat, umět, vědět - a co mě štve",
+  "icon": "x-circle",
+  "color": "#F44336",
+  "subcategories": [
+    {
+      "id": "nechci-obecne",
+      "name": "Nechci",
+      "description": "Co nechci v životě",
+      "categories": {
+        "byt": ["arogantní", "lakomá", "závistivá", "vzteklá", "sama", "smutná", "zamračená", "chudá", "tlustá", "nemocná", "zlá", "nepřející", "křivé zuby"],
+        "mit": ["nepřátele", "dluhy", "exekuce", "stres"],
+        "delat_nebavi": [],
+        "delat_muzu_delegovat": ["úklid", "papírování"],
+        "umet_muzu_delegovat": [],
+        "vedet_nezajimam_se": ["matika", "fyzika", "chemie", "jaderná fyz.", "jazyky", "sport", "politika"]
+      },
+      "note": "Můžu cokoliv je jiné než CHCI. Chci je ovlivněno rozumem. Můžu cokoliv nemá hranice."
+    },
+    {
+      "id": "stve-me",
+      "name": "Štve mě",
+      "description": "Co mě štve a můžu s tím pracovat",
+      "aspects": {
+        "ja": {
+          "categories": ["bojím se", "nevěřím si"],
+          "kdy": [],
+          "ceho": [],
+          "telo": [],
+          "reakce": [],
+          "zlozvyky": [],
+          "chovani": [],
+          "vlastnosti": []
+        },
+        "co": ["peníze", "únava", "nepořádek", "úklid po někom", "chamtivost", "nelogičnost", "žárlivost", "nevrlost", "závist", "sobectví", "bezohlednost", "lhostejnost", "zbytečnosti"],
+        "kdo": ["konkrétní úřad", "konkrétní člověk", "skupina lidí", "vláda"],
+        "kde": ["doma", "v práci", "ve společnosti", "ve světě"]
+      },
+      "transformation": {
+        "description": "Co mě štve nejvíc a jak to můžu změnit",
+        "fields": ["ŠTVE MĚ", "ZMĚNA"]
+      }
+    },
+    {
+      "id": "nejvic-me-stve",
+      "name": "Nejvíc mě štve",
+      "description": "Jak to změnit a poradit ostatním",
+      "structure": {
+        "citim": ["sžírá mě", "frustrace", "vztek", "nuda", "je mi to jedno", "stres", "nejistota", "bezmoc", "strach", "nebezpečí", "vyčerpání", "absurdita", "nerovnováha", "zmatek"],
+        "chci_citit": ["poslání", "nadšení", "energii", "sebedůvěru", "štěstí", "radost", "zábavu", "souznění", "harmonii", "bezpečí"],
+        "muzu_zmenit": ["pocity", "vnímání", "přístup"],
+        "mit": ["možnosti", "odvahu", "důvěru", "čas", "svobodu", "volnost", "nápady", "tým", "přátele", "záměr", "plán", "jistotu"],
+        "naporcuju_slona": {
+          "plan": ["dílčí kroky", "systém", "kontinuita"],
+          "praxe": ["dílčí kroky"]
+        },
+        "otazky": [
+          "Chci změnit práci?",
+          "Chci najít své poslání?",
+          "Můžu si teď dovolit změnu?",
+          "Moje priority v oblasti práce jsou...",
+          "kolegové, šéfové, náplň práce, postup, procesy, peníze, čas, prostředí"
+        ],
+        "muzu_zmenit_plus": ["PROSTŘEDÍ", "LIDI"]
+      }
+    }
+  ]
+}

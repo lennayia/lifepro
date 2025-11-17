@@ -1,0 +1,67 @@
+{
+  "id": "delam",
+  "name": "Dělám",
+  "description": "Co dělám ve volném čase, při odpočinku a jak socializuji",
+  "icon": "activity",
+  "color": "#00BCD4",
+  "subcategories": [
+    {
+      "id": "volny-cas",
+      "name": "Ve volném čase",
+      "categories": {
+        "text": {
+          "stolni": ["karetní", "sportovní", "naučné", "kreativní"],
+          "online": []
+        },
+        "odpocel": ["učení", "jídlo", "zábava", "kafíčko", "pivo, víno"],
+        "pomoc": ["rodina", "přátelé"],
+        "krasa": ["úklid", "aktivity", "hry", "péče", "design", "interiéry", "móda", "líčení"],
+        "studium": ["distanční", "prezenční", "materiál", "on-line"],
+        "cteni": ["knížky", "čtečka", "internet", "časopisy", "soc. sítě", "vtipy", "komentuji", "studuji", "hry", "hledám info"],
+        "na_pc": [],
+        "pohyb": ["sport", "procházka", "v ČR", "v zahraničí", "uvnitř", "venku", "individuální"],
+        "kultura": ["divadlo", "hrady", "koncerty", "festivaly", "zámky", "výstavy", "muzea", "v ČR", "v cizině", "reportáže"],
+        "tvoreni": ["design"],
+        "relax": ["o samotě", "ve skupině", "uvnitř", "venku", "s dětmi", "v tichu"],
+        "plus": ["LIDÉ", "ZVÍŘE", "PŘÍRODA (toulky, poznávání, dokumentování, trasy, táboření, rituály, přežití, malování)", "FLÓRA", "životní prostředí", "PROSTŘEDÍ"]
+      }
+    },
+    {
+      "id": "kdyz-odpocivam",
+      "name": "Když odpočívám",
+      "description": "Aktivní i pasivní odpočinek",
+      "note": "Nemusíme odpočívat jen pasivně. Při aktivním odpočinku vypínáme mozek, ale zapojujeme tělo. Jakákoliv aktivita bez náročného přemýšlení se tedy rozhodně počítá!",
+      "structure": {
+        "relax": ["spánek", "meditace", "dýchání", "vizualizace", "pozorování", "denní snění", "lenošení", "masáž", "vana", "vůně", "četba", "TV", "hudba", "poslech"],
+        "aktivni": ["zpěv", "tanec", "poznávání", "smích", "zábava", "vaření", "úklid", "bádání", "tvoření", "pohyb", "sport", "cestování", "jízda autem", "výlet", "kultura", "hry (on-line, stolní, pohybové)"],
+        "kde": ["o samotě", "v anonymitě", "on-line", "ve společnosti"],
+        "plus": ["LIDÉ", "ZVÍŘATA", "PROSTŘEDÍ (KDE)", "ZAHRADA", "ZVÍŘE"]
+      }
+    },
+    {
+      "id": "socializuji-se",
+      "name": "Socializuji se",
+      "description": "Jak navazuji a udržuji kontakty",
+      "note": "Obklopuješ se kvalitními a úspěšnými lidmi? Z množství kontaktů můžeme generovat kvalitní lidi pro spolupráci.",
+      "categories": {
+        "soucasne": {
+          "pece": ["svátky, narozeniny, Vánoce...", "zkontaktovat 'jen tak'", "zájem"],
+          "pomoc": []
+        },
+        "zanedbane": {
+          "obnoveni": ["zapomenutí známí", "dávní přátelé", "bývalí kolegové"],
+          "pres_zajmy": []
+        },
+        "nove": {
+          "ziskavani": ["ve frontě", "venku", "on-line", "na akcích", "při sportu", "v kavárně, rest."],
+          "aktivni_nacvik_1x_denne": ["úsměv", "povídání o počasí", "přání hezkého dne", "nezávazná věta", "nabídka..."]
+        },
+        "spoluprace": {
+          "note": "nejsem na všechno sama",
+          "types": ["delegování", "partnerství", "zaměstnanci", "spolupracovníci"]
+        },
+        "plus_prostredi_kde": []
+      }
+    }
+  ]
+}
