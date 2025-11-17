@@ -11,14 +11,14 @@ export { default as FlipCard } from './components/cards/FlipCard.jsx';
 // ============================================
 // CONTEXT
 // ============================================
-export { ThemeProvider, useTheme } from './context/ThemeContext';
+export { ThemeProvider, useThemeMode } from './context/ThemeContext';
 
 // ============================================
 // HOOKS
 // ============================================
 export { default as useSoundFeedback } from './hooks/useSoundFeedback.js';
-export { default as useModernEffects } from './hooks/useModernEffects.js';
-export { default as useResponsive } from './hooks/useResponsive.js';
+export { useModernEffects } from './hooks/useModernEffects.js';
+export { useResponsive } from './hooks/useResponsive.js';
 
 // ============================================
 // STYLES

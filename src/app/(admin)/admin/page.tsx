@@ -14,7 +14,6 @@ import {
   Typography,
   Button,
 } from '@mui/material';
-import { createClient } from '@/lib/supabase/client';
 import Link from 'next/link';
 
 interface Stats {
@@ -36,7 +35,6 @@ export default function AdminDashboard() {
     responses: 0,
   });
   const [loading, setLoading] = useState(true);
-  const supabase = createClient();
 
   useEffect(() => {
     loadStats();
@@ -44,28 +42,15 @@ export default function AdminDashboard() {
 
   const loadStats = async () => {
     try {
-      const [
-        categoriesRes,
-        sectionsRes,
-        questionsRes,
-        optionsRes,
-        responsesRes,
-      ] = await Promise.all([
-        supabase.from('lifepro_categories').select('id', { count: 'exact', head: true }),
-        supabase.from('lifepro_sections').select('id', { count: 'exact', head: true }),
-        supabase.from('lifepro_questions').select('id', { count: 'exact', head: true }),
-        supabase.from('lifepro_question_options').select('id', { count: 'exact', head: true }),
-        supabase.from('lifepro_user_responses').select('id', { count: 'exact', head: true }),
-      ]);
+      // Volat admin stats API endpoint
+      const response = await fetch('/api/admin/stats');
 
-      setStats({
-        categories: categoriesRes.count || 0,
-        sections: sectionsRes.count || 0,
-        questions: questionsRes.count || 0,
-        options: optionsRes.count || 0,
-        users: 0, // TODO: count from auth.users
-        responses: responsesRes.count || 0,
-      });
+      if (!response.ok) {
+        throw new Error('Failed to load stats');
+      }
+
+      const data = await response.json();
+      setStats(data.stats);
     } catch (error) {
       console.error('Error loading stats:', error);
     } finally {

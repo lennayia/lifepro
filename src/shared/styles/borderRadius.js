@@ -10,6 +10,7 @@ const BORDER_RADIUS = {
   input: 8,
   modal: 16,
   pill: 50,
+  glassPanel: 12,
 };
 
 export default BORDER_RADIUS;

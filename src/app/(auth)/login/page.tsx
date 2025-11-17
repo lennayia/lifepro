@@ -20,7 +20,6 @@ import {
   CircularProgress,
 } from '@mui/material';
 import { useLifeAuth } from '@/shared/context/LifeAuthContext';
-import { GoogleSignInButton } from '@/shared';
 
 export default function LoginPage() {
   const [email, setEmail] = useState('');
@@ -133,11 +132,14 @@ export default function LoginPage() {
 
         <Divider sx={{ my: 2 }}>nebo</Divider>
 
-        <GoogleSignInButton
+        <Button
+          variant="outlined"
           onClick={handleGoogleLogin}
           disabled={loading}
           fullWidth
-        />
+        >
+          Přihlásit se přes Google
+        </Button>
 
         <Box sx={{ mt: 3, textAlign: 'center' }}>
           <Typography variant="body2" color="text.secondary">

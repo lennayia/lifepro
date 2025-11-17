@@ -1,3 +1,5 @@
+'use client';
+
 // Cesta: src/shared/hooks/useResponsive.js
 // Jednotný hook pro responsive design napříč celou aplikací
 

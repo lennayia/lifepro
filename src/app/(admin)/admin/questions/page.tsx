@@ -28,7 +28,7 @@ import {
   AccordionSummary,
   AccordionDetails,
 } from '@mui/material';
-import { Edit, Delete, Add, ChevronDown } from 'lucide-react';
+import { Edit, Delete, Plus, ChevronDown } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
 
 interface Question {
@@ -151,7 +151,7 @@ export default function QuestionsAdmin() {
             Správa otázek a možností odpovědí
           </Typography>
         </div>
-        <Button variant="contained" startIcon={<Add size={20} />}>
+        <Button variant="contained" startIcon={<Plus size={20} />}>
           Přidat otázku
         </Button>
       </Box>

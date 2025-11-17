@@ -4,11 +4,8 @@
  */
 
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/shared/context/ThemeContext';
 import { LifeAuthProvider } from '@/shared/context/LifeAuthContext';
-
-const inter = Inter({ subsets: ['latin', 'latin-ext'] }); // Czech characters support
 
 export const metadata: Metadata = {
   title: 'LifePro - Najděte své životní poslání',
@@ -29,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="cs">
-      <body className={inter.className}>
+      <body style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
         <ThemeProvider>
           <LifeAuthProvider>
             {children}

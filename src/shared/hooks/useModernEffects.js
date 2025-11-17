@@ -1,7 +1,9 @@
+'use client';
+
 // 🎨 REACT HOOK PRO MODERN EFFECTS
 // ===================================
 import { useCallback } from 'react';
-import { useThemeMode } from '../../App';
+import { useThemeMode } from '@/shared/context/ThemeContext';
 import {
   createGlass,
   createHover,
@@ -9,8 +11,8 @@ import {
   createModernCard,
   animations,
   hoverEffects
-} from '../styles/modernEffects';
-import BORDER_RADIUS from '../../styles/borderRadius';
+} from '@/shared/styles/modernEffects';
+import BORDER_RADIUS from '@/shared/styles/borderRadius';
 
 export const useModernEffects = () => {
   const { mode } = useThemeMode();

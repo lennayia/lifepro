@@ -25,7 +25,7 @@ import {
   Select,
   MenuItem,
 } from '@mui/material';
-import { Edit, Delete, Add } from 'lucide-react';
+import { Edit, Delete, Plus } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
 
 interface Section {
@@ -115,7 +115,7 @@ export default function SectionsAdmin() {
             Podsekce v kategoriích (Role, Vzdělání, Dovednosti, atd.)
           </Typography>
         </div>
-        <Button variant="contained" startIcon={<Add size={20} />}>
+        <Button variant="contained" startIcon={<Plus size={20} />}>
           Přidat sekci
         </Button>
       </Box>

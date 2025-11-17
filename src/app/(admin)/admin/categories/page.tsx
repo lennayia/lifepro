@@ -21,7 +21,7 @@ import {
   Chip,
   CircularProgress,
 } from '@mui/material';
-import { Edit, Delete, Add } from 'lucide-react';
+import { Edit, Delete, Plus } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
 
 interface Category {
@@ -92,7 +92,7 @@ export default function CategoriesAdmin() {
             Hlavní kategorie dotazníku (JSEM, VÍM, UMÍM, MÁM RÁD/A, atd.)
           </Typography>
         </div>
-        <Button variant="contained" startIcon={<Add size={20} />}>
+        <Button variant="contained" startIcon={<Plus size={20} />}>
           Přidat kategorii
         </Button>
       </Box>
