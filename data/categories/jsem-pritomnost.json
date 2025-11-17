@@ -1,0 +1,55 @@
+{
+  "id": "jsem-pritomnost",
+  "name": "Já jsem (Přítomnost)",
+  "description": "Současné role, práce a sebepojetí",
+  "icon": "user",
+  "color": "#3F51B5",
+  "subcategories": [
+    {
+      "id": "soucasna-prace",
+      "name": "Současná práce",
+      "items": [
+        "Co mě štve",
+        "Co mám rád/a",
+        "Co nesnáším",
+        "Kde můžu pomoct"
+      ]
+    },
+    {
+      "id": "role",
+      "name": "Role v životě",
+      "subcategories": [
+        {
+          "id": "v-rodicovstvi",
+          "name": "V rodičovství",
+          "items": ["matka", "otec", "bachař/ka", "kuchař/ka", "psycholog", "taxikář/ka", "učitel/ka", "zdravotník"]
+        },
+        {
+          "id": "potomek",
+          "name": "Potomek",
+          "items": ["syn", "dcera", "prvorozený/á", "benjamínek", "vymodlený/á"]
+        },
+        {
+          "id": "v-partnerstvi",
+          "name": "V partnerství",
+          "items": ["partner/ka", "kamarád/ka", "účetní", "pečovatel/ka"]
+        },
+        {
+          "id": "v-praci",
+          "name": "V práci",
+          "items": ["kolega/yně", "rival/ka", "šéf/ka", "podřízený/á"]
+        },
+        {
+          "id": "v-pratelstvi",
+          "name": "V přátelství",
+          "items": ["kamarád/ka", "zpovědník", "rádce", "posluchač/ka", "průvodce"]
+        },
+        {
+          "id": "v-zivote",
+          "name": "V životě",
+          "items": ["tvůrce", "sportovec", "bavič/ka", "řešitel/ka", "pomocník", "bojovník", "rebel/ka"]
+        }
+      ]
+    }
+  ]
+}
