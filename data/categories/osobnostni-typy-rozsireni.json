@@ -1,0 +1,24 @@
+{
+  "id": "osobnostni-typy-rozsireni",
+  "name": "Osobnostní typy - rozšíření",
+  "description": "Detailní typologie osobnosti dle různých teorií",
+  "icon": "users",
+  "color": "#20B2AA",
+  "note": "Zdroj: https://wikisofia.cz/wiki/Temperament",
+  "categories": {
+    "intro_extrovert": {
+      "myslenkovy": ["racionalista", "vědecké myšlení", "myšlenky", "realita"],
+      "citovy": ["vlastní cítění", "představy", "objektivní skutečnost", "senzitivnost", "subjektivní vnímání"],
+      "pocitkovy": ["realista", "vnější vlivy"],
+      "intuitivni": ["intuice", "plánování", "možnosti", "vnitřní život"]
+    },
+    "hodnotova_orientace": {
+      "teoreticky": ["poznání", "pravda", "racionální", "intelektualita", "kritický a empirický přístup", "abstraktní poznávání jevů", "neosobní, necitové, neprožitkové poznávání"],
+      "ekonomicky": ["užitečnost", "peníze", "pragmatičnost", "obhajoba vlastní existence", "praktičnost"],
+      "esteticky": ["krása", "hledání harmonie", "citový", "symetrie", "dokonalost", "odtržený od reality"],
+      "socialni": ["láska", "pomoc druhým", "empatie", "konání dobra"],
+      "politicky": ["moc", "vliv", "ovládání druhých", "nesnáší konkurenci"],
+      "nabozenstvi": ["jednota", "vyšší význam v kosmu", "překonávání sebe sama", "nejvyšší hodnoty", "smysl života"]
+    }
+  }
+}

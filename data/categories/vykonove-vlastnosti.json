@@ -1,0 +1,21 @@
+{
+  "id": "vykonove-vlastnosti",
+  "name": "Výkonové vlastnosti",
+  "description": "Vlohy, schopnosti a inteligence",
+  "icon": "trending-up",
+  "color": "#FF8C00",
+  "categories": {
+    "vlohy": ["vrozené"],
+    "inteligence": {
+      "typy": ["abstraktní", "konkrétní", "emoční", "sociální", "duchovní", "kreativní", "praktická", "analytická"],
+      "obecne": ["soudnost", "moudrost"],
+      "specifické": ["hudební", "matematické", "literární"],
+      "faktory": ["vnímání", "představivosti", "intelektu", "psychomotoriky", "emocionality"],
+      "stupne": ["nadání", "talent", "genialita"]
+    },
+    "schopnosti": {
+      "individualni": ["zodpovědnost", "spolehlivost", "produktivita", "adaptabilita", "flexibilita", "sebeřízení"],
+      "kolektivni": ["vůdcovství", "iniciativa", "spolupráce", "komunikace", "flexibilita", "sebeřízení"]
+    }
+  }
+}

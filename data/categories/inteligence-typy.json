@@ -1,0 +1,47 @@
+{
+  "id": "inteligence-typy",
+  "name": "9 druhů inteligence",
+  "description": "Gardnerova teorie mnohočetné inteligence",
+  "icon": "brain",
+  "color": "#4B0082",
+  "types": {
+    "verbalne_jazykova": {
+      "popis": "čtení, psaní, příběhy, rozhovory",
+      "profese": ["překladatel", "spisovatel", "tlumočník", "reportér", "právník", "učitel", "básník"],
+      "aktivity": ["hříčky", "jazykolamy", "hádanky"]
+    },
+    "logicko_matematicka": {
+      "popis": "logika, systémovost, hlavolamy",
+      "profese": ["matematik", "programátor", "technik", "badatel", "vědec"],
+      "aktivity": ["hádanky", "fantazie", "odhad", "strategie"]
+    },
+    "zvukove_hudebni": {
+      "popis": "zvuky, tóny, rytmus, intonace",
+      "profese": ["muzikant", "zpěvák", "skladatel", "tanečník", "dirigent"]
+    },
+    "vizualne_prostorova": {
+      "popis": "tvar, prostor, představa, podoba",
+      "profese": ["návrhář", "modelář", "sochař", "architekt", "ilustrátor", "geograf", "kartograf", "řidič", "pilot"]
+    },
+    "telesne_pohybova": {
+      "popis": "hraní, skok, pohyb, napodobování, tanec, běh, sport, dotyk",
+      "profese": ["chirurg", "tanečník", "atlet", "řemeslník", "sportovec", "řemeslník"]
+    },
+    "spolecenska": {
+      "popis": "hovory, týmovost, empatie, přátelství, vedení, organizace",
+      "profese": ["učitel", "psycholog", "politik", "právník", "marketing", "politik", "psycholog"]
+    },
+    "vnitrni": {
+      "popis": "názory, klid, meditace, nezávislost, já, pocity, vůle, styl, samota",
+      "profese": ["filozof"]
+    },
+    "prirodni": {
+      "popis": "učitel, farmář, zahradník, ochránce přírody, myslivec, instruktor přežití",
+      "profese": ["zoolog", "botanik", "pěstitel", "chovatel", "farmář", "zahradník", "ochránce přírody", "myslivec", "instruktor přežití", "ekolog"]
+    },
+    "existencialni": {
+      "popis": "filozofie",
+      "profese": ["filozof"]
+    }
+  }
+}

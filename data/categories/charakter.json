@@ -1,0 +1,17 @@
+{
+  "id": "charakter",
+  "name": "Charakter",
+  "description": "Charakterové vlastnosti projevující se v činech",
+  "icon": "award",
+  "color": "#800080",
+  "note": "Projevuje se v činech, ne ve smýšlení. Základ = zvnitřnění mravních norem. Ovlivněn výchovou a společenskými vlivy.",
+  "categories": {
+    "mravni": ["etika", "ctnost", "pravda", "morálka", "svědomí", "poctivost", "statečnost", "svědomitost", "odpovědnost", "zásadovost", "pravdomluvnost"],
+    "pracovni": ["pracovitost", "iniciativa", "píle", "loajalita", "integrita", "zapojení", "výsledky", "nasazení", "průkopnictví", "pohotovost", "podnikavost", "operativnost", "soustředěnost", "houževnatost", "zodpovědnost"],
+    "vztah_k_lidem": ["dobrosrdečnost", "věrnost", "upřímnost", "empatie", "soucitnost", "obětavost", "ohleduplnost", "spravedlnost", "takt", "úcta", "důvěra", "sdílnost", "vřelost", "lidumilnost", "kolegialita", "lidskost", "naslouchání", "pospolitost", "partnerství", "dochvilnost", "příslušnost", "sounáležitost", "solidarita", "shovívavost", "vliv", "péče", "snášenlivost", "společenskost", "přátelskost", "družnost"],
+    "volni": ["spolehlivost", "vytrvalost", "rozvážnost", "trpělivost", "rozhodnost", "prospěšnost", "konzistence", "ráznost", "síla", "ostražitost", "stabilita"],
+    "odolnost_k_zatezi": ["ukázněnost", "sebekritika", "sebeřízení", "sebekázeň", "disciplína", "řád", "režim", "stabilita", "sebekontrola", "autoregulace"],
+    "kontrola_rizeni_temperamentu": ["citové projevy", "sebeovládání"],
+    "sebehodncoeni": ["sebehodnota", "sebeúcta", "sebedůvěra", "sebeuvědomění", "sebeláska", "sebeocenění", "sebevědomí", "sebereflexe"]
+  }
+}
