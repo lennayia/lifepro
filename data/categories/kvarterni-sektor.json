@@ -1,0 +1,68 @@
+{
+  "id": "kvarterni-sektor",
+  "name": "Kvartérní sektor",
+  "description": "Znalosti, informace, výzkum, finanční služby",
+  "icon": "book-open",
+  "color": "#3F51B5",
+  "subcategories": [
+    {
+      "id": "znalosti-1",
+      "name": "Znalosti 1",
+      "categories": {
+        "vedy": {
+          "humanitni": ["etnologie", "filologie", "historiografie", "jurisprudence", "kulturologie", "lingvistika", "muzikologie", "politologie", "teologie"],
+          "prirodni": ["astronomie", "biologie", "fyzika", "chemie", "vědy o Zemi", "geologie", "hydrologie", "meteorologie", "geografie", "geodézie"],
+          "socialni": ["ekonomie", "psychologie", "religionistika", "sociologie"],
+          "formalni": ["reálné", "filosofie", "logika", "matematika"],
+          "meziborove": ["antropologie", "geografie", "meteorologie", "kognitivní v."],
+          "aplikovane": ["technické", "lékařské", "veterinární", "zemědělské"]
+        },
+        "vyzkum": ["vývoj"],
+        "poradenstvi": {
+          "psychologicke": ["rodinné", "partnerské", "vztahové", "sexuologické", "plátno"],
+          "karierni": ["volba profese", "nezaměstnaní", "nalezení zaměstnání", "doporučení", "rekvalifikace"],
+          "pedagogicko_psychologicke": ["pomoc dětem", "PORUCHY (učení, pozornosti, chování, hyperaktivita)", "speciální"],
+          "znevyhodneni": ["zdravotně postižení"]
+        },
+        "financnictvi": ["centrální b.", "bankovnictví", "finanční trhy", "investice", "leasing", "zastavárny", "pojišťovnictví", "úvěry", "penzijní f."],
+        "vladni_sluzby": ["státní správa", "veřejná správa", "justice", "obrana", "policie", "bezpečnostní agentury"],
+        "kapital": ["sběr", "uchování", "vyhledání", "rozšiřování"],
+        "media": {
+          "primarni": ["slovo", "gesto", "pohyb", "zvuky", "hudba"],
+          "sekundarni": ["megafon", "místní rozhlas", "tisk", "kino"],
+          "terciarni": ["TV", "rozhlas", "telefon", "PC"],
+          "kvartarni": ["síť"]
+        },
+        "zpravodajstvi": [],
+        "informace": ["veletrhy", "výstavy", "kongresy", "PR"],
+        "propagace": ["direct mail", "billboardy", "výlohy", "obaly", "prospekty", "inzeráty", "outdoor"],
+        "vydavatelstvi": ["knihy", "software", "filmy", "periodika", "text"],
+        "planovani": []
+      }
+    },
+    {
+      "id": "znalosti-2",
+      "name": "Znalosti 2",
+      "categories": {
+        "prumysl_volneho_casu": {
+          "zabavni": ["FILMOVÝ (studia, produkce, scénáře, f. festivaly, distribuce f., f. štáb, nezávislé filmy, kinematografie)", "HUDEBNÍ", "HERNÍ (videohry, PC hry)"],
+          "sportovni": [],
+          "reality": ["koupě", "prodej", "pronájem", "zprostředkování", "spolubydlení"],
+          "cestovni_ruch": ["městský", "letní", "zimní", "vinařský", "lovecký", "agro", "cyklo", "motorkářský", "motivační", "skupinový", "individuální", "domácí", "zahraniční", "lázně", "kongresy", "průmyslový", "turistika", "rekreace"]
+        },
+        "design": ["průmyslový", "produktový", "světelný", "interiérový", "in-store", "grafický", "webový", "módní", "floristický", "d. služeb", "playful d."],
+        "kultura": ["hrady", "zámky", "památky", "muzea", "divadla", "knihovny", "galerie", "koncertní síně", "kina", "kláštery", "zámecké zahrady", "kina v přírodě", "technické památky"],
+        "vs_vzdelavani": ["+ ŠKOLSTVÍ", "+ STUDIUM (v přírodě, diplomatické, pro cizince, církevní)"],
+        "neziskovky": ["nadace", "sdružení", "spolky", "politické strany", "církve"],
+        "odborne_sluzby": ["právo"],
+        "telekomunikace": ["pevné", "satelitní", "mikroelektronika"],
+        "ict": ["programování", "poradenství", "správa", "weby"],
+        "zdravotnictvi": ["ordinace", "laboratoř", "nemocnice", "lázně", "pečovatelské", "lékárny", "sanitky", "čekárny"],
+        "zivotni_prostredi": [],
+        "veda_vyzkum_zpravodajstvi": [],
+        "media_informace_propagace": [],
+        "planovani_poradenstvi": ["interpretace", "komunikace", "konzultace", "analýzy", "inovace", "administrativa", "úklid budov", "úprava krajiny", "správa"]
+      }
+    }
+  ]
+}

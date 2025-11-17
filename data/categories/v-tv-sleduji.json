@@ -1,0 +1,50 @@
+{
+  "id": "v-tv-sleduji",
+  "name": "V TV sleduji",
+  "description": "Co sleduji v televizi a na internetu - moje mediální zájmy",
+  "icon": "tv",
+  "color": "#673AB7",
+  "note": "Na co často koukáme a co často posloucháme, o tom toho nejspíš i dost víme! Vytipuj si, co v TV nebo na internetu sleduješ hodně, zajímá Tě to a dost o tomto tématu víš.",
+  "categories": {
+    "zpravodajstvi": {
+      "cr": [],
+      "svet": [],
+      "oblasti": ["počasí", "politika", "ekonomika", "ze společnosti", "rozhovory", "diskuse", "reportáže", "dokumenty"]
+    },
+    "vzdelavaci": ["auta, motorky", "letadla", "lodě", "stroje", "věda", "zdraví", "ekonomie", "psychologie", "soběstačnost", "Země", "+ PĚSTOVÁNÍ", "+ CHOV", "technika", "umění", "tradice", "technologie", "řemesla", "památky", "vesmír", "válka", "historie", "životopisy", "cestopisy", "+ ZVÍŘATA"],
+    "sport": [],
+    "deni": [],
+    "filmy_serialy": {
+      "ceske": [],
+      "zahranicni": [],
+      "zanry": ["detektivky", "krimi", "akční", "válka", "scifi", "tajemno", "horor", "thriller", "drama", "tragédie", "komedie", "americké", "rodinné", "romantika", "lékařské", "telenovely", "pohádky", "výukové", "večerníčky"]
+    },
+    "zabava": ["humor", "scénky", "soutěže", "estrády", "hry", "hudba", "reality show"],
+    "lifestyl": {
+      "ls_magaziny": ["móda", "značky", "shopping", "krása"],
+      "osobni_rozvoj": [],
+      "zivotni_uroven": [],
+      "nabozenstvi": [],
+      "volny_cas": ["pohyb", "auta", "technologie", "IT"],
+      "spiritualita": ["esoterika", "astrologie", "horoskopy", "výklad karet"],
+      "vegetarianstvi": [],
+      "alternativy": [],
+      "charita": [],
+      "fitness": [],
+      "adrenalin": [],
+      "zdravi": [],
+      "materstvi": [],
+      "rodina": [],
+      "deti": [],
+      "zvirata": [],
+      "vztahy": [],
+      "laska": [],
+      "udrzitelnost": []
+    },
+    "tvoreni": ["+ ROSTLINY", "+ PROSTŘEDÍ", "+ PŘÍRODA"],
+    "priprava_jidla": ["grilování"],
+    "bydleni": ["dům", "interiéry", "zahrada", "chytrá domácnost"],
+    "vylety": ["přežití", "gaming", "noční život"],
+    "plus": ["cestování", "zájezdy"]
+  }
+}

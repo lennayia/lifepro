@@ -1,0 +1,10 @@
+{
+  "id": "jidlo",
+  "name": "Jídlo",
+  "description": "Preference v jídle a stravování",
+  "icon": "coffee",
+  "color": "#FF5722",
+  "categories": {
+    "teplota": ["ledové", "studené", "akorát", "teplé", "horké"]
+  }
+}
