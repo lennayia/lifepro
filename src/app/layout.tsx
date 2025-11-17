@@ -6,6 +6,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/shared/context/ThemeContext';
+import { LifeAuthProvider } from '@/shared/context/LifeAuthContext';
 
 const inter = Inter({ subsets: ['latin', 'latin-ext'] }); // Czech characters support
 
@@ -30,7 +31,9 @@ export default function RootLayout({
     <html lang="cs">
       <body className={inter.className}>
         <ThemeProvider>
-          {children}
+          <LifeAuthProvider>
+            {children}
+          </LifeAuthProvider>
         </ThemeProvider>
       </body>
     </html>
