@@ -34,6 +34,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { createClient } from '@/lib/supabase/client';
 import { useLifeAuth } from '@/shared/context/LifeAuthContext';
 import { useSoundFeedback } from '@/shared';
+import MindmapQuestion from '@/shared/components/MindmapQuestion';
 
 interface Question {
   id: string;
@@ -63,6 +64,7 @@ interface Answer {
   answer_multiple?: string[];
   answer_number?: number;
   answer_date?: string;
+  answer_json?: any;
   is_favorite?: boolean;
 }
 
@@ -191,6 +193,9 @@ export default function QuestionnairePage() {
         break;
       case 'date':
         newAnswer.answer_date = value;
+        break;
+      case 'mindmap':
+        newAnswer.answer_json = value;
         break;
     }
 
@@ -383,6 +388,16 @@ export default function QuestionnairePage() {
                 ))}
             </Select>
           </FormControl>
+        );
+
+      case 'mindmap':
+        return (
+          <MindmapQuestion
+            initialData={currentAnswer.answer_json}
+            onChange={(data) =>
+              handleAnswerChange(currentQuestion.id, data, 'mindmap')
+            }
+          />
         );
 
       default:

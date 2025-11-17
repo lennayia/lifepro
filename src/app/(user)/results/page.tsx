@@ -33,6 +33,7 @@ import {
 import { motion } from 'framer-motion';
 import { createClient } from '@/lib/supabase/client';
 import { useLifeAuth } from '@/shared/context/LifeAuthContext';
+import { generateAnalysisPDF, downloadJSON } from '@/lib/utils/pdfGenerator';
 
 interface Analysis {
   id: string;
@@ -62,6 +63,7 @@ export default function ResultsPage() {
   const [analysis, setAnalysis] = useState<Analysis | null>(null);
   const [loading, setLoading] = useState(true);
   const [generating, setGenerating] = useState(false);
+  const [exporting, setExporting] = useState(false);
   const [error, setError] = useState('');
   const { user } = useLifeAuth();
   const supabase = createClient();
@@ -117,6 +119,69 @@ export default function ResultsPage() {
       setError(error.message);
     } finally {
       setGenerating(false);
+    }
+  };
+
+  const handleExportPDF = async () => {
+    if (!analysis || !user) return;
+
+    setExporting(true);
+    setError('');
+
+    try {
+      const response = await fetch('/api/export/pdf', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ userId: user.id }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Chyba při exportu PDF');
+      }
+
+      const { data } = await response.json();
+
+      // Generovat PDF na klientovi
+      generateAnalysisPDF(data.analysis, data.user);
+    } catch (error: any) {
+      console.error('Error exporting PDF:', error);
+      setError(error.message);
+    } finally {
+      setExporting(false);
+    }
+  };
+
+  const handleExportJSON = async () => {
+    if (!user) return;
+
+    setExporting(true);
+    setError('');
+
+    try {
+      const response = await fetch('/api/export/json', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ userId: user.id }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Chyba při exportu JSON');
+      }
+
+      const { data } = await response.json();
+
+      // Stáhnout JSON
+      const fileName = `LifePro_Data_${new Date().toISOString().split('T')[0]}.json`;
+      downloadJSON(data, fileName);
+    } catch (error: any) {
+      console.error('Error exporting JSON:', error);
+      setError(error.message);
+    } finally {
+      setExporting(false);
     }
   };
 
@@ -180,17 +245,30 @@ export default function ResultsPage() {
             </div>
           </Box>
 
-          <Box display="flex" gap={2}>
+          <Box display="flex" gap={2} flexWrap="wrap">
             <Button
               variant="outlined"
               startIcon={<Sparkles size={20} />}
               onClick={generateAnalysis}
-              disabled={generating}
+              disabled={generating || exporting}
             >
               {generating ? 'Generuji...' : 'Regenerovat'}
             </Button>
-            <Button variant="outlined" startIcon={<Download size={20} />}>
-              Stáhnout PDF
+            <Button
+              variant="contained"
+              startIcon={exporting ? <CircularProgress size={16} color="inherit" /> : <Download size={20} />}
+              onClick={handleExportPDF}
+              disabled={exporting || generating}
+            >
+              {exporting ? 'Exportuji...' : 'Stáhnout PDF'}
+            </Button>
+            <Button
+              variant="outlined"
+              startIcon={<Download size={20} />}
+              onClick={handleExportJSON}
+              disabled={exporting || generating}
+            >
+              Stáhnout JSON
             </Button>
           </Box>
         </Box>

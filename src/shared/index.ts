@@ -9,6 +9,15 @@
 export { default as FlipCard } from './components/cards/FlipCard.jsx';
 
 // ============================================
+// COMPONENTS - UI
+// ============================================
+export { default as GoogleSignInButton } from './components/GoogleSignInButton';
+export { default as AnimatedGradient } from './components/AnimatedGradient';
+export { default as NavigationFloatingMenu } from './components/NavigationFloatingMenu';
+export { default as ProfileScreen } from './components/ProfileScreen';
+export { default as MindmapQuestion } from './components/MindmapQuestion';
+
+// ============================================
 // CONTEXT
 // ============================================
 export { ThemeProvider, useThemeMode } from './context/ThemeContext';
