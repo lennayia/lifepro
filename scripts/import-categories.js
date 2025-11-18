@@ -73,7 +73,8 @@ function flattenSubcategories(subcategories, parentPath = '', level = 0) {
     // Pokud má items, vytvoř z nich otázky
     if (subcat.items && subcat.items.length > 0) {
       subcat.items.forEach((item, itemIndex) => {
-        const questionSlug = `${sectionSlug}-${slugify(item)}`;
+        // Přidej index pro zajištění unikátnosti slugu
+        const questionSlug = `${sectionSlug}-q${itemIndex}`;
 
         const question = {
           section_slug: sectionSlug,
