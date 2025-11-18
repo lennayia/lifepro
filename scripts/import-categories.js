@@ -236,6 +236,36 @@ async function importCategories() {
       });
     });
 
+    // Debug: Zkontroluj duplicity
+    const duplicateCheck = {};
+    const duplicates = [];
+    allQuestions.forEach(q => {
+      const key = `${q.section_id}::${q.slug}`;
+      if (duplicateCheck[key]) {
+        duplicates.push({ key, question: q.question_text });
+      }
+      duplicateCheck[key] = (duplicateCheck[key] || 0) + 1;
+    });
+
+    if (duplicates.length > 0) {
+      console.log('⚠️  Nalezeny duplicitní otázky:');
+      duplicates.forEach(d => console.log(`  - ${d.key}: ${d.question}`));
+      console.log('\n🔧 Opravuji duplicity přidáním UUID sufixu...\n');
+
+      // Oprav duplicity přidáním unique sufixu
+      const seen = {};
+      allQuestions.forEach(q => {
+        const key = `${q.section_id}::${q.slug}`;
+        if (seen[key]) {
+          // Přidej counter k slugu
+          seen[key]++;
+          q.slug = `${q.slug}-${seen[key]}`;
+        } else {
+          seen[key] = 1;
+        }
+      });
+    }
+
     const { data: insertedQuestions, error: qError } = await supabase
       .from('lifepro_questions')
       .upsert(allQuestions, { onConflict: 'section_id,slug' })
