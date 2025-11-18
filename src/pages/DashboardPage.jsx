@@ -3,13 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import { Box, Container, Typography, Grid, CircularProgress, Card, LinearProgress, Chip } from '@mui/material';
 import { BookOpen, TrendingUp, User, Settings, Heart, Target, CheckCircle } from 'lucide-react';
 import { supabase } from '@/lib/supabase/client';
-import { useAuth } from '@shared/context/AuthContext';
 import { useNotification } from '@shared/context/NotificationContext';
 import WelcomeScreen from '@shared/components/WelcomeScreen';
 
 const DashboardPage = () => {
   const navigate = useNavigate();
-  const { user } = useAuth();
   const { showError } = useNotification();
   const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -17,12 +15,9 @@ const DashboardPage = () => {
 
   useEffect(() => {
     fetchProfile();
-    if (user) {
-      fetchQuickStats();
-    }
-  }, [user]);
+  }, []);
 
-  const fetchQuickStats = async () => {
+  const fetchQuickStats = async (currentUser) => {
     try {
       // Načti počet otázek celkem
       const { count: totalQuestions } = await supabase
@@ -34,7 +29,7 @@ const DashboardPage = () => {
       const { data: responses } = await supabase
         .from('lifepro_user_responses')
         .select('question_id, answer_multiple, is_favorite')
-        .eq('user_id', user.id);
+        .eq('user_id', currentUser.id);
 
       const answeredCount = responses?.filter(
         r => r.answer_multiple && r.answer_multiple.length > 0
@@ -69,6 +64,9 @@ const DashboardPage = () => {
         displayName: user.user_metadata?.full_name || user.email?.split('@')[0] || 'Uživatel',
         photo_url: user.user_metadata?.avatar_url || null,
       });
+
+      // Načti quick stats
+      await fetchQuickStats(user);
     } catch (err) {
       console.error('Error fetching profile:', err);
       showError('Chyba', 'Nepodařilo se načíst profil');

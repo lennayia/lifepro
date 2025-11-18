@@ -15,15 +15,14 @@ import {
 } from '@mui/material';
 import { ArrowLeft, Heart, CheckCircle, TrendingUp, Target } from 'lucide-react';
 import { supabase } from '@/lib/supabase/client';
-import { useAuth } from '@shared/context/AuthContext';
 import { useNotification } from '@shared/context/NotificationContext';
 
 const ResultsPage = () => {
   const navigate = useNavigate();
-  const { user } = useAuth();
   const { showError } = useNotification();
 
   const [loading, setLoading] = useState(true);
+  const [user, setUser] = useState(null);
   const [stats, setStats] = useState({
     totalCategories: 0,
     completedCategories: 0,
@@ -35,12 +34,28 @@ const ResultsPage = () => {
   const [favorites, setFavorites] = useState([]);
 
   useEffect(() => {
-    if (user) {
-      fetchResults();
-    }
-  }, [user]);
+    fetchUser();
+  }, []);
 
-  const fetchResults = async () => {
+  const fetchUser = async () => {
+    try {
+      const { data: { user }, error } = await supabase.auth.getUser();
+      if (error) throw error;
+
+      if (!user) {
+        navigate('/login');
+        return;
+      }
+
+      setUser(user);
+      fetchResults(user);
+    } catch (err) {
+      console.error('Error fetching user:', err);
+      navigate('/login');
+    }
+  };
+
+  const fetchResults = async (currentUser) => {
     try {
       // Načti všechny kategorie
       const { data: categories, error: catError } = await supabase
@@ -91,7 +106,7 @@ const ResultsPage = () => {
             )
           )
         `)
-        .eq('user_id', user.id);
+        .eq('user_id', currentUser.id);
 
       if (resError) throw resError;
 

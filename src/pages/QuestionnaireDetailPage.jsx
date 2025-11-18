@@ -18,16 +18,15 @@ import {
 import { ArrowLeft, Heart, Save, CheckCircle } from 'lucide-react';
 import { supabase } from '@/lib/supabase/client';
 import { useNotification } from '@shared/context/NotificationContext';
-import { useAuth } from '@shared/context/AuthContext';
 
 const QuestionnaireDetailPage = () => {
   const { categorySlug } = useParams();
   const navigate = useNavigate();
   const { showSuccess, showError } = useNotification();
-  const { user } = useAuth();
 
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
+  const [user, setUser] = useState(null);
   const [category, setCategory] = useState(null);
   const [sections, setSections] = useState([]);
   const [questions, setQuestions] = useState([]);
@@ -35,11 +34,27 @@ const QuestionnaireDetailPage = () => {
   const [favorites, setFavorites] = useState(new Set());
 
   useEffect(() => {
-    if (categorySlug && user) {
+    fetchUser();
+  }, [categorySlug]);
+
+  const fetchUser = async () => {
+    try {
+      const { data: { user }, error } = await supabase.auth.getUser();
+      if (error) throw error;
+
+      if (!user) {
+        navigate('/login');
+        return;
+      }
+
+      setUser(user);
       fetchQuestionnaire();
-      fetchUserResponses();
+      fetchUserResponses(user);
+    } catch (err) {
+      console.error('Error fetching user:', err);
+      navigate('/login');
     }
-  }, [categorySlug, user]);
+  };
 
   const fetchQuestionnaire = async () => {
     try {
@@ -84,12 +99,12 @@ const QuestionnaireDetailPage = () => {
     }
   };
 
-  const fetchUserResponses = async () => {
+  const fetchUserResponses = async (currentUser) => {
     try {
       const { data, error } = await supabase
         .from('lifepro_user_responses')
         .select('question_id, answer_multiple, is_favorite')
-        .eq('user_id', user.id);
+        .eq('user_id', currentUser.id);
 
       if (error) throw error;
 
