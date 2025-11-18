@@ -26,7 +26,7 @@ const QuestionnairePage = () => {
   const fetchCategories = async () => {
     try {
       const { data, error } = await supabase
-        .from('categories')
+        .from('lifepro_categories')
         .select('*')
         .eq('is_published', true)
         .order('order');
