@@ -1,0 +1,59 @@
+{
+  "id": "sebepojeti",
+  "name": "Sebepojetí",
+  "description": "Jak se vidím a vnímám já",
+  "icon": "mirror",
+  "color": "#9C27B0",
+  "subcategories": [
+    {
+      "id": "aspekty",
+      "name": "Aspekty sebepojetí",
+      "items": [
+        "sebepoznání",
+        "seberealizace",
+        "sebeuplatnění",
+        "sebevyjádření",
+        "sebeaktualizace",
+        "sebenaplnění",
+        "sebeprosazení",
+        "seberůst",
+        "sebeovládání",
+        "sebejistota",
+        "sebedůvěra",
+        "sebezměna",
+        "sebehodnota",
+        "sebereflexe",
+        "sebeláska",
+        "sebeúcta",
+        "sebepřijetí",
+        "sebezáchova",
+        "seberegulace",
+        "sebeuvědomění",
+        "sebekritika",
+        "sebeanalýza",
+        "sebekontrola",
+        "sebehodnocení",
+        "sebekázeň",
+        "sebeřízení",
+        "sebeocenění",
+        "sebevýraz"
+      ]
+    },
+    {
+      "id": "ja-kategorie",
+      "name": "JÁ kategorie",
+      "items": [
+        "DOKÁŽU",
+        "VÍM",
+        "MÁM",
+        "NEMÁM",
+        "JSEM",
+        "DĚLÁM",
+        "NEDĚLÁM",
+        "NEUMÍM",
+        "NEDOKÁŽU",
+        "UZNÁVÁM"
+      ]
+    }
+  ]
+}

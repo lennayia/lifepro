@@ -1,0 +1,23 @@
+{
+  "id": "kvinterni-sektor",
+  "name": "Kvintérní sektor",
+  "description": "Vysoký management, hi-tech a biotechnologie",
+  "icon": "award",
+  "color": "#4B0082",
+  "categories": {
+    "high_management": {
+      "pozice": ["nejvyšší vedení", "rozhodování", "nejvyšší pozice", "pravomoce", "prezident", "vláda"]
+    },
+    "hi_technologie": ["nano", "robotika"],
+    "biotechnologie": [
+      "nové léky",
+      "léčivé rostliny",
+      "geneticky modifikované plodiny a hospodářská zvířata",
+      "rostlinné oleje a biopaliva",
+      "recyklace",
+      "zpracování odpadu",
+      "čištění kontaminovaných míst",
+      "vývoj biologických zbraní"
+    ]
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "id": "uspechy-zdroje",
+  "name": "Úspěchy a zdroje",
+  "description": "Co jsem dokázal/a a co mám k dispozici",
+  "icon": "trophy",
+  "color": "#4CAF50",
+  "subcategories": [
+    {
+      "id": "moje-uspechy",
+      "name": "Moje úspěchy",
+      "categories": [
+        "profese",
+        "odpočinek",
+        "koníčky",
+        "péče",
+        "pomoc",
+        "potěšení",
+        "učení",
+        "zábava",
+        "zájmy",
+        "záliby"
+      ]
+    },
+    {
+      "id": "co-mam",
+      "name": "Co mám (aktiva)",
+      "subcategories": [
+        {
+          "id": "penize",
+          "name": "Peníze",
+          "items": [
+            "úspory",
+            "půjčené",
+            "vlastní",
+            "pravidelné",
+            "jednorázové",
+            "do začátku",
+            "na provoz",
+            "na charitu",
+            "na studium",
+            "na zábavu",
+            "na koníčky",
+            "na investice"
+          ]
+        },
+        {
+          "id": "od-boha",
+          "name": "Od Boha (talenty)",
+          "items": [
+            "talent",
+            "vzhled",
+            "charisma",
+            "úsměv"
+          ]
+        },
+        {
+          "id": "osobnost",
+          "name": "Osobnost",
+          "items": [
+            "sebejistota",
+            "vyjadřování",
+            "autenticita",
+            "otevřenost",
+            "lidskost",
+            "komunikace"
+          ]
+        },
+        {
+          "id": "energie",
+          "name": "Energie",
+          "items": [
+            "podpora",
+            "čas",
+            "motivace",
+            "důvěra",
+            "záměr",
+            "nápady",
+            "inspirace",
+            "chuť do"
+          ]
+        },
+        {
+          "id": "strategie",
+          "name": "Strategie",
+          "items": [
+            "vlastní koncept",
+            "převzaté",
+            "plán"
+          ]
+        },
+        {
+          "id": "prostor",
+          "name": "Prostor",
+          "items": [
+            "vlastní",
+            "osobní",
+            "pracovní"
+          ]
+        },
+        {
+          "id": "produkt-sluzba",
+          "name": "Produkt/Služba",
+          "items": [
+            "produkt",
+            "služba"
+          ]
+        },
+        {
+          "id": "zasoby",
+          "name": "Zásoby",
+          "items": [
+            "materiál",
+            "zboží",
+            "provozní materiál",
+            "pomůcky",
+            "software"
+          ]
+        },
+        {
+          "id": "naradi-technika",
+          "name": "Nářadí a technika",
+          "items": [
+            "software",
+            "hardware"
+          ]
+        },
+        {
+          "id": "nemovitost",
+          "name": "Nemovitost",
+          "items": [
+            "vlastní",
+            "pronajatá",
+            "půjčená",
+            "zdravotní"
+          ]
+        },
+        {
+          "id": "prace",
+          "name": "Práce",
+          "items": [
+            "stálá",
+            "nárazová",
+            "poslání",
+            "ujde"
+          ]
+        },
+        {
+          "id": "identita",
+          "name": "Identita",
+          "items": [
+            "příběh",
+            "představy"
+          ]
+        },
+        {
+          "id": "cas-na",
+          "name": "Čas na",
+          "items": [
+            "přátele",
+            "rodinu",
+            "zvířata",
+            "kulturu",
+            "přírodu",
+            "studium",
+            "koníčky",
+            "sport",
+            "charitu",
+            "knihy",
+            "cestování",
+            "zábavu",
+            "vzdělávání",
+            "zázemí",
+            "naslouchání",
+            "zájem",
+            "hydratace",
+            "sebedůvěra",
+            "spánek"
+          ]
+        },
+        {
+          "id": "zdravi",
+          "name": "Zdraví",
+          "items": [
+            "hydratace",
+            "spánek",
+            "pohyb"
+          ]
+        },
+        {
+          "id": "zdroje-info",
+          "name": "Zdroje info",
+          "items": [
+            "knihy",
+            "videa",
+            "kurzy",
+            "scripta",
+            "zájem",
+            "záliby",
+            "naplnění"
+          ]
+        },
+        {
+          "id": "konicky",
+          "name": "Koníčky",
+          "items": [
+            "zájem",
+            "záliby",
+            "naplnění",
+            "lidé",
+            "cestování",
+            "vyprávění"
+          ]
+        },
+        {
+          "id": "podpora",
+          "name": "Podpora",
+          "subcategories": [
+            {
+              "id": "kdo",
+              "name": "Kdo (lidé)",
+              "items": [
+                "odborník",
+                "banka",
+                "realitka",
+                "půjčovna",
+                "pomocníci"
+              ]
+            },
+            {
+              "id": "co",
+              "name": "Co (typ podpory)",
+              "items": [
+                "finanční (jednorázová, pravidelná, příspěvek na studium)",
+                "materiální (půjčení auta, techniky, prostory, renovace, pronájem, přestavba, půjčení, darování věcí, pozvání na oběd)",
+                "energetická (povzbuzení, důvěra, nadšení, otázka v meditaci)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "co-potrebuji",
+      "name": "Co potřebuji (nezbytné)",
+      "description": "3 věci které nezbytně potřebuji"
+    },
+    {
+      "id": "omezeni",
+      "name": "Omezení",
+      "items": [
+        "zdravotní",
+        "rodinná",
+        "časová",
+        "informační"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "vse-zive",
+  "name": "Vše živé",
+  "description": "Vesmír, planeta, civilizace a veškerý život",
+  "icon": "globe",
+  "color": "#009688",
+  "categories": {
+    "vesmir": ["astrologie", "nekonečno", "vyšší síly", "věda"],
+    "zeme": ["technologie", "civilizace", "vzdělání"],
+    "plus": ["VODA", "PŘÍRODA"]
+  }
+}

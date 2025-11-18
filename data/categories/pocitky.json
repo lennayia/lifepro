@@ -1,0 +1,20 @@
+{
+  "id": "pocitky",
+  "name": "Pocitky",
+  "description": "Vnímání smysly a mimosmyslové vjemy",
+  "icon": "eye",
+  "color": "#E91E63",
+  "categories": {
+    "zrak": ["barva", "světlo", "stín"],
+    "sluch": ["tón", "šelest", "zvuk", "hluk", "ticho"],
+    "chut": ["slané", "sladké", "kyselé", "hořké", "kořeněné", "pálivé"],
+    "cich": ["vůně", "pachy"],
+    "hmat": ["teplo", "chlad", "bolest"],
+    "mimosmyslove_vjemy": ["budoucí události", "vnímání na dálku", "bolest", "podprahové podněty"],
+    "poruchy": ["krátkozrakost", "dalekozrakost", "šeroslepost", "barvoslepost", "zákal", "nedoslýchavost", "halucinace", "pseudohalucinace"],
+    "jasno_vjemy": ["jasnozrak", "jasnosluch", "jasnovědění", "jasnocit"],
+    "psychosomaticke_vjemy": ["citlivost", "regresní zážitky"],
+    "pocitova_teplota": ["horké", "teplé", "studené", "ledové", "tříšť"],
+    "psychosomaticke_vjemy_chut": ["slané", "sladké", "mix", "kyselé", "trpké", "hořké", "kořeněné", "pikantní", "pálivé"]
+  }
+}

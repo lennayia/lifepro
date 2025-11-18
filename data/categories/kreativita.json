@@ -1,0 +1,230 @@
+{
+  "id": "kreativita",
+  "name": "Kreativita a tvoření",
+  "description": "Rozvoj kreativity, tvůrčí proces a překonávání překážek",
+  "icon": "palette",
+  "color": "#1976D2",
+  "subcategories": [
+    {
+      "id": "typy-kreativity",
+      "name": "Typy kreativity",
+      "description": "Rozdělení podle oblastí",
+      "subcategories": [
+        {
+          "id": "specificka",
+          "name": "Specifická kreativita",
+          "description": "Kreativita v konkrétních oborech",
+          "subcategories": [
+            {
+              "id": "figuralni",
+              "name": "Figurální",
+              "items": [
+                "architektura",
+                "výtvarná díla",
+                "sochařství",
+                "umělecká řemesla"
+              ]
+            },
+            {
+              "id": "symbolicka",
+              "name": "Symbolická",
+              "items": [
+                "hudba",
+                "tanec",
+                "matematika"
+              ]
+            },
+            {
+              "id": "semanticka",
+              "name": "Sémantická",
+              "items": [
+                "literatura",
+                "žurnalistika",
+                "psaní divadelních her"
+              ]
+            },
+            {
+              "id": "socialni",
+              "name": "Sociální",
+              "items": [
+                "psychologie",
+                "výuka",
+                "veřejná činnost",
+                "kariéra"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nespecificka",
+          "name": "Nespecifická kreativita",
+          "description": "Obecná tvořivost",
+          "items": [
+            "myšlenky",
+            "terminologie",
+            "kreativní obsah"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "metody",
+      "name": "Metody rozvoje kreativity",
+      "description": "Techniky a postupy",
+      "subcategories": [
+        {
+          "id": "skupinove",
+          "name": "Skupinové metody",
+          "items": [
+            "mind-maps",
+            "brainstorming",
+            "brainwriting",
+            "crawford slip"
+          ]
+        },
+        {
+          "id": "individualni",
+          "name": "Individuální metody",
+          "items": [
+            "strategie Walta Disneye",
+            "náhodný vstup"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zajmy",
+      "name": "Zájmy",
+      "description": "Co podporuje kreativitu",
+      "items": [
+        "rozvoj",
+        "přátelství",
+        "spolupráce",
+        "pomoc",
+        "uznání",
+        "sounáležitost"
+      ]
+    },
+    {
+      "id": "pozitivni-pocity",
+      "name": "Pozitivní pocity",
+      "description": "Emoce podporující kreativitu",
+      "items": [
+        "očekávání",
+        "radost",
+        "zvídavost",
+        "hrdost"
+      ]
+    },
+    {
+      "id": "motivy",
+      "name": "Motivy",
+      "description": "Vnitřní a vnější motivace",
+      "subcategories": [
+        {
+          "id": "osobni",
+          "name": "Osobní motivy",
+          "items": [
+            "biologické",
+            "společenské"
+          ],
+          "details": {
+            "biologicke": [
+              "hlad",
+              "žízeň",
+              "bolest",
+              "sebezáchova",
+              "mateřství",
+              "manipulace s předměty"
+            ],
+            "spolecenske": []
+          }
+        },
+        {
+          "id": "skupinove-motivy",
+          "name": "Skupinové motivy",
+          "items": [
+            "poznávání",
+            "učení se novému",
+            "práce sama o sobě"
+          ]
+        },
+        {
+          "id": "pudy",
+          "name": "Pudy",
+          "items": [
+            "nedostatek uspokojování",
+            "vyhnout se neúspěchu"
+          ]
+        },
+        {
+          "id": "moralni",
+          "name": "Morální motivy",
+          "items": [
+            "duchovní",
+            "morální"
+          ]
+        },
+        {
+          "id": "vykon",
+          "name": "Výkon",
+          "description": "Motivace k výkonu"
+        }
+      ]
+    },
+    {
+      "id": "prekazky",
+      "name": "Překážky kreativity",
+      "description": "Co brání tvořivosti",
+      "subcategories": [
+        {
+          "id": "vnitrni",
+          "name": "Vnitřní překážky",
+          "items": [
+            "negativní myšlení",
+            "logika",
+            "zákazy",
+            "příkazy",
+            "nechoď tam",
+            "to je problém",
+            "izolace",
+            "nejistota ve vztahu k okolí",
+            "pocit zodpovědnosti",
+            "málo času",
+            "starosti",
+            "frustrace",
+            "málo spánku",
+            "málo pohybu"
+          ]
+        },
+        {
+          "id": "venkovni",
+          "name": "Vnější překážky",
+          "items": [
+            "tlak",
+            "omezení",
+            "v práci",
+            "doma",
+            "péče o...",
+            "strach z kritiky",
+            "strach ze selhání",
+            "málo nápadů",
+            "málo času",
+            "disciplína",
+            "fyzická únava",
+            "lenost"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "postoje",
+      "name": "Postoje",
+      "description": "Postoje podporující kreativitu",
+      "items": [
+        "osobní hodnoty",
+        "návyky"
+      ]
+    }
+  ]
+}

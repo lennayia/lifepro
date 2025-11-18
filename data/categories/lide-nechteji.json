@@ -1,0 +1,20 @@
+{
+  "id": "lide-nechteji",
+  "name": "Lidé nechtějí",
+  "description": "Co lidé odmítají a čemu se vyhýbají - pochopení negativních aspektů",
+  "icon": "block",
+  "color": "#D32F2F",
+  "note": "Pochopení toho, co lidé nechtějí, pomáhá vytvářet lepší produkty a služby",
+  "items": [
+    "chaos",
+    "strach",
+    "nesmyslná nařízení",
+    "úzkost",
+    "nedostatek",
+    "omezení",
+    "nemoc",
+    "samotu",
+    "jednotvárnost",
+    "nezájem"
+  ]
+}

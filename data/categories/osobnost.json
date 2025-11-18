@@ -1,0 +1,79 @@
+{
+  "id": "osobnost",
+  "name": "Osobnost",
+  "description": "Psychické rysy, temperament a osobnostní typy",
+  "icon": "user-check",
+  "color": "#20B2AA",
+  "subcategories": [
+    {
+      "id": "psychicke-rysy",
+      "name": "Psychické rysy",
+      "note": "Zdroj: https://issmb.cz/DUM/III.2%204/III.2%204.17.pdf",
+      "categories": {
+        "aktivacne_motivacni": ["potřeby", "pudy", "zájmy", "záliby", "sklony", "aspirace", "cíle", "životní plány", "zvyky"],
+        "vztahove_postojove": ["charakter", "postoje", "ideály", "citové vztahy"],
+        "vykonove": ["vlohy", "schopnosti", "vědomosti", "dovednosti", "návyky"],
+        "seberegulacni": ["sebeuvědomění", "sebehodnocení", "sebekritika", "svědomí", "volní vlastnosti"],
+        "dynamicke": ["temperament"],
+        "vlastnosti": ["schopnosti", "znalosti", "dovednosti"],
+        "postoj": {
+          "hodnoty": ["miluju", "uznávám", "nesnáším", "odsuzuju"],
+          "motivy": [],
+          "potreby": [],
+          "postoje": []
+        }
+      }
+    },
+    {
+      "id": "osobnostni-typy",
+      "name": "Osobnostní typy",
+      "types": {
+        "prace": ["sova", "ranní ptáče"],
+        "jsem": ["vizionář (hýřím nápady)", "tvůrce (zhmotňuji cizí nápady)", "dotahovač (všechno doladím)", "prodejce (prodávám cizí výrobek/službu)"],
+        "postoj": ["snílek", "realista", "kritik", "materialista", "fatalista", "determinista", "nihilista", "pozitivní", "negativní"],
+        "schopnosti": ["intelekt", "senzomotorika", "umění"],
+        "pomoc_charita": []
+      }
+    },
+    {
+      "id": "temperament",
+      "name": "Temperament",
+      "note": "Zdroj: https://wikisofia.cz/wiki/Temperament",
+      "categories": {
+        "zakladni_typy": {
+          "sangvinik": {
+            "extrovert": true,
+            "stabilita": "stabilní",
+            "vlastnosti": ["ctižádostivost", "společenskost", "smířlivost", "družnost", "ukázněnost", "smělost", "trpělivost", "chladnokrevnost", "vytrvalost", "samostatnost", "neovlivnitelnost", "milost", "snášenlivost", "přátelskost", "sebeovládání", "živost", "vnímavost", "zásadovost", "iniciativa", "podnikavost", "impulzivnost", "sebejistota", "činorodost", "slabé city", "sportovní", "praktičnost", "hodně obsáhne, nestačí si osvojit", "lehce přes neúspěchy"],
+            "pozice": "optimista, radost, lehce přes neúspěchy, smířlivost"
+          },
+          "cholerik": {
+            "extrovert": true,
+            "stabilita": "labilní",
+            "vlastnosti": ["oduševnělost", "rychlost", "praktičnost", "náladovost", "podnikavost", "zásadovost", "vůdce", "impulzivnost", "iniciativa", "vnímavost", "silné city", "ctižádostivost", "plán uskutečňuje", "energie", "city ovládá", "vytrvalost", "žije pro ideu", "osamocenost", "dobrý pozorovatel", "jen svůj názor", "kritičnost", "vydrážditelný", "vznětlivý", "vášeň"],
+            "styl": "stres"
+          },
+          "melancholik": {
+            "introvert": true,
+            "stabilita": "labilní",
+            "vlastnosti": ["hlubokomyslnost", "svědomitost", "vážnost", "zodpovědnost", "houževnatost", "rovnoměrnost", "ukázněnost", "srdečnost", "oddanost", "věrnost", "náladovost", "bujná fantazie", "idealizuje", "nerozhodnost", "rychlé vzplanutí", "neklid", "zápal x nečinnost", "přelétavost", "kritičnost", "vydrážděitelný", "vznětlivý", "uzavřený", "samota", "zvyky", "nevůdčí", "nepřesnost", "nespolečenský", "neodvážný", "nesnaživý"],
+            "pozice": "pesimista, smutek"
+          },
+          "flegmatik": {
+            "introvert": true,
+            "stabilita": "stabilní",
+            "vlastnosti": ["chlad", "střízlivost", "činorodost", "rozvážnost", "pracovitost", "dobrá paměť", "abstrakce", "pravidla", "lhostejnost", "milost", "samostatnost", "snášenlivost", "sebeovládání", "dobrá paměť", "chlad", "přátelskost", "abstrakce", "pravidla", "chladnokrevnost", "dobromyslnost", "neovlivnitelnost", "vytrvalost", "trpělivost", "obezřetnost", "klid"],
+            "pozice": "lhostejnost, apatik"
+          }
+        },
+        "keirsey_typy": {
+          "artisan": ["umělecký", "svoboda", "senzace", "vznětlivost", "spontánnost", "troufalost", "zábava", "realista", "optimista", "skladatel", "živnostník", "spekulant", "umělec"],
+          "guardian": ["opatrovnický", "spolehlivost", "prospěšnost", "pracovitost", "věrnost", "oddanost", "obezřetnost", "skromnost", "tradice", "jistota", "inspektor", "prospektor", "dodavatel", "dozorce"],
+          "idealist": ["idealistický", "nadšenec", "intuice", "romantika", "láskyplnost", "dobrosrdečnost", "dávání", "věří", "intenzivní partnerství", "sní o moudrosti", "léčitel", "poradce", "závodník", "učitel"],
+          "rational": ["racionální", "logika", "vyrovnanost", "partnerství", "důvtip", "řešení", "nezávislost", "pragmatik", "skeptik", "výkon", "architekt", "vynálezce", "vůdce"]
+        },
+        "dimenze": ["extrovert/ambivert/introvert", "stabilita/labilita", "emotivní/neemotivní", "aktivní/neaktivní", "impulzivní/sekundární", "silný/slabý", "vyrovnaný/nevyrovnaný", "pomalý/pohyblivý"]
+      }
+    }
+  ]
+}

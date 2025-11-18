@@ -1,0 +1,65 @@
+{
+  "id": "mam-rada",
+  "name": "Mám rád/a",
+  "description": "Zájmy, planeta, život, věci, činnosti",
+  "icon": "heart",
+  "color": "#E91E63",
+  "subcategories": [
+    {
+      "id": "planeta",
+      "name": "Planeta Země",
+      "subcategories": [
+        {
+          "id": "pocasi",
+          "name": "Počasí",
+          "items": ["slunce", "déšť", "sníh", "vítr", "bouřka", "mlha"]
+        },
+        {
+          "id": "flora",
+          "name": "Flóra (rostliny)",
+          "items": ["stromy", "květiny", "zahrady", "lesy", "pěstování"]
+        },
+        {
+          "id": "fauna",
+          "name": "Fauna (zvířata)",
+          "items": ["domácí zvířata", "divoká zvířata", "chování zvířat", "ochrana zvířat"]
+        },
+        {
+          "id": "ochrana",
+          "name": "Ochrana přírody",
+          "items": ["ekologie", "udržitelnost", "recyklace", "ochrana prostředí"]
+        },
+        {
+          "id": "prostredi",
+          "name": "Prostředí",
+          "items": ["hory", "moře", "jezera", "řeky", "příroda", "krajina"]
+        },
+        {
+          "id": "voda",
+          "name": "Voda",
+          "items": ["oceány", "řeky", "jezera", "plavání", "vodní sporty"]
+        },
+        {
+          "id": "zeme",
+          "name": "Země",
+          "items": ["geologie", "minerály", "půda", "zemědělství"]
+        }
+      ]
+    },
+    {
+      "id": "zivot",
+      "name": "Život",
+      "items": ["rodina", "přátelství", "vztahy", "komunita", "kultura", "tradice"]
+    },
+    {
+      "id": "veci",
+      "name": "Věci",
+      "items": ["knihy", "umění", "hudba", "technologie", "oblečení", "design"]
+    },
+    {
+      "id": "cinnosti",
+      "name": "Činnosti",
+      "items": ["sport", "vaření", "čtení", "psaní", "tvoření", "cestování", "učení"]
+    }
+  ]
+}

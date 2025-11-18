@@ -1,0 +1,64 @@
+{
+  "id": "lidske-potreby",
+  "name": "Lidské potřeby",
+  "description": "Hierarchie lidských potřeb a motivace",
+  "icon": "users",
+  "color": "#3F51B5",
+  "subcategories": [
+    {
+      "id": "zakladni",
+      "name": "Základní potřeby",
+      "items": ["dýchání", "tělesná teplota", "těl. integrita", "voda", "jídlo", "odpočinek", "spánek", "vylučování", "pohyb", "rozmnožování", "hygiena", "střecha nad hlavou", "oblečení", "necítit bolest", "soběstačnost", "pohodlí", "klid", "činnost", "péče o děti"]
+    },
+    {
+      "id": "jistota",
+      "name": "Jistota a bezpečí",
+      "items": ["vzdělání", "zaměstnání", "příjem, zdroje", "fyz. bezpečnost", "morální jistota", "rodina", "zdraví", "stálost", "spolehlivost", "struktura", "pravidla", "hranice", "sebezáchova", "volný čas", "+POŘÁDEK"]
+    },
+    {
+      "id": "spojeni",
+      "name": "Spojení a láska",
+      "items": ["vztahy", "láska", "rodina", "sounáležitost", "+PŘÍRODA", "přátelství", "kolektiv", "tým", "modlitba", "přátelství"]
+    },
+    {
+      "id": "pomoc",
+      "name": "Pomoc",
+      "items": ["rada", "naslouchání", "blízkost"]
+    },
+    {
+      "id": "zbytne",
+      "name": "Zbytné",
+      "items": ["dárky", "luxus", "cestování"]
+    },
+    {
+      "id": "prijeti",
+      "name": "Přijetí a uznání",
+      "items": ["úcta", "respekt", "uznání", "ocenění", "sebeúcta", "potřebnost", "potěšení", "úspěch", "radost", "image", "obdiv", "prestiž"]
+    },
+    {
+      "id": "seberealizace",
+      "name": "Seberealizace",
+      "items": ["přijetí okolností", "spontánnost", "tvořivost", "zájem o řešení", "vnitřní etika", "objektivita", "svoboda", "sebeaktualizace", "rozvoj talentu", "osobní růst"]
+    },
+    {
+      "id": "kognitivni",
+      "name": "Kognitivní potřeby",
+      "items": ["nové poznatky", "hledání smyslu", "pochopení", "zaměření"]
+    },
+    {
+      "id": "esteticke",
+      "name": "Estetické potřeby",
+      "items": ["kultura", "krása", "harmonie", "možnosti", "výkon", "odpovědnost", "samostatnost", "překonávání překážek", "soutěživost", "zpětná vazba", "dobře odvedená práce", "kompetence", "smysl", "naplnění potenciálu", "záměr", "zájmy", "cíle"]
+    },
+    {
+      "id": "duchovni",
+      "name": "Duchovní potřeby",
+      "items": ["vrcholné zážitky", "inspirace", "extáze", "tvořivá energie", "naplnění", "spiritualita", "motivace", "vize", "přispění"]
+    },
+    {
+      "id": "moc",
+      "name": "Moc a vliv",
+      "items": ["řízení", "ovlivňování", "prosazení se"]
+    }
+  ]
+}

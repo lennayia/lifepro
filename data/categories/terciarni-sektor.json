@@ -1,0 +1,26 @@
+{
+  "id": "terciarni-sektor",
+  "name": "Terciární sektor",
+  "description": "Služby - ubytování, stravování, péče",
+  "icon": "briefcase",
+  "color": "#795548",
+  "note": "Hromadné vs. individuální služby",
+  "categories": {
+    "sluzby": ["hromadné", "individuální"],
+    "ubytovani": ["ubytovna", "penzion", "hostel", "hotel", "airbnb", "kemp", "srub, chata", "turistická osada", "chatová oblast"],
+    "stravovani": ["jídelna", "párky", "hranolky", "ryby", "stánek", "donáška", "rozvoz"],
+    "bary": {
+      "denni": ["bar", "koktejl", "mléčný bar", "caffé bar", "snack bar", "lunch bar", "Champagne & Soft bar", "vinný", "whisky", "PEACH BAR", "SNOW (ICE) BAR", "Grill bar"],
+      "nocni": ["disco", "dancing", "kabaret", "casino bar", "night club bar", "music bar"],
+      "specialni": ["hotelový", "aperitiv", "etážový bar", "piano bar", "výčep přes ulici"],
+      "ostatni": ["cukrárna", "kavárna", "espresso", "vinárna", "pivnice"]
+    },
+    "pece_o_telo": ["kadeřnictví", "manikúra", "pedikúra", "kosmetika"],
+    "opravy_udrzba": [],
+    "hygienicke_sluzby": ["čistírna", "prádelna"],
+    "socialni_sluzby": [],
+    "komunalni_sluzby": [],
+    "remeslne_sluzby": [],
+    "skolstvi": []
+  }
+}

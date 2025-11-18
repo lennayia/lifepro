@@ -1,0 +1,29 @@
+{
+  "id": "moje-tema",
+  "name": "Moje téma",
+  "description": "Co je moje téma a mohlo by mě to živit",
+  "icon": "target",
+  "color": "#9C27B0",
+  "questions": [
+    "přitahuje mě",
+    "trávím čas s",
+    "často mluvím o",
+    "v TV koukám na",
+    "chci být nejlepší v",
+    "těší mě",
+    "chci se dozvědět všechno o",
+    "chci se naučit víc o",
+    "chci se zlepšit v",
+    "zajímá mě všechno o",
+    "chodím na kurzy, semináře, diskuse o",
+    "píšu o",
+    "všímám si ...",
+    "ráda se učím..",
+    "ráda poslouchám",
+    "čtu všechno o",
+    "na netu hledám",
+    "vím toho opravdu hodně o",
+    "pořád přemýšlím o"
+  ],
+  "note": "Co je Tvoje téma? Mohlo by Tě to živit?"
+}

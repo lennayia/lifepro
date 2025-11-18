@@ -1,0 +1,119 @@
+{
+  "id": "dovednosti",
+  "name": "Dovednosti",
+  "description": "Komplexní přehled dovedností - tvrdé, jemné a měkké kompetence",
+  "icon": "skills",
+  "color": "#2E7D32",
+  "subcategories": [
+    {
+      "id": "tvrde",
+      "name": "Tvrdé dovednosti",
+      "description": "Technické a odborné dovednosti",
+      "items": [
+        "software",
+        "jazyky",
+        "certifikace",
+        "řidičák",
+        "právo",
+        "IT",
+        "daně",
+        "technika",
+        "odbornost"
+      ]
+    },
+    {
+      "id": "jemne",
+      "name": "Jemné dovednosti",
+      "description": "Měkké a sociální dovednosti",
+      "items": [
+        "komunikace",
+        "spolupráce",
+        "řešení konfliktů",
+        "vyjednávání",
+        "asertivita",
+        "efektivita týmové řešení",
+        "socializace"
+      ]
+    },
+    {
+      "id": "strategicke",
+      "name": "Strategické dovednosti",
+      "description": "Plánování, rozhodování a strategické myšlení",
+      "items": [
+        "strategie",
+        "strukturovanost",
+        "souvislosti",
+        "rozhodování",
+        "plánování práce",
+        "organizování práce",
+        "time management",
+        "metodika",
+        "nadhled"
+      ]
+    },
+    {
+      "id": "tymu",
+      "name": "Týmové dovednosti",
+      "description": "Práce s týmem a vedení lidí",
+      "items": [
+        "budování týmu",
+        "sociální sítě",
+        "konstruktivní kritika",
+        "leadership",
+        "delegování",
+        "koordinace",
+        "zpětná vazba"
+      ]
+    },
+    {
+      "id": "osobni",
+      "name": "Osobní dovednosti",
+      "description": "Individuální schopnosti a vlastnosti",
+      "items": [
+        "flexibilita",
+        "samostatnost",
+        "aktivní přístup",
+        "zvládání zátěže",
+        "práce s informacemi",
+        "kreativita",
+        "přesvědčivost",
+        "prezentace",
+        "vyjadřování",
+        "logika",
+        "pružnost",
+        "řešení problémů",
+        "celoživotní učení"
+      ]
+    },
+    {
+      "id": "podnikatelske",
+      "name": "Podnikatelské dovednosti",
+      "description": "Obchodní a podnikatelské schopnosti",
+      "items": [
+        "zdravý risk",
+        "ovlivňování",
+        "prodej",
+        "rozvoj kvalifikace",
+        "zákaznické potřeby",
+        "podnikatelské myšlení",
+        "předvídavost",
+        "konstruktivita",
+        "kompetence"
+      ]
+    },
+    {
+      "id": "prakticke",
+      "name": "Praktické dovednosti",
+      "description": "Manuální a technické schopnosti",
+      "items": [
+        "výkonnost",
+        "porozumění",
+        "pravidelnost",
+        "šikovnost",
+        "věcnost",
+        "všestrannost",
+        "zručnost"
+      ]
+    }
+  ]
+}

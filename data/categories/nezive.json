@@ -1,0 +1,23 @@
+{
+  "id": "nezive",
+  "name": "Neživé",
+  "description": "Věci, které mě zajímají - od umění po módu",
+  "icon": "box",
+  "color": "#795548",
+  "note": "Proč se zamýšlet, jestli se nám líbí vyřezávaná lavička v parku nebo na zámku? Protože je možné, že bychom ji uměli nádherně zrenovovat. Proč si psát, že jsme zapálení cyklisté? Protože můžeme radit ostatním, jak si své miláčky tunit.",
+  "categories": {
+    "stavby": [],
+    "knizky": [],
+    "umeni": {
+      "sochy": [],
+      "obrazy": [],
+      "plastiky": [],
+      "uzite_umeni": ["klasické", "moderní"]
+    },
+    "hudba": [],
+    "moda": ["trendy", "oblečení", "modelling"],
+    "sperky": ["zlato"],
+    "liceni": [],
+    "pohyb": []
+  }
+}

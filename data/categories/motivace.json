@@ -1,0 +1,24 @@
+{
+  "id": "motivace",
+  "name": "Motivace",
+  "description": "Co mě motivuje a pohání vpřed",
+  "icon": "zap",
+  "color": "#DC143C",
+  "categories": {
+    "vnitrni_vs_vnejsi": {
+      "vnitrni": ["sama to chci", "vlastní potřeby", "pozitivní pocity", "očekávání, radost", "zvídavost", "práce sama", "radost z procesu", "snaha hledat nové"],
+      "vnejsi": ["tlak prostředí", "cíle", "vyhnout se neúspěchu", "nedostatek", "uspokojování", "omezení", "ZISK (peníze, uznání, kariéra, majetek)"]
+    },
+    "skupinove": {
+      "biologicke": ["hlad", "žízeň", "zima", "bolest", "sebezáchova", "mateřství"],
+      "spolecenske": ["společenský úspěch", "manipulace s předměty"],
+      "osobni": ["pudy", "ambice", "výkon"],
+      "znalostni": ["poznávání", "učení se novému", "touha objevovat", "intelektuální sklony", "zvědavost"],
+      "socialni": ["přátelství", "spolupráce", "uznání", "sounáležitost"],
+      "duchovni": ["morální", "smysl života", "vůle"]
+    },
+    "potreby": ["ideály", "zájmy", "postoje", "návyky", "závist", "hodnoty"],
+    "v_praci_doma": ["v práci", "doma", "kariéra", "seberealizace", "plný potenciál"],
+    "cile": ["ambice", "pomoc", "hrdost"]
+  }
+}

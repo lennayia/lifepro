@@ -1,0 +1,26 @@
+{
+  "id": "flow-radost",
+  "name": "Když to dělám s radostí (Flow)",
+  "description": "Činnosti, při kterých jsem ve flow stavu",
+  "icon": "zap",
+  "color": "#FFEB3B",
+  "questions": [
+    "Lidé ode mě chtějí radu ohledně...",
+    "100% miluju...",
+    "... mi přináší klid",
+    "Když ..., tak nemyslím na jídlo ani na spánek",
+    "... mi jde od ruky",
+    "Užívám si...",
+    "Při ... mám vysoké nasazení",
+    "... i bez nároku na odměnu",
+    "Když ..., prožívám radost",
+    "Když ..., cítím maximální spokojenost",
+    "Automaticky se angažuji v...",
+    "Když ..., jsem naprosto bez starostí",
+    "Když ..., cítím vlastní užitečnost",
+    "Usmívám se, když...",
+    "Moc ráda...",
+    "Když ..., jsem 100% ve flow",
+    "Na ..., dostávám zpětnou vazbu"
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "id": "prodej",
+  "name": "Prodej",
+  "description": "Komplexní systém pro prodej produktů a služeb",
+  "icon": "shopping_cart",
+  "color": "#2E7D32",
+  "subcategories": [
+    {
+      "id": "kde",
+      "name": "Kde prodávat",
+      "description": "Prodejní kanály a platformy",
+      "subcategories": [
+        {
+          "id": "online",
+          "name": "Online prodej",
+          "items": [
+            "web",
+            "Fleur",
+            "Amazon",
+            "FB",
+            "e-shop",
+            "platformy"
+          ]
+        },
+        {
+          "id": "offline",
+          "name": "Offline prodej",
+          "items": [
+            "trhy",
+            "burza",
+            "kamenný obchod",
+            "provozovna",
+            "výstavy",
+            "galerie",
+            "salon",
+            "občerstvovna",
+            "nákupy",
+            "přímý prodej",
+            "MLM"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "proces",
+      "name": "Proces prodeje",
+      "description": "Technické a právní aspekty",
+      "items": [
+        "GDPR",
+        "mailing",
+        "obchodní platforma",
+        "reklama",
+        "dodavatelé",
+        "provize"
+      ]
+    },
+    {
+      "id": "technicke",
+      "name": "Technické systémy",
+      "description": "Webové a prodejní systémy",
+      "items": [
+        "WordPress",
+        "Joomla",
+        "Drupal",
+        "na zakázku",
+        "vlastní systém",
+        "poskytovatel (Wedos)",
+        "fakturace",
+        "platební brána",
+        "Pay Pal"
+      ]
+    },
+    {
+      "id": "komu",
+      "name": "Komu prodávat",
+      "description": "Cílová skupina a zákazníci",
+      "items": [
+        "potřeby",
+        "motivy",
+        "hodnoty",
+        "postoje"
+      ]
+    },
+    {
+      "id": "co",
+      "name": "Co prodávat",
+      "description": "Typy produktů a služeb",
+      "items": [
+        "produkt",
+        "služba"
+      ]
+    },
+    {
+      "id": "dovednosti",
+      "name": "Prodejní dovednosti",
+      "description": "Schopnosti potřebné pro prodej",
+      "reference": "Viz kategorie Dovednosti"
+    },
+    {
+      "id": "vlastnosti",
+      "name": "Vlastnosti prodejce",
+      "description": "Osobnostní charakteristiky"
+    },
+    {
+      "id": "jak-udelat",
+      "name": "Jak udělat",
+      "description": "Praktické tipy pro prodej",
+      "items": [
+        "něco navíc - balíček s materiálem (tvoření)",
+        "návod oběma - těm, co mají zájem o produkt i těm, co si chtějí vyrobit sami",
+        "příběh - kus člověka - osobní dárky",
+        "něčím začít a pokračovat dál",
+        "přidaná hodnota",
+        "slevový portál, srovnávač cen"
+      ]
+    },
+    {
+      "id": "obalovy-material",
+      "name": "Obalový materiál",
+      "description": "Balení a prezentace produktu",
+      "examples": {
+        "napoje": [
+          "skleněné láhve - čiré, tmavé",
+          "PET láhve",
+          "Tetra Pak",
+          "sudy, bečky - kov, dřevo, plast",
+          "kanystry, plechovky, kádě, ocelové tanky, demižony, cisterny"
+        ]
+      }
+    },
+    {
+      "id": "pravni",
+      "name": "Právní záležitosti",
+      "description": "Právní aspekty prodeje",
+      "items": [
+        "název",
+        "ŽL (živnostenský list)",
+        "účetní",
+        "právník",
+        "obchodní podmínky"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "pozitivni-emoce",
+  "name": "Pozitivní emoce a pocity",
+  "description": "Pozitivní emoční stavy",
+  "icon": "smile",
+  "color": "#32CD32",
+  "note": "Poruchy emotivity: https://www.studium-psychologie.cz/obecna-psychologie/13-emotivita-emoce-afekty-nalady.html",
+  "emoce": {
+    "radost_stesti": ["radost", "štěstí", "spokojenost", "potěšení", "slast", "blaho"],
+    "nadseni_vzruseni": ["nadšení", "očekávání", "překvapení", "vzrušení", "fascinace", "okouzlení", "ohromení"],
+    "lasky": ["láska", "touha", "něha", "sympatie", "láskyplnost", "bezpodmínečná láska", "přítulnost", "intenzita"],
+    "jistota_bezpeci": ["jistota", "bezpečí", "úleva", "naděje", "pokora"],
+    "pozitivni_vztahy": ["hrdost", "zájem", "obdiv", "povinnost", "souhlas"],
+    "pohoda": ["pohoda", "smích", "vděčnost", "volnost", "nevázanost"],
+    "naplneni": ["naplnění", "dojetí", "hledání", "přijetí", "soulad", "nespoutanost"],
+    "odhodlani": ["odhodlanost", "povzbuzení"],
+    "intuice": ["intuice"],
+    "afirmace": ["mám na to", "dokážu to", "zasloužím si"]
+  }
+}

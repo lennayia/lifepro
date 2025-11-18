@@ -1,0 +1,83 @@
+{
+  "id": "harmonogram",
+  "name": "Harmonogram dne",
+  "description": "Strukturovaný denní rozvrh aktivit",
+  "icon": "schedule",
+  "color": "#D32F2F",
+  "subcategories": [
+    {
+      "id": "rano",
+      "name": "Ranní program",
+      "description": "Aktivity po probuzení",
+      "items": [
+        "budíček",
+        "hygiena",
+        "cvičení",
+        "meditace",
+        "snídaně",
+        "doplňky",
+        "kapky"
+      ]
+    },
+    {
+      "id": "dopoledni",
+      "name": "Dopolední program",
+      "description": "Dopolední aktivity",
+      "items": [
+        "doplňky",
+        "kapky"
+      ]
+    },
+    {
+      "id": "obed",
+      "name": "Oběd",
+      "description": "Polední přestávka",
+      "items": [
+        "relax",
+        "doplňky",
+        "kapky"
+      ]
+    },
+    {
+      "id": "odpoledni",
+      "name": "Odpolední program",
+      "description": "Odpolední aktivity",
+      "items": [
+        "procházka",
+        "práce",
+        "socializace",
+        "nákupy"
+      ]
+    },
+    {
+      "id": "vecerni",
+      "name": "Večerní program",
+      "description": "Večerní aktivity",
+      "items": [
+        "večeře",
+        "doplňky",
+        "kapky",
+        "koníčky",
+        "kultura"
+      ]
+    },
+    {
+      "id": "spanek",
+      "name": "Spánek",
+      "description": "Příprava na spánek",
+      "items": [
+        "kniha",
+        "lehnout"
+      ]
+    },
+    {
+      "id": "prace-snu",
+      "name": "Práce snů",
+      "description": "Profesní činnosti",
+      "items": [
+        "práce",
+        "studium"
+      ]
+    }
+  ]
+}

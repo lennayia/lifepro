@@ -1,0 +1,54 @@
+{
+  "id": "moje-cesta",
+  "name": "Moje cesta",
+  "description": "Osobní cesta, záměry a životní směřování",
+  "icon": "explore",
+  "color": "#D32F2F",
+  "motto": "Všechno, co potřebuješ, se dozvíš v pravý čas.",
+  "subcategories": [
+    {
+      "id": "vnitrni-svet",
+      "name": "Vnitřní svět",
+      "description": "Vnitřní motivace a postoje",
+      "items": [
+        "záměr",
+        "vize",
+        "důvěra",
+        "víra v",
+        "pocity"
+      ]
+    },
+    {
+      "id": "touhy-sny",
+      "name": "Touhy a sny",
+      "description": "Osobní přání a aspirace",
+      "items": [
+        "touhy",
+        "sny",
+        "zájem",
+        "radost z",
+        "možnosti"
+      ]
+    },
+    {
+      "id": "zajmy",
+      "name": "Zájmy",
+      "description": "Oblast osobních zájmů",
+      "items": [
+        "poznávání",
+        "technika",
+        "výtvarno, krása",
+        "tvoření",
+        "sport",
+        "příroda",
+        "obchod",
+        "společnost"
+      ]
+    },
+    {
+      "id": "lide",
+      "name": "Lidé",
+      "description": "Vztahy a sociální aspekty cesty"
+    }
+  ]
+}

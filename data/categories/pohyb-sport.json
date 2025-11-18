@@ -1,0 +1,29 @@
+{
+  "id": "pohyb-sport",
+  "name": "Pohyb a sport",
+  "description": "Sportovní a pohybové aktivity",
+  "icon": "zap",
+  "color": "#FF4500",
+  "note": "Co Tě zajímá? Co máš vyzkoušené? Co dalšího Tě napadá? Můžeš o tom napsat: článek, návod, příběh...",
+  "categories": {
+    "pohyb": ["chůze", "tanec", "běh", "skok", "šplh", "let", "jízda", "hod", "vrh", "střelba", "plavání", "cvičení", "akrobacie", "posilování", "aerobik", "extrémní", "x-boj", "zápas", "hry", "sex", "potápění"],
+    "intenzita": ["rychlost", "přesnost", "síla", "vytrvalost", "odvaha", "taktika", "adrenalin"],
+    "s_cim": ["jen s tělem", "s pomůckou", "se strojem", "s nářadím", "s technikou"],
+    "kde": {
+      "uvnitr": ["doma", "PC", "stolek", "stavby", "na ulici", "rampa"],
+      "kombi": [],
+      "online": []
+    },
+    "jak": ["aktivně", "on-line", "pasivně"],
+    "kdy": ["zima", "léto", "sezóna", "celý rok"],
+    "s_kym": ["individuální", "dvojice", "družstvo", "kolektivní", "masový"],
+    "prostredi": ["na zemi", "pod zemí", "ve vzduchu", "ve větru", "na vodě", "pod vodou", "sníh", "led", "oheň"],
+    "pomucka": ["zbraň", "luk", "kladivo", "meč"],
+    "narad": ["trampolína", "kladina", "lano"],
+    "plus": ["brusle", "lyže", "skate", "surf", "sáňky", "boby", "balón"],
+    "stroj": ["auto", "moto", "kolo", "koloběžka", "loď"],
+    "technika": ["dron"],
+    "dalsi": ["míč", "puk", "raketa", "chůdy", "šachy"],
+    "zvire": []
+  }
+}

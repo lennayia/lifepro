@@ -1,0 +1,71 @@
+{
+  "id": "avatar-zakaznika",
+  "name": "Avatar zákazníka",
+  "description": "Definice ideálního zákazníka a pochopení jeho potřeb",
+  "icon": "person",
+  "color": "#F57C00",
+  "questions": {
+    "pro-koho": "Pro koho?",
+    "subtitle": "lidé - zvířata - stát?"
+  },
+  "subcategories": [
+    {
+      "id": "zakaznik",
+      "name": "Zákazník",
+      "description": "Kdo je můj ideální zákazník?",
+      "questions": [
+        "co lidé chtějí?",
+        "konkrétní řešení na 1 věc",
+        "vyřešení jejich problému",
+        "co ho štve",
+        "co ho bolí",
+        "co prožívá"
+      ],
+      "definition": {
+        "demographics": [
+          "muž/žena",
+          "věk",
+          "příjem",
+          "děti",
+          "práce"
+        ],
+        "psychographics": [
+          "touhy",
+          "sny",
+          "souvislost s mým produktem"
+        ],
+        "challenges": [
+          "překážky",
+          "výzvy",
+          "strachy",
+          "bloky",
+          "brzdy"
+        ]
+      }
+    },
+    {
+      "id": "cilova-skupina",
+      "name": "Cílová skupina",
+      "description": "Definice cílové skupiny",
+      "questions": [
+        "jakého chci ideálního zákazníka?",
+        "komu dokážu nejlíp pomoct?",
+        "kdo mi to nejlíp zaplatí?",
+        "pro koho je to tak důležité?",
+        "kdo jsem byla pár let zpátky?"
+      ]
+    },
+    {
+      "id": "produkt",
+      "name": "Produkt",
+      "description": "Od zákazníka k produktu",
+      "insights": [
+        "ještě nemusím mít",
+        "přemýšlení o zákazníkovi - dovede mě k produktu",
+        "co mi přijde normální a ostatním těžké?",
+        "co jsem prožívala, když jsem to řešila?",
+        "asi to budou prožívat i oni - produkt pak popsat z hlediska těchto pocitů"
+      ]
+    }
+  ]
+}

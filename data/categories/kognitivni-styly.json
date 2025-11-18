@@ -1,0 +1,67 @@
+{
+  "id": "kognitivni-styly",
+  "name": "Kognitivní styly",
+  "description": "Jak přemýšlím a zpracovávám informace",
+  "icon": "cpu",
+  "color": "#228B22",
+  "note": "Zdroj: https://wikisofia.cz/wiki/Kognitivní_styl_osobnosti",
+  "dimenze": {
+    "reflexivni_impulsivni": {
+      "reflexivni": ["přesnost", "promyšlenost", "pečlivá volba"],
+      "impulsivni": ["rychlost", "spontánní volba"]
+    },
+    "uhlazovac_vyostrovac": {
+      "uhlazovac": ["konzervativnost"],
+      "vyostrovac": ["flexibilita", "detail", "změna"]
+    },
+    "konvergentni_divergentni": {
+      "konvergentni": ["známé", "zavedené"],
+      "divergentni": ["originalita", "kreativita", "inovace"]
+    },
+    "adaptor_inovator": {
+      "adaptor": ["adaptace", "flexibilita", "korekce", "modifikace", "vylepšení", "netvorivý"],
+      "inovator": ["netradičnost", "rekonstrukce", "změna", "tvořivý"]
+    },
+    "algoritmicky_heuristicky": {
+      "algoritmicky": ["rutina"],
+      "heuristicky": ["novost"]
+    },
+    "vizualizator_verbalizator": {
+      "vizualizator": ["obrazy"],
+      "verbalizator": ["slova"]
+    },
+    "perceptni_pole": {
+      "figura": [],
+      "pozadi": []
+    },
+    "perceptni_intuitivni": {
+      "perceptni": ["detail"],
+      "intuitivni": ["vztahy", "souvislosti"]
+    },
+    "komplexni_simplicitni": {
+      "komplexni": ["množství konstruktů", "delší rozhodování"],
+      "simplicitní": ["omezené množství", "kratší rozhodování"]
+    },
+    "globalni_detailni": {
+      "globalni": ["celek", "holistický", "víc hypotéz"],
+      "detailni": ["detail", "serialistický", "jedna hypotéza", "puntičkář"]
+    },
+    "systematicky_chaoticky": {
+      "systematicky": ["konstatující", "objasňující", "reprodukce", "struktura"],
+      "chaoticky": []
+    },
+    "kolb_styly": {
+      "konkretne_sekvencni": ["pořádek", "logika", "posloupnost"],
+      "konkretne_nahodny": ["experiment", "intuice", "nezávislost"],
+      "abstraktne_sekvencni": [],
+      "abstraktne_nahodny": []
+    },
+    "ucebni_styly": {
+      "divergent": ["konkrétní zkušenost", "přemýšlivé pozorování"],
+      "konvergent": ["abstraktní představy", "aktivní experimentování"],
+      "asimilator": ["abstraktní představy", "přemýšlivé pozorování"],
+      "akoodátor": ["konkrétní zkušenost", "aktivní experimentování"]
+    },
+    "rozsah_risk": ["ochota k řešení"]
+  }
+}

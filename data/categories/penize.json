@@ -1,0 +1,30 @@
+{
+  "id": "penize",
+  "name": "Peníze",
+  "description": "Vztah k penězům a mindset o financích",
+  "icon": "dollar-sign",
+  "color": "#4CAF50",
+  "aspects": {
+    "predstavuji": ["neutrální", "špinavé", "druhořadé", "nutnost", "radost", "bohatství", "nedostatek", "hojnost", "energie", "luxus", "snadný život", "možnost si užívat", "možnost studovat", "možnost nakupovat", "status", "svobodu", "domov", "mince a papírky s obrázky"],
+    "vztah": ["šetření", "utrácení"],
+    "otazky": [
+      "kolik je dostatek?",
+      "kolik peněz potřebuji?",
+      "kolik peněz chci měsíčně?",
+      "jak se s nimi cítím?",
+      "jak pomůžu potřebným?",
+      "do čeho investuji?",
+      "kdybych vyhrála milion Kč, tak....",
+      "když mám v kapse 10.000 Kč, tak...",
+      "o penězích jsem slýchala..."
+    ]
+  },
+  "mindset": {
+    "note": "Peníze musí proudit – k nám i od nás, to je jejich vibrace. Bez ní dochází k zablokování energie.",
+    "questions": [
+      "Jaký je Tvůj vztah k penězům? Jsou na předním místě nebo na čtvrtém, desátém?",
+      "Jaký je život bez peněz, s málo penězi a jaký je život v hojnosti?",
+      "Cítíš, že potřebuješ změnit mindset?"
+    ]
+  }
+}

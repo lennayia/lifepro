@@ -1,0 +1,22 @@
+{
+  "id": "vsimam-si",
+  "name": "Všímám si",
+  "description": "Co si všímám na lidech a co se mi líbí",
+  "icon": "eye",
+  "color": "#3F51B5",
+  "categories": {
+    "charisma": ["úsměv", "pohled", "výraz", "vcítění se", "kouzlo", "vznešenost", "intenzita"],
+    "vlasy": {
+      "delka": ["dlouhé", "krátké", "vyholené"],
+      "struktura": ["rovné", "vlnité", "dredy"],
+      "barva": ["černé", "hnědé", "světlejší", "zrzavé", "plavé", "blond", "šedé", "barevné"],
+      "uprava": ["melír"]
+    },
+    "barvy": ["bílá", "černá", "pastelové", "výrazné", "strakaté"],
+    "intenzita": ["klídek", "rychlost", "šnek", "ladnost"],
+    "postava": ["hubená", "štíhlá", "drobná", "svalnatá", "vysoká", "malá", "akorát", "je mi to jedno"],
+    "styl": [],
+    "muj_vzor": [],
+    "libi_se_mi": ["nehty", "boty", "hodinky", "telefon", "doplňky"]
+  }
+}
