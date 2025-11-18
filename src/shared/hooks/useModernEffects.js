@@ -1,7 +1,7 @@
 // 🎨 REACT HOOK PRO MODERN EFFECTS
 // ===================================
 import { useCallback } from 'react';
-import { useThemeMode } from '../../App';
+import { useTheme } from '@mui/material/styles';
 import {
   createGlass,
   createHover,
@@ -13,7 +13,8 @@ import {
 import BORDER_RADIUS from '../../styles/borderRadius';
 
 export const useModernEffects = () => {
-  const { mode } = useThemeMode();
+  const theme = useTheme();
+  const mode = theme.palette.mode;
   const isDarkMode = mode === 'dark';
 
   // 🌊 Glassmorphism hook
