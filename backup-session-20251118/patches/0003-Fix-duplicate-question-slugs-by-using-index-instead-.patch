@@ -1,0 +1,27 @@
+From a50975f5a7866c2564e6c3e04de8ceca4737b41c Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 18 Nov 2025 20:45:58 +0000
+Subject: [PATCH 3/6] Fix duplicate question slugs by using index instead of
+ text
+
+---
+ scripts/import-categories.js | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/scripts/import-categories.js b/scripts/import-categories.js
+index 1086643..8d84af7 100644
+--- a/scripts/import-categories.js
++++ b/scripts/import-categories.js
+@@ -73,7 +73,8 @@ function flattenSubcategories(subcategories, parentPath = '', level = 0) {
+     // Pokud má items, vytvoř z nich otázky
+     if (subcat.items && subcat.items.length > 0) {
+       subcat.items.forEach((item, itemIndex) => {
+-        const questionSlug = `${sectionSlug}-${slugify(item)}`;
++        // Přidej index pro zajištění unikátnosti slugu
++        const questionSlug = `${sectionSlug}-q${itemIndex}`;
+ 
+         const question = {
+           section_slug: sectionSlug,
+-- 
+2.43.0
+

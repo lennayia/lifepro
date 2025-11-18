@@ -1,0 +1,32 @@
+From 3da25788604e820df1dd8cfcfb6989e324d4ee5e Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 18 Nov 2025 20:31:11 +0000
+Subject: [PATCH 1/6] Add SQL to add level and parent_slug columns to sections
+ table
+
+---
+ supabase-add-section-hierarchy.sql | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+ create mode 100644 supabase-add-section-hierarchy.sql
+
+diff --git a/supabase-add-section-hierarchy.sql b/supabase-add-section-hierarchy.sql
+new file mode 100644
+index 0000000..edd707f
+--- /dev/null
++++ b/supabase-add-section-hierarchy.sql
+@@ -0,0 +1,12 @@
++-- Přidej sloupce pro hierarchii sekcí
++-- Spusť v Supabase SQL Editor
++
++ALTER TABLE lifepro.lifepro_sections
++ADD COLUMN level INTEGER DEFAULT 0,
++ADD COLUMN parent_slug TEXT;
++
++-- Přidej index pro rychlejší dotazy
++CREATE INDEX idx_sections_parent ON lifepro.lifepro_sections(parent_slug);
++CREATE INDEX idx_sections_level ON lifepro.lifepro_sections(level);
++
++-- Hotovo!
+-- 
+2.43.0
+

@@ -1,0 +1,34 @@
+From a1461325539716d1bbf409ebacf6e4b0bef87814 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 18 Nov 2025 20:48:34 +0000
+Subject: [PATCH 4/6] Add SQL script to clear import data for fresh start
+
+---
+ supabase-clear-data.sql | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+ create mode 100644 supabase-clear-data.sql
+
+diff --git a/supabase-clear-data.sql b/supabase-clear-data.sql
+new file mode 100644
+index 0000000..6e124d4
+--- /dev/null
++++ b/supabase-clear-data.sql
+@@ -0,0 +1,15 @@
++-- Vyčisti data z tabulek pro nový import
++-- Spusť v Supabase SQL Editor
++
++-- POZOR: Toto smaže všechna data! Používej jen při vývoji.
++
++-- Smaž otázky (nejdřív kvůli foreign keys)
++TRUNCATE TABLE lifepro.lifepro_questions CASCADE;
++
++-- Smaž sekce
++TRUNCATE TABLE lifepro.lifepro_sections CASCADE;
++
++-- Smaž kategorie
++TRUNCATE TABLE lifepro.lifepro_categories CASCADE;
++
++-- Hotovo! Teď můžeš spustit import znovu.
+-- 
+2.43.0
+

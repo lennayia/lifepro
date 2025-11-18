@@ -1,0 +1,31 @@
+From 8ecd9c80698f5cc16520299ec7c3a7a702937762 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 18 Nov 2025 20:35:30 +0000
+Subject: [PATCH 2/6] Fix section_slug being inserted into questions table
+
+---
+ scripts/import-categories.js | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/scripts/import-categories.js b/scripts/import-categories.js
+index b2bf18a..1086643 100644
+--- a/scripts/import-categories.js
++++ b/scripts/import-categories.js
+@@ -225,11 +225,12 @@ async function importCategories() {
+       questions.forEach(question => {
+         const sectionId = sectionMap[question.section_slug];
+         if (sectionId) {
++          // Vyřaď section_slug pomocí destructuringu
++          const { section_slug, ...questionData } = question;
+           allQuestions.push({
+-            ...question,
++            ...questionData,
+             section_id: sectionId,
+           });
+-          delete question.section_slug; // už nepotřebujeme
+         }
+       });
+     });
+-- 
+2.43.0
+

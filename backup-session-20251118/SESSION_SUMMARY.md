@@ -1,0 +1,393 @@
+# LifePro Migration Session - Souhrn
+
+**Datum:** 2025-11-18
+**Konverzace:** Pokračování migrace Next.js → React+Vite
+**Status:** ✅ Import kategorií dokončen
+
+---
+
+## 🎯 Co jsme udělali v této session
+
+### 1. **Import Script pro Kategorie** ✅
+
+Vytvořili jsme automatický import script, který načte všech 66 JSON souborů z `data/categories/` a naimportuje je do Supabase.
+
+**Soubory:**
+- `scripts/import-categories.js` - hlavní import script
+- `scripts/README.md` - dokumentace k importu
+- `package.json` - přidán npm script `import:categories`
+
+**Funkcionalita:**
+- Načítá všechny JSON kategorie z `data/categories/`
+- Rekurzivně zpracovává vnořené subcategories
+- Transformuje JSON strukturu do DB tabulek:
+  - `lifepro_categories` - hlavní kategorie (66 záznamů)
+  - `lifepro_sections` - sekce/podkategorie (237 záznamů)
+  - `lifepro_questions` - jednotlivé otázky (500+ záznamů)
+- Automaticky detekuje a opravuje duplicitní slugy
+- Používá `upsert` - můžeš spustit vícekrát bez problémů
+
+### 2. **Opravy Databázového Schématu** ✅
+
+**Přidané sloupce do `lifepro_sections`:**
+```sql
+ALTER TABLE lifepro.lifepro_sections
+ADD COLUMN level INTEGER DEFAULT 0,
+ADD COLUMN parent_slug TEXT;
+```
+
+**Důvod:** Pro podporu hierarchické struktury sekcí (vnořené kategorie).
+
+**SQL soubory:**
+- `supabase-grant-permissions.sql` - oprávnění pro service_role
+- `supabase-add-section-hierarchy.sql` - přidání sloupců level a parent_slug
+- `supabase-clear-data.sql` - vyčištění dat pro nový import
+
+### 3. **Environment Variables** ✅
+
+**Přidáno do `.env.example`:**
+```bash
+SUPABASE_SERVICE_KEY=your-service-role-key-here
+```
+
+**Tvůj `.env.local` by měl obsahovat:**
+```bash
+VITE_SUPABASE_URL=https://tvuj-projekt.supabase.co
+VITE_SUPABASE_ANON_KEY=eyJhb...
+SUPABASE_SERVICE_KEY=eyJhb...  # Service Role Key (TAJNÝ!)
+```
+
+### 4. **Opravy Import Scriptu** ✅
+
+**Problémy, které jsme vyřešili:**
+
+1. **Chybějící dotenv**
+   - Přidán `dotenv` balíček
+   - Script načítá `.env.local` automaticky
+
+2. **Schema permissions**
+   - Service role neměl oprávnění na schema `lifepro`
+   - Vyřešeno SQL: `GRANT USAGE ON SCHEMA lifepro TO service_role`
+
+3. **Chybějící sloupce**
+   - Tabulka `lifepro_sections` neměla sloupce `level` a `parent_slug`
+   - Přidány SQL příkazem
+
+4. **Duplicitní slugy v questions**
+   - Původně: `hodnoty-spolecenske-zdravi` (text se opakoval)
+   - Opraveno: `hodnoty-spolecenske-q0`, `hodnoty-spolecenske-q1` (s indexem)
+
+5. **Duplicity při insertu**
+   - Script obsahoval detekci duplicit a automatickou opravu
+   - Přidává suffix `-2`, `-3` atd. při kolizi
+
+---
+
+## 📊 Import Statistiky
+
+**Import dokončen!** 🎉
+
+Výsledky (čekám na tvé potvrzení):
+- **Kategorie:** ? (očekáváno: 66)
+- **Sekce:** ? (očekáváno: 237)
+- **Otázky:** ? (očekáváno: 500+)
+
+**Zkontroluj v Supabase:**
+- Table Editor → Schema: `lifepro`
+- Tabulky: `lifepro_categories`, `lifepro_sections`, `lifepro_questions`
+
+---
+
+## 🔧 Technické Detaily
+
+### Struktura Import Scriptu
+
+```javascript
+// 1. Načte všechny JSON soubory z data/categories/
+// 2. Zpracuje každý soubor:
+//    - Vytvoří kategorii
+//    - Rekurzivně zpracuje subcategories → sekce
+//    - Z items vytvoří otázky (checkbox type)
+// 3. Naimportuje do Supabase:
+//    - Kategorie (s mapováním slug → ID)
+//    - Sekce (s mapováním slug → ID)
+//    - Otázky (s kontrolou duplicit)
+```
+
+### Slugy Struktura
+
+**Kategorie:**
+```
+hodnoty
+dovednosti
+profese
+...
+```
+
+**Sekce:**
+```
+hodnoty-spolecenske
+hodnoty-spolecenske-vitalni
+profese-zdravotnictvi
+...
+```
+
+**Otázky:**
+```
+hodnoty-spolecenske-q0  (rodina)
+hodnoty-spolecenske-q1  (přátelství)
+profese-zdravotnictvi-q0  (lékař)
+...
+```
+
+---
+
+## 📝 Nepushnuté Commity (5)
+
+⚠️ **Tyto commity jsou pouze v tvém lokálním repozitáři, NEJSOU na GitHubu:**
+
+```
+aef559a Add duplicate detection and auto-fix for question slugs
+a146132 Add SQL script to clear import data for fresh start
+a50975f Fix duplicate question slugs by using index instead of text
+8ecd9c8 Fix section_slug being inserted into questions table
+3da2578 Add SQL to add level and parent_slug columns to sections table
+```
+
+**Důvod:** Git push má network problémy (504 timeout).
+
+**Řešení:**
+1. **Zkus push později z terminálu:**
+   ```bash
+   git push -u origin claude/migrate-lifepro-react-vite-01X7BzoFWawBfgKWpAUH6T2W
+   ```
+
+2. **Nebo vytvoř novou branch a push tam:**
+   ```bash
+   git checkout -b lenka/import-categories-backup
+   git push -u origin lenka/import-categories-backup
+   ```
+
+---
+
+## 🗂️ Změněné Soubory
+
+### Nové soubory:
+```
+scripts/import-categories.js          - Import script
+scripts/README.md                     - Dokumentace importu
+supabase-grant-permissions.sql        - SQL pro oprávnění
+supabase-add-section-hierarchy.sql    - SQL pro sloupce level/parent_slug
+supabase-clear-data.sql               - SQL pro vyčištění dat
+```
+
+### Upravené soubory:
+```
+package.json                          - Přidán dotenv + npm script
+.env.example                          - Přidán SUPABASE_SERVICE_KEY
+```
+
+---
+
+## 🎯 Co Dál? Plán Dalšího Vývoje
+
+### **Option A: Admin Interface** 🔧
+
+Vytvořit CRUD interface pro správu dat:
+
+**Funkce:**
+- ✅ Zobrazení všech kategorií/sekcí/otázek
+- ✅ Přidání nové kategorie/sekce/otázky
+- ✅ Editace existujících záznamů
+- ✅ Mazání (soft delete - is_published = false)
+- ✅ Drag & drop pro změnu pořadí
+- ✅ Preview dotazníku
+
+**Technologie:**
+- React Admin nebo vlastní CRUD s MUI DataGrid
+- Formuláře s validací (Zod)
+- Supabase realtime subscriptions
+
+**Čas:** ~8-12 hodin práce
+
+---
+
+### **Option B: User Questionnaire Flow** 📝
+
+Implementovat vyplňování dotazníku pro uživatele:
+
+**Funkce:**
+- ✅ Krokový průvodce kategoriemi
+- ✅ Progress bar (% dokončení)
+- ✅ Checkbox otázky s možností označit favorita (❤️)
+- ✅ Automatické ukládání odpovědí (draft)
+- ✅ Možnost vrátit se a upravit
+- ✅ Dokončit a odeslat
+
+**Ukládání:**
+```javascript
+// Tabulka: lifepro_user_responses
+{
+  user_id: "uuid",
+  question_id: "uuid",
+  answer_multiple: ["option1", "option2"],
+  is_favorite: true,
+  created_at: "2025-11-18"
+}
+```
+
+**UI/UX:**
+- Material-UI steppers
+- Framer Motion animace
+- Responsive design
+- Auto-save každých 5 sekund
+
+**Čas:** ~12-16 hodin práce
+
+---
+
+### **Option C: AI Analýza Odpovědí** 🤖
+
+Integrace Claude API pro analýzu uživatelských odpovědí:
+
+**Funkce:**
+- ✅ Shromáždění všech odpovědí uživatele
+- ✅ Analýza patterns a insights
+- ✅ Identifikace blind spots
+- ✅ Doporučení pro další rozvoj
+- ✅ Generování PDF reportu
+
+**API Integration:**
+```javascript
+// POST /api/analyze
+{
+  userId: "uuid",
+  responses: [...],
+  categories: [...]
+}
+
+// Response
+{
+  insights: "...",
+  strengths: [...],
+  blindSpots: [...],
+  recommendations: [...]
+}
+```
+
+**Technologie:**
+- Anthropic Claude API
+- PDF export (jsPDF nebo react-pdf)
+- Streaming responses pro real-time feedback
+
+**Čas:** ~16-20 hodin práce
+
+---
+
+### **Option D: Dashboard & Results** 📊
+
+Vizualizace výsledků pro uživatele:
+
+**Funkce:**
+- ✅ Přehled dokončených kategorií
+- ✅ Grafy a vizualizace odpovědí
+- ✅ Timeline pokroku
+- ✅ Srovnání s průměrem (volitelné)
+- ✅ Export do PDF
+
+**Vizualizace:**
+- Recharts nebo Chart.js
+- Radar chart pro vícenásobné dimenze
+- Progress circles
+- Heat mapy
+
+**Čas:** ~8-10 hodin práce
+
+---
+
+## 🚀 Doporučené Pořadí
+
+**Fáze 1: Základy (týden 1-2)**
+1. ✅ Import kategorií (HOTOVO!)
+2. User Questionnaire Flow (Option B)
+3. Basic Results Page (Option D - základní verze)
+
+**Fáze 2: Správa (týden 3)**
+4. Admin Interface (Option A)
+5. User management
+6. Export/Import funkcionalita
+
+**Fáze 3: Intelligence (týden 4+)**
+7. AI Analýza (Option C)
+8. Advanced Dashboard (Option D - plná verze)
+9. PDF export s brandingem
+
+---
+
+## 📋 Checklist pro Tebe
+
+### Ihned:
+- [ ] Zkontroluj data v Supabase (66 kategorií, 237 sekcí, 500+ otázek)
+- [ ] Zkus push znovu: `git push -u origin claude/migrate-lifepro-react-vite-01X7BzoFWawBfgKWpAUH6T2W`
+- [ ] Pošli mi statistiky importu (kolik se naimportovalo)
+- [ ] Rozhodněte, kterou option (A/B/C/D) chceš jako další
+
+### Záloha (pokud push nefunguje):
+- [ ] Vytvoř ZIP všech souborů: `zip -r lifepro-backup.zip .`
+- [ ] Nebo commit na novou branch a zkus push tam
+
+### Testování:
+- [ ] Spusť aplikaci: `npm run dev`
+- [ ] Naviguj na `/questionnaire`
+- [ ] Měly by se zobrazit všechny kategorie z DB
+
+---
+
+## 🆘 Pokud Něco Nejde
+
+### Import script nefunguje
+```bash
+# Zkontroluj .env.local
+cat .env.local | grep SUPABASE
+
+# Zkus import znovu
+npm run import:categories
+```
+
+### Git push nefunguje
+```bash
+# Vytvoř backup branch
+git checkout -b backup-$(date +%Y%m%d)
+git push -u origin backup-$(date +%Y%m%d)
+
+# Nebo vytvoř patch
+git format-patch origin/claude/migrate-lifepro-react-vite-01X7BzoFWawBfgKWpAUH6T2W
+```
+
+### Data v DB chybí
+```sql
+-- Smaž a importuj znovu
+TRUNCATE TABLE lifepro.lifepro_questions CASCADE;
+TRUNCATE TABLE lifepro.lifepro_sections CASCADE;
+TRUNCATE TABLE lifepro.lifepro_categories CASCADE;
+```
+Pak: `npm run import:categories`
+
+---
+
+## 📞 Kontakt
+
+Pokud budeš pokračovat sama nebo s jiným vývojářem, tato dokumentace obsahuje vše potřebné pro pokračování.
+
+**Klíčové soubory k záloze:**
+- `scripts/import-categories.js`
+- `package.json`
+- `.env.local` (POZOR - obsahuje tajné klíče!)
+- `supabase-*.sql` (všechny SQL skripty)
+- `data/categories/*.json` (66 souborů)
+
+---
+
+**Vytvořeno:** 2025-11-18
+**Status:** Import dokončen ✅
+**Další krok:** Tvá volba (A/B/C/D)
