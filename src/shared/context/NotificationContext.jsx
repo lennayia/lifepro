@@ -22,7 +22,7 @@ export const NotificationProvider = ({ children }) => {
       const id = Date.now() + Math.random();
       setNotifications((prev) => [...prev, { id, message, severity, title }]);
 
-      const isMuted = false; // false = zvuk ZAPNUTÝ
+      const isMuted = true; // true = zvuk VYPNUTÝ (TODO: přidat zvukový soubor do public/sounds/)
       if (!isMuted) {
         try {
           const audio = new Audio('/sounds/notification.mp3');
