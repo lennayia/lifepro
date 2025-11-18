@@ -8,6 +8,7 @@ import LoginPage from '@pages/LoginPage';
 import RegisterPage from '@pages/RegisterPage';
 import DashboardPage from '@pages/DashboardPage';
 import QuestionnairePage from '@pages/QuestionnairePage';
+import QuestionnaireDetailPage from '@pages/QuestionnaireDetailPage';
 import ResultsPage from '@pages/ResultsPage';
 import ProfilePage from '@pages/ProfilePage';
 import AdminPage from '@pages/AdminPage';
@@ -69,6 +70,7 @@ function App() {
             {/* Protected Routes */}
             <Route path="/dashboard" element={<DashboardPage />} />
             <Route path="/questionnaire" element={<QuestionnairePage />} />
+            <Route path="/questionnaire/:categorySlug" element={<QuestionnaireDetailPage />} />
             <Route path="/results" element={<ResultsPage />} />
             <Route path="/profile" element={<ProfilePage />} />
 

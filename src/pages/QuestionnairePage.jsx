@@ -98,10 +98,7 @@ const QuestionnairePage = () => {
                     boxShadow: 4,
                   },
                 }}
-                onClick={() => {
-                  // TODO: Implementovat navigaci na sekce kategorie
-                  showSuccess('Info', `Kategorie: ${category.title} (zatím není implementováno)`);
-                }}
+                onClick={() => navigate(`/questionnaire/${category.slug}`)}
               >
                 <Box display="flex" alignItems="center" mb={2}>
                   {category.icon && (
