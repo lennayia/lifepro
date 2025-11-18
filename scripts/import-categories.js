@@ -225,11 +225,12 @@ async function importCategories() {
       questions.forEach(question => {
         const sectionId = sectionMap[question.section_slug];
         if (sectionId) {
+          // Vyřaď section_slug pomocí destructuringu
+          const { section_slug, ...questionData } = question;
           allQuestions.push({
-            ...question,
+            ...questionData,
             section_id: sectionId,
           });
-          delete question.section_slug; // už nepotřebujeme
         }
       });
     });
