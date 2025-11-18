@@ -1,6 +1,7 @@
 // Import kategorií z JSON do Supabase
-// Spuštění: node scripts/import-categories.js
+// Spuštění: npm run import:categories
 
+import { config } from 'dotenv';
 import { createClient } from '@supabase/supabase-js';
 import fs from 'fs/promises';
 import path from 'path';
@@ -8,6 +9,9 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+// Načti environment variables z .env.local
+config({ path: path.join(__dirname, '../.env.local') });
 
 // Supabase konfigurace (z .env.local)
 const supabaseUrl = process.env.VITE_SUPABASE_URL;
