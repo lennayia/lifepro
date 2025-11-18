@@ -1,18 +1,29 @@
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   Box,
   Container,
   Typography,
-  Card,
   Button,
+  Tabs,
+  Tab,
+  Paper,
 } from '@mui/material';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Grid3x3, Layers, MessageSquare } from 'lucide-react';
+import AdminCategoriesTab from '@/components/admin/AdminCategoriesTab';
+import AdminSectionsTab from '@/components/admin/AdminSectionsTab';
+import AdminQuestionsTab from '@/components/admin/AdminQuestionsTab';
 
 const AdminPage = () => {
   const navigate = useNavigate();
+  const [activeTab, setActiveTab] = useState(0);
+
+  const handleTabChange = (event, newValue) => {
+    setActiveTab(newValue);
+  };
 
   return (
-    <Container maxWidth="lg" sx={{ py: 4 }}>
+    <Container maxWidth="xl" sx={{ py: 4 }}>
       <Box mb={4}>
         <Button
           startIcon={<ArrowLeft size={20} />}
@@ -30,14 +41,42 @@ const AdminPage = () => {
         </Typography>
       </Box>
 
-      <Card sx={{ p: 4, textAlign: 'center' }}>
-        <Typography variant="h6" gutterBottom>
-          Admin rozhraní je ve vývoji
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Zde budete moci spravovat kategorie, sekce, otázky a další obsah aplikace
-        </Typography>
-      </Card>
+      <Paper sx={{ mb: 3 }}>
+        <Tabs
+          value={activeTab}
+          onChange={handleTabChange}
+          variant="fullWidth"
+          sx={{
+            borderBottom: 1,
+            borderColor: 'divider',
+          }}
+        >
+          <Tab
+            icon={<Grid3x3 size={20} />}
+            iconPosition="start"
+            label="Kategorie"
+            sx={{ textTransform: 'none', fontSize: 16 }}
+          />
+          <Tab
+            icon={<Layers size={20} />}
+            iconPosition="start"
+            label="Sekce"
+            sx={{ textTransform: 'none', fontSize: 16 }}
+          />
+          <Tab
+            icon={<MessageSquare size={20} />}
+            iconPosition="start"
+            label="Otázky"
+            sx={{ textTransform: 'none', fontSize: 16 }}
+          />
+        </Tabs>
+      </Paper>
+
+      <Paper sx={{ p: 3 }}>
+        {activeTab === 0 && <AdminCategoriesTab />}
+        {activeTab === 1 && <AdminSectionsTab />}
+        {activeTab === 2 && <AdminQuestionsTab />}
+      </Paper>
     </Container>
   );
 };
