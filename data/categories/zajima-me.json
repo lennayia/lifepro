@@ -1,0 +1,17 @@
+{
+  "id": "zajima-me",
+  "name": "Zajímá mě",
+  "description": "Moje zájmy a témata, která mě fascinují",
+  "icon": "bookmark",
+  "color": "#FF6F00",
+  "categories": {
+    "prostredi": ["STAVBY", "POČASÍ"],
+    "lide": [],
+    "konicky": [],
+    "styl": [],
+    "material": [],
+    "moje_tema": ["materiály k tématu", "knihy", "dokumenty", "kurzy", "workhopy", "festivaly", "výstavy"],
+    "duchovni": ["esoterika", "modlitba", "New Age", "meditace", "náboženství", "astrologie", "horoskopy", "numerologie", "reiki", "kineziologie", "akupunktura", "akupresura", "výklad karet", "věštění"],
+    "alternativni_smery": ["harmonizace čaker", "EFT", "TFT", "NLP"]
+  }
+}

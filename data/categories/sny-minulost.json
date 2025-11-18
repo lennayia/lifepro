@@ -1,0 +1,205 @@
+{
+  "id": "sny-minulost",
+  "name": "Sny z minulosti",
+  "description": "Co mě bavilo a o čem jsem snil/a",
+  "icon": "star",
+  "color": "#FFC107",
+  "subcategories": [
+    {
+      "id": "jako-dite",
+      "name": "Já jako dítě",
+      "subcategories": [
+        {
+          "id": "bavilo-me",
+          "name": "Bavilo mě v dětství",
+          "items": [
+            "ruční práce",
+            "sport",
+            "muzika",
+            "matika a spol.",
+            "jazyky",
+            "výtvarka",
+            "technika",
+            "učení",
+            "práce se zvířaty"
+          ]
+        },
+        {
+          "id": "hrala-jsem-si",
+          "name": "Hrál/a jsem si na",
+          "items": [
+            "princezny",
+            "Vinnetoua",
+            "Tarzana",
+            "vojáky",
+            "Barbíně",
+            "popelář",
+            "policajt/ka",
+            "učitel/ka"
+          ]
+        },
+        {
+          "id": "pouzivala-jsem",
+          "name": "Při hře jsem používal/a",
+          "items": [
+            "pastelky",
+            "vodu",
+            "kameny",
+            "písek",
+            "hlínu",
+            "dřevo",
+            "hrnce a poklice"
+          ]
+        },
+        {
+          "id": "ve-skole-mi-slo",
+          "name": "Ve škole mi šlo",
+          "items": [
+            "matika",
+            "jazyky",
+            "tělák",
+            "hudebka",
+            "výtvarka",
+            "sloh"
+          ]
+        },
+        {
+          "id": "chvalili-me",
+          "name": "Chválili mě za",
+          "items": [
+            "poslušnost",
+            "píli",
+            "sport",
+            "známky",
+            "nápady"
+          ]
+        },
+        {
+          "id": "chtela-jsem-byt",
+          "name": "Chtěl/a jsem být",
+          "items": [
+            "kosmonaut/ka",
+            "hasič/ka",
+            "spisovatel/ka",
+            "baletka",
+            "učitel/ka",
+            "princezna"
+          ]
+        },
+        {
+          "id": "snila-jsem-o",
+          "name": "Snil/a jsem o",
+          "items": [
+            "Barbíně",
+            "bruslích",
+            "lyžích",
+            "dlouhých vlasech",
+            "džínách",
+            "kamarádech",
+            "zámku"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jako-dospely",
+      "name": "Jako dospělý/á jsem chtěl/a",
+      "subcategories": [
+        {
+          "id": "zkusit",
+          "name": "Zkusit",
+          "items": [
+            "řídit letadlo",
+            "řídit náklaďák",
+            "skok padákem",
+            "závodit v autě",
+            "jet stopem",
+            "řídit loď"
+          ]
+        },
+        {
+          "id": "zit",
+          "name": "Žít",
+          "items": [
+            "v luxusu",
+            "v teple",
+            "v Nepálu",
+            "respektovaný/á",
+            "slavný/á",
+            "uznávaný/á",
+            "úspěšný/á",
+            "bohatý/á",
+            "vzdělaný/á"
+          ]
+        },
+        {
+          "id": "umet",
+          "name": "Umět",
+          "items": [
+            "anglicky",
+            "čínsky",
+            "znakovou řeč",
+            "malovat",
+            "tančit",
+            "sport"
+          ]
+        },
+        {
+          "id": "mit",
+          "name": "Mít",
+          "items": [
+            "BMW 850i",
+            "velký dům",
+            "jezírko",
+            "zahradu",
+            "hodně přátel",
+            "psa",
+            "úspěšnou firmu",
+            "veselé děti",
+            "dlouhé vlasy",
+            "svaly",
+            "vyprodaný sál",
+            "výstavu obrazů"
+          ]
+        },
+        {
+          "id": "videt",
+          "name": "Vidět",
+          "items": [
+            "sopku",
+            "Tibet",
+            "Turecko",
+            "Jordánsko"
+          ]
+        },
+        {
+          "id": "delat",
+          "name": "Dělat",
+          "items": [
+            "napsat knihu",
+            "začít cvičit a vydržet",
+            "zhubnout",
+            "cestovat",
+            "jíst naposledy v 17 hod",
+            "vstávat 6:30 hod"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ale-prekazky",
+      "name": "Ale... (překážky)",
+      "items": [
+        "Chybí mi...",
+        "Zrazovali mě, že prý...",
+        "Nemůžu, mám strach, že...",
+        "Nechtělo se mi do toho, protože...",
+        "Už to někdo dělá",
+        "Neumím prodávat",
+        "Tohle nikoho nebude zajímat",
+        "Lidé mi nebudou chtít platit",
+        "To není pro mě"
+      ]
+    }
+  ]
+}

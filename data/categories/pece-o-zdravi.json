@@ -1,0 +1,31 @@
+{
+  "id": "pece-o-zdravi",
+  "name": "Péče o zdraví",
+  "description": "Holistický přístup ke zdraví a pohodě",
+  "icon": "heart",
+  "color": "#4CAF50",
+  "categories": {
+    "pohyb": ["silový", "aerobní", "klidnější"],
+    "relax": ["lenošení", "vana", "četba", "sex"],
+    "jidlo": ["výživa", "kvalita", "množství"],
+    "priroda": [],
+    "spanek": ["kvalita", "množství", "čtení před spaním", "budík", "oční uzení", "problém usnout"],
+    "tekutiny": ["energie"],
+    "socializace": ["klub", "parta", "komunita", "spolupráce"],
+    "aktivity_pro_mozek": ["křížovky", "sudoku", "psaní", "meditace", "čtení"],
+    "otuzovani": [],
+    "odborne_sluzby": {
+      "diagnostika": [],
+      "rehabilitace": [],
+      "fyzioterapie": [],
+      "terapie": [],
+      "lekař": [],
+      "mentoring": [],
+      "koucink": [],
+      "trenink": [],
+      "prace_s_mysli": []
+    },
+    "doplnky": ["vitamíny"],
+    "plus": ["PŘÍRODA", "VODA", "FAUNA", "FLÓRA"]
+  }
+}

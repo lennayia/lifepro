@@ -1,0 +1,29 @@
+{
+  "id": "profese",
+  "name": "Profese",
+  "description": "Tipy na profese včetně profesí budoucnosti",
+  "icon": "users",
+  "color": "#1E90FF",
+  "note": "Tipy na profese jsou psány v mužském rodě jen proto, aby se slova lépe vešla do rámečků",
+  "categories": {
+    "jidlo_piti": ["chovatel", "pěstitel", "výrobce marmelád", "kuchař", "provozní", "cukrář", "dietář", "tvůrce kuchařky", "foodblogger", "barman", "číšník", "sládek", "vinař", "pekař", "zelinář", "hospodský"],
+    "doprava": ["řidič", "řidič tramvaje", "řidič autobusu", "kamioňák", "taxi", "kurýr", "závozník", "rozvoz jídla", "strojvedoucí", "traktorista", "průvodčí", "dispečer", "kapitán", "námořník", "pilot", "stevard"],
+    "bezpecnost": ["kontrolor jízdenek", "kontrolor", "ministr", "ochranka", "stráž", "policista", "soukromá ochrana", "detektiv", "kriminalista", "hasič", "voják"],
+    "zabava": ["bavič", "trenér psů", "krupiér", "speaker", "dýdžej"],
+    "moderni": ["blogger", "copywriter", "contentwriter", "youtuber", "instagramer", "influencer", "hodinový manžel", "digitální nomád", "profi hráč", "pilot dronů", "tester čehokoliv", "virální marketér", "on-line marketér", "virtuální asistentka", "SEO", "manažer zdraví/e-learningu/štěstí/e-sportu/rodičovství/social media", "specialista na big data", "pověřenec GDPR", "učitel chatbotů", "technik robotizace", "specialista na cloudové služby", "vývojář aplikací", "headhunter", "UX designer", "učitel e-learningu", "zařizovač", "hledač talentů", "datový novinář", "data science", "mentální trenér"],
+    "zdravi": ["lékárník", "mentor", "trenér", "kouč", "psychoterapeut", "výživový poradce", "bylinkář", "masér", "plavčík", "aromaterapeut", "fyzioterapeut", "lékař", "sestra", "sociální pracovník"],
+    "knihy": ["antikvariát", "literární kavárna", "redaktor", "editor", "překladatel", "korektor", "knihovník", "digitalizace knih", "ufolog"],
+    "profese_budoucnosti": {
+      "pc_internet": ["Network Lawyer", "digitální lingvista", "správce virtuálního prostoru", "ochrana dat", "datový detektiv", "ochránce identity"],
+      "zdravi": ["lékař on-line", "znalec robotů", "sexuální kouč", "telechirurg", "genetický poradce", "konzultant pro zdravé stárnutí", "specialista na léčbu závislosti na sítích a gadgetech", "specialista karanténu", "specialista na zvětšení paměti", "specialista na umělé orgány", "nano-medicina"],
+      "doprava": ["manažer kosmoturismu", "vesmírný pilot/průvodce", "správce dálnic"],
+      "osobnost": ["odborník na jednoduchost", "nostalgik", "plánovač konce života", "vztahové profese", "životní kouč", "konzultant produktivity", "osobní digitální kurátor", "manažer účtů na sociálních sítích po smrti", "průvodce seniora"],
+      "ostatni": ["lovec trendů", "eko-kazatel", "urbanista-ekolog", "specialista na správu ekologických katastrof", "specialista na změnu klimatu", "meteorologická policie", "expert na vědeckou etiku", "virtuální právník", "recyklátor dat/informací"],
+      "priroda": ["upcyklátor", "renovator divočiny", "pracovník aquaponické farmy", "městský zemědělec", "odborník na molekulární výživu"],
+      "technologie": ["neurotechnolog", "designér virtuální reality", "návrhář šalon pro 3D tisk", "specialista pro 3D tiskárny", "opravář dronů", "opravář robotů", "specialista na smart města", "PC specialista bojového vozidla", "manažer rozvoje obchodu s umělou int.", "tvůrce prostředí pro e-sport", "návrhář haptického rozhraní"],
+      "firma": ["brand manager", "profi teambuilder", "firemní dezorganizátor"],
+      "vzdelani": ["učitel na volné noze", "koordinátor celoživotního vzdělávání"],
+      "domacnost": ["údržbář chytré domácnosti"]
+    }
+  }
+}

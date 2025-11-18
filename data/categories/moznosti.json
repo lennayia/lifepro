@@ -1,0 +1,46 @@
+{
+  "id": "moznosti",
+  "name": "Možnosti",
+  "description": "Inovace a nápady pro budoucnost",
+  "icon": "lightbulb",
+  "color": "#FFC107",
+  "subcategories": [
+    {
+      "id": "inovace",
+      "name": "Inovace",
+      "description": "Inovace stávajícího",
+      "note": "Inovovat z hlediska: obsahu, jiného úhlu pohledu",
+      "aspects": {
+        "zmena": ["komunikace", "barvy", "lokality", "stylu"],
+        "lidi_bavi": ["nové hračky", "nové hry"],
+        "lidi_potesi": [],
+        "lide_potrebuji": [],
+        "lide_chteji": [],
+        "bavi_me_to": [],
+        "umim": [],
+        "vim": [],
+        "davam_vic": ["přáníčko", "fyzická kartička", "tvořeno s láskou"],
+        "odlisi_me": [],
+        "je_to_trend": ["drony"],
+        "dlouhodobe_funguje": [],
+        "to_by_mohlo_fungovat": [],
+        "napady_ze_supliku": [],
+        "nove_napady": [],
+        "inspirace": []
+      }
+    },
+    {
+      "id": "napady",
+      "name": "Nápady",
+      "description": "Trénink nápadů a kreativita",
+      "note": "Aby nápady chodily, je potřeba trénink. Denně 10 min vymýšlej. Zápisník nebo diktafon měj u sebe 24/7. Co Tě napadne, hned zaznamenej, hlava to totiž neudrží. Nejvíc nápadů chodí před spánekem – tak měj u postele zápisník a tužku.",
+      "prompts": [
+        "Na trhu chybí",
+        "Teď je 'in' ..........., ale já to můžu zlepšit",
+        "Lidi jsou otrávení z …………………….. a já jim můžu pomoct",
+        "Je to sice banalita, ale usnadní život.....",
+        "Nabízím víc než ...........…. (konkurence)"
+      ]
+    }
+  ]
+}

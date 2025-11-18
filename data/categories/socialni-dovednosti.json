@@ -1,0 +1,17 @@
+{
+  "id": "socialni-dovednosti",
+  "name": "Sociální dovednosti",
+  "description": "Dovednosti pro úspěšnou interakci s lidmi",
+  "icon": "users",
+  "color": "#8B0000",
+  "categories": {
+    "typy": ["behaviorální", "komunikační", "interakční", "percepční", "organizační"],
+    "zakladni": ["empatie", "otevřenost", "pochvala", "respekt", "tolerance", "naslouchání", "řeč těla", "autenticita", "konkrétnost", "akceptování", "přizpůsobivost"],
+    "podpora": ["sebekontroly", "rozvoj sebejistoty", "vedení ke spolupráci", "pochopení vzájemného vlivu"],
+    "rodina": {
+      "atmosfera": [],
+      "sebepojet": ["otevřenost", "autonomie", "styl vedení", "náročnost", "příkazy", "city", "tvořivost", "motivace", "stimulace", "očekávání", "obětavost"]
+    },
+    "kompetence": ["učební", "interpersonální", "rozvoj osobnosti", "komunikace", "řešit problémy", "občanské", "pracovní"]
+  }
+}

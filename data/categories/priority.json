@@ -1,0 +1,54 @@
+{
+  "id": "priority",
+  "name": "Priority v životě",
+  "description": "Co právě teď považuješ za stěžejní",
+  "icon": "target",
+  "color": "#FF9800",
+  "subcategories": [
+    {
+      "id": "prace-kariera",
+      "name": "Práce a kariéra",
+      "items": ["práce", "dělat co mě baví", "úspěch", "finanční nezávislost", "úspory"]
+    },
+    {
+      "id": "rodina-vztahy",
+      "name": "Rodina a vztahy",
+      "items": ["rodina", "děti", "rodiče", "zázemí", "vztahy", "přátelé", "kolegové", "soudržnost"]
+    },
+    {
+      "id": "domov-poradek",
+      "name": "Domov a pořádek",
+      "items": ["dům", "domácnost", "řád", "disciplína", "pořádek", "úklid"]
+    },
+    {
+      "id": "vzdelavani-rust",
+      "name": "Vzdělávání a růst",
+      "items": ["vzdělávání", "seberůst", "životní záměr"]
+    },
+    {
+      "id": "zdravi-pohoda",
+      "name": "Zdraví a pohoda",
+      "items": ["zdraví", "spokojenost", "štěstí", "odpočinek"]
+    },
+    {
+      "id": "zajmy-volny-cas",
+      "name": "Zájmy a volný čas",
+      "items": ["koníčky", "zábava", "cestování", "zajímavý život", "volný čas", "legrace", "vaření"]
+    },
+    {
+      "id": "pomoc-prinos",
+      "name": "Pomoc a přínos",
+      "items": ["pomoc lidem", "pomoc společnosti", "pomoc planetě", "přínos", "užitečnost"]
+    },
+    {
+      "id": "priroda-zivotni-prostredi",
+      "name": "Příroda a životní prostředí",
+      "items": ["příroda", "flóra", "fauna", "planeta", "komunita"]
+    },
+    {
+      "id": "majetek-technika",
+      "name": "Majetek a technika",
+      "items": ["majetek", "technika"]
+    }
+  ]
+}

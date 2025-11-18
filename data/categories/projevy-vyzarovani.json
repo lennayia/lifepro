@@ -1,0 +1,19 @@
+{
+  "id": "projevy-vyzarovani",
+  "name": "Projevy a vyzařování",
+  "description": "Jak se projevuji navenek a co vyzařuji",
+  "icon": "sun",
+  "color": "#FFD700",
+  "categories": {
+    "projevy": ["angažovanost", "ambice", "průbojnost", "vlastnosti", "nezištnost", "pozornost", "roztomilost", "velkorysost", "zdvořilost", "blahosklonnost", "duchaplnost"],
+    "vyzarovani": {
+      "fyzicke": ["důstojnost", "svěžest", "usměvavost", "čipernost", "čistota", "atraktivita", "elegance", "krása", "kultivovanost", "křehkost", "jemnost", "půvab", "přirozenost", "přízeň", "vitalita", "vzhled", "vznešenost"],
+      "osobnostni": ["serióznost", "úspěšnost", "autorita", "charizma", "důvěryhodnost", "hodnověrnost", "ostýchavost", "osobitost", "uvolněnost", "milosrdnost"],
+      "image": ["image", "brand", "bohatství", "extravagance", "okázalost", "prestiž", "moc", "status", "sláva", "úroveň", "hierarc
+
+hie"],
+      "styl": ["životní styl", "styl", "stylovost", "jednoduchost", "komfort", "pohodlí", "móda", "odlišnost", "unikátnost", "trendy", "technika", "tradice", "náboženství", "konformita", "uhlazenost", "výstřednost", "vkus", "zjednodušování"],
+      "ostatni": ["dobrodružství", "otužování"]
+    }
+  }
+}

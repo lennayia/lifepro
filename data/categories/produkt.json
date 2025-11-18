@@ -1,0 +1,221 @@
+{
+  "id": "produkt",
+  "name": "Produkt nebo služba",
+  "description": "Kompletní přehled možností produktů a služeb",
+  "icon": "inventory",
+  "color": "#795548",
+  "subcategories": [
+    {
+      "id": "digitalni",
+      "name": "Digitální produkty",
+      "description": "Produkty v digitální podobě",
+      "subcategories": [
+        {
+          "id": "vzdelavaci",
+          "name": "Vzdělávací produkty",
+          "items": [
+            "e-book",
+            "on-line kurz",
+            "klub",
+            "e-mailový kurz",
+            "videokurz",
+            "internetová TV",
+            "podcast",
+            "magazín"
+          ]
+        },
+        {
+          "id": "podpurne-materialy",
+          "name": "Podpůrné materiály",
+          "items": [
+            "myšlenková mapa",
+            "check list",
+            "vysvětlení",
+            "případová studie",
+            "článek",
+            "blog",
+            "návod",
+            "infografika"
+          ]
+        },
+        {
+          "id": "platformy",
+          "name": "Online platformy",
+          "items": [
+            "web",
+            "FB",
+            "ZOOM",
+            "TEAMS"
+          ]
+        },
+        {
+          "id": "aplikace",
+          "name": "Aplikace a hry",
+          "items": [
+            "aplikace",
+            "hry",
+            "web"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fyzicky",
+      "name": "Fyzické produkty",
+      "description": "Hmotné produkty",
+      "subcategories": [
+        {
+          "id": "vytvarne",
+          "name": "Výtvarné produkty",
+          "items": [
+            "karty",
+            "obrazy",
+            "mandaly",
+            "grafika"
+          ]
+        },
+        {
+          "id": "media",
+          "name": "Média",
+          "items": [
+            "časopis",
+            "CD",
+            "DVD",
+            "kniha"
+          ]
+        },
+        {
+          "id": "zbozi",
+          "name": "Zboží",
+          "items": [
+            "jídlo",
+            "oblečení",
+            "boty",
+            "drogerie",
+            "kosmetika",
+            "zverimex",
+            "elektronika",
+            "papírnictví",
+            "výtvarka",
+            "knihy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sluzby",
+      "name": "Služby",
+      "description": "Poskytované služby",
+      "subcategories": [
+        {
+          "id": "osobni-prace",
+          "name": "Osobní práce s lidmi",
+          "items": [
+            "konzultace",
+            "mentoring",
+            "koučování",
+            "poradenství",
+            "terapie",
+            "trénink",
+            "vzdělávání"
+          ]
+        },
+        {
+          "id": "pece-o-telo",
+          "name": "Péče o tělo",
+          "description": "Služby péče o fyzické zdraví"
+        },
+        {
+          "id": "pece-o-dusi",
+          "name": "Péče o duši",
+          "description": "Služby péče o duševní pohodu"
+        },
+        {
+          "id": "vzdelavaci-akce",
+          "name": "Vzdělávací akce",
+          "items": [
+            "besedy",
+            "prezentace",
+            "semináře",
+            "workshopy",
+            "festivaly"
+          ]
+        },
+        {
+          "id": "pece-o-prostredi",
+          "name": "Péče o prostředí",
+          "items": [
+            "péče o techniku",
+            "péče o technologie",
+            "péče o on-line prostředí",
+            "péče o domov",
+            "péče o mazlíčky",
+            "péče o věci",
+            "péče o rostliny"
+          ]
+        },
+        {
+          "id": "finance",
+          "name": "Finanční služby",
+          "items": [
+            "finance",
+            "péče o majetek",
+            "péče o vzdělání"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tvorba",
+      "name": "Tvorba obsahu",
+      "description": "Kreativní tvorba",
+      "items": [
+        "výtvarná grafika",
+        "psaní",
+        "hudba",
+        "video",
+        "článek",
+        "reportáž",
+        "rozhovory",
+        "film",
+        "tvorba"
+      ]
+    },
+    {
+      "id": "kroky",
+      "name": "Kroky k vytvoření produktu",
+      "description": "Jak produkt vytvořit",
+      "items": [
+        "vymyslet",
+        "vyrobit",
+        "napsat návod",
+        "nechat vyrobit",
+        "koupit a používat",
+        "napsat návod, recenze",
+        "koupit a dodělat (upravit)",
+        "vyrobit podle návodu",
+        "prodávat",
+        "najmout prodejce"
+      ]
+    },
+    {
+      "id": "vlastni-vs-cizi",
+      "name": "Vlastní vs. cizí",
+      "description": "Typ vlastnictví produktu",
+      "items": [
+        "vlastní",
+        "cizí",
+        "kombinace"
+      ]
+    },
+    {
+      "id": "cil-skupiny",
+      "name": "Cílové skupiny",
+      "description": "Pro koho je produkt určen",
+      "items": [
+        "lidé",
+        "zvířata"
+      ]
+    }
+  ]
+}

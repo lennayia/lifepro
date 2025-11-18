@@ -1,0 +1,265 @@
+{
+  "id": "hodnoty",
+  "name": "Hodnoty",
+  "description": "Životní hodnoty a principy organizované podle různých oblastí",
+  "icon": "heart",
+  "color": "#1976D2",
+  "coreValues": ["dobro", "život", "pravda", "krása", "láska"],
+  "subcategories": [
+    {
+      "id": "spolecenske",
+      "name": "Společenské hodnoty",
+      "description": "Hodnoty vztahující se ke společnosti a komunitě",
+      "items": [
+        "stát",
+        "rodina",
+        "právo",
+        "uskupení",
+        "národy",
+        "právní zřízení",
+        "rody"
+      ]
+    },
+    {
+      "id": "civilizacni",
+      "name": "Civilizační hodnoty",
+      "description": "Hodnoty moderní civilizace",
+      "subcategories": [
+        {
+          "id": "politicke",
+          "name": "Politické hodnoty",
+          "items": [
+            "moc",
+            "vliv",
+            "uznání"
+          ]
+        },
+        {
+          "id": "komunikacni",
+          "name": "Komunikační hodnoty",
+          "items": [
+            "řeč",
+            "písmo",
+            "média",
+            "internet"
+          ]
+        },
+        {
+          "id": "pracovni",
+          "name": "Pracovní hodnoty",
+          "items": [
+            "výroba",
+            "technika",
+            "práce",
+            "jistota",
+            "kariéra",
+            "firma",
+            "kolegové",
+            "odbornost",
+            "růst"
+          ]
+        },
+        {
+          "id": "ekonomicke",
+          "name": "Ekonomické hodnoty",
+          "items": [
+            "peníze",
+            "majetek",
+            "pohodlí",
+            "klid",
+            "stabilita",
+            "zdraví",
+            "pasivní příjmy",
+            "plánování výdajů"
+          ]
+        },
+        {
+          "id": "poznavaci",
+          "name": "Poznávací hodnoty",
+          "items": [
+            "zkušenost",
+            "užitá věda",
+            "cestování",
+            "technika",
+            "poznání"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prirodni",
+      "name": "Přírodní hodnoty",
+      "description": "Hodnoty spojené s přírodou a životem",
+      "subcategories": [
+        {
+          "id": "socialni",
+          "name": "Sociální hodnoty",
+          "items": [
+            "přátelství",
+            "kolegialita",
+            "asociace",
+            "družnost",
+            "vzájemnost",
+            "citová odezva",
+            "láska",
+            "sdílení",
+            "blízkost"
+          ]
+        },
+        {
+          "id": "vitalni",
+          "name": "Vitální hodnoty",
+          "items": [
+            "zdraví",
+            "sebezáchova",
+            "svěžest",
+            "zdatnost",
+            "plodnost",
+            "smyslové blaho",
+            "tělesné blaho",
+            "sytost",
+            "odpočinek",
+            "ekologie",
+            "síla",
+            "energie",
+            "sport",
+            "prevence",
+            "vůle"
+          ]
+        },
+        {
+          "id": "zvířata",
+          "name": "Hodnoty péče o zvířata",
+          "items": [
+            "úspora energií",
+            "užitečnost",
+            "předvídatelnost"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "duchovni",
+      "name": "Duchovní hodnoty",
+      "description": "Hodnoty duchovního života a víry",
+      "subcategories": [
+        {
+          "id": "nabozenske",
+          "name": "Náboženské hodnoty",
+          "items": [
+            "víra",
+            "bůh",
+            "spiritualita"
+          ]
+        },
+        {
+          "id": "filozoficke",
+          "name": "Filozofické hodnoty",
+          "items": [
+            "smysl života",
+            "karma",
+            "osud",
+            "náhoda",
+            "svoboda",
+            "vůle"
+          ]
+        },
+        {
+          "id": "seberizeni",
+          "name": "Sebereflexe a sebeřízení",
+          "items": [
+            "sebereflexe",
+            "světový názor",
+            "životní názor",
+            "zákony",
+            "realita",
+            "harmonie",
+            "povaha",
+            "cíle",
+            "autoregulace"
+          ]
+        },
+        {
+          "id": "eticke",
+          "name": "Etické hodnoty",
+          "items": [
+            "morálka",
+            "principy",
+            "mravnost"
+          ]
+        },
+        {
+          "id": "esteticke",
+          "name": "Estetické hodnoty",
+          "items": [
+            "estetičnost",
+            "krása",
+            "umění",
+            "harmonie",
+            "vzhled",
+            "kultura"
+          ]
+        },
+        {
+          "id": "sebevyraz",
+          "name": "Sebevyjádření",
+          "items": [
+            "nezávislost",
+            "volnost k inovaci",
+            "vzdělání",
+            "emocionální bohatství",
+            "sebevyjádření"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "teoreticke",
+      "name": "Teoretické hodnoty",
+      "description": "Hodnoty poznání a vědy",
+      "items": [
+        "pravda",
+        "znalosti",
+        "vzdělání"
+      ]
+    },
+    {
+      "id": "postojove",
+      "name": "Postojové hodnoty",
+      "description": "Hodnoty vztahující se k postojům a chování",
+      "items": [
+        "užitečnost",
+        "předvídatelnost",
+        "účast",
+        "uplatnění",
+        "prosazení se",
+        "uznání",
+        "ocenění",
+        "prestiž",
+        "vtip",
+        "humor"
+      ]
+    },
+    {
+      "id": "pomoc",
+      "name": "Pomoc",
+      "description": "Hodnoty pomoci druhým",
+      "items": [
+        "charita",
+        "opora",
+        "pomoc cizím",
+        "pomoc nemocným",
+        "pomoc starším",
+        "úcta"
+      ]
+    },
+    {
+      "id": "tvoreni",
+      "name": "Tvoření",
+      "description": "Tvůrčí hodnoty a zážitky",
+      "items": [
+        "zážitky"
+      ]
+    }
+  ]
+}

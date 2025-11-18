@@ -1,0 +1,12 @@
+{
+  "id": "pocasi-obdobi",
+  "name": "Počasí a období",
+  "description": "Kdy je venku ideální podmínky",
+  "icon": "sun",
+  "color": "#FFD700",
+  "note": "Každý z nás má rád 'ideální' podmínky. Máme však jiné potřeby. Které podmínky a která období jsou Tvoje? Může to být přínosné z hlediska ujasnění si Tvého pracovního záměru.",
+  "categories": {
+    "pocasi": ["soumrak", "den", "noc", "ráno", "večer", "svítání", "západ slunce", "úplněk", "hvězdná obloha"],
+    "obdobi": ["jaro", "léto", "podzim", "zima", "celý rok", "víkend", "prázdniny", "Vánoce", "Velikonoce", "půst", "jaro léto", "vegetační doba", "vegetační klid"]
+  }
+}

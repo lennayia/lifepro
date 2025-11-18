@@ -1,0 +1,101 @@
+{
+  "id": "idealni-zivot",
+  "name": "Můj ideální život",
+  "description": "Představy o ideálním dni, práci, vztazích a životě",
+  "icon": "star",
+  "color": "#FF9800",
+  "subcategories": [
+    {
+      "id": "superden",
+      "name": "Superden",
+      "description": "Jak vypadá můj ideální den",
+      "categories": [
+        "Spánek (noční: od-do, denní: od-do)",
+        "Zdraví (jídlo, pohyb, odpočinek, psychika)",
+        "Rodina (děti, vaření, úklid, zařizování, rodiče)",
+        "Vzhled (oblečení, kosmetika, péče)",
+        "Nákupy (shopping, jídlo)",
+        "Práce (smysl, peníze, výsledky)",
+        "Studium (jazyk, vysoká škola, osobní růst)",
+        "Volný čas (zábava, přátelé, hry, zvířata, četba, TV)",
+        "Tvoření",
+        "Relax (meditace, horká vana)"
+      ]
+    },
+    {
+      "id": "superprace-1",
+      "name": "Superpráce - kritéria",
+      "description": "Co má splňovat ideální práce",
+      "criteria": {
+        "forma": ["zaměstnanec", "podnikatel"],
+        "prostor": ["on-line", "off-line", "home-office", "na cestách", "kombinace"],
+        "kde": ["uvnitř", "venku"],
+        "s_kym": ["sám/a", "dvojice", "kolegové", "tým", "zákazníci", "společnost", "služba"],
+        "prijmy": ["nárazové", "pravidelné", "pasivní"],
+        "podminky": ["svoboda", "důvěra", "? hodin denně max?", "? peněz/měsíc min?"]
+      }
+    },
+    {
+      "id": "superprace-2",
+      "name": "Superpráce - proč",
+      "description": "Proč to chci dělat",
+      "questions": [
+        "Proč to chci dělat?",
+        "Co z toho má být přínosem pro mě?",
+        "Co má přinést mé rodině?",
+        "Co chci předat svým dětem?",
+        "Co chci, aby to přineslo společnosti?",
+        "Co chci předat dalším generacím?"
+      ]
+    },
+    {
+      "id": "supervztahy",
+      "name": "Supervztahy",
+      "description": "Ideální vztahy s lidmi",
+      "categories": [
+        "děti",
+        "partneři",
+        "rodiče",
+        "širší rodina",
+        "přátelé",
+        "známí",
+        "kolegové",
+        "nadřízení",
+        "zákazníci",
+        "komunita"
+      ]
+    },
+    {
+      "id": "supermesic",
+      "name": "Superměsíc",
+      "description": "Co chci změnit za měsíc",
+      "areas": {
+        "pocity": ["naplnění", "radost", "hojnost", "rozmanitost", "vyrovnanost", "klid"],
+        "energie": [],
+        "pomoc": [],
+        "seberust": [],
+        "vztahy": ["četné", "nové", "přátelské", "inspirativní", "spolupráce", "partnerské"],
+        "aktiva": ["zážitky", "banka", "nový majetek", "přátelství", "znalosti"],
+        "kondice": ["kila dolů", "kila nahoru", "výdrž", "rychlost", "zdraví", "vzhled"],
+        "volny_cas": ["na sebe", "lidi", "studium", "příroda", "zábava", "cestování", "kultura", "sport", "tvoření", "relax", "zvíře", "rostliny"]
+      }
+    },
+    {
+      "id": "superzivot",
+      "name": "Superživot za 1 rok",
+      "description": "Jak si představuji život za rok",
+      "areas": [
+        "zkušenosti",
+        "zdraví",
+        "vztahy",
+        "práce",
+        "peníze",
+        "majetek",
+        "znalosti",
+        "dovednosti",
+        "volný čas",
+        "zážitky"
+      ]
+    }
+  ]
+}

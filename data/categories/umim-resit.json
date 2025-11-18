@@ -1,0 +1,46 @@
+{
+  "id": "umim-resit",
+  "name": "Umím řešit",
+  "description": "Problémy, které jsem vyřešila a můžu pomoci ostatním",
+  "icon": "check-circle",
+  "color": "#FF5722",
+  "note": "Připomeň si svoje celoživotní úspěchy. Na svoje úspěchy nahlédni ze tří rovin – osobní a společenské, pracovní, sebezměna. Možná právě přes úspěchy najdeš svoje téma.",
+  "subcategories": [
+    {
+      "id": "vyresila-jsem-1",
+      "name": "Vyřešila jsem 1",
+      "categories": {
+        "detstvi": ["hry", "soutěže", "škola"],
+        "puberta": ["výtvarka", "hudba", "sport", "soutěže", "škola", "vztah s rodiči", "osamostatnění"],
+        "rodičovství": ["těhotenství", "porod", "šestinedělí", "období proč", "období vzdoru", "puberta", "péče o zdraví", "domácí porod"],
+        "domacnost": ["úklid", "organizace", "nákupy", "vaření", "interiér", "zahrada", "bazén", "péče o...", "technologie", "výbava pro miminko"],
+        "dospelost": ["zorganizování svatby", "zorganizování oslav", "péče o tělo", "péče o krásu", "výtvory", "rok zpátky"],
+        "sobestacnost": ["pěstování", "chov", "sběr", "výroba"],
+        "vztahy": ["odchod dětí z domu", "perfektní vztah", "zlepšení vztahu", "sex", "rozchod", "péče o...", "smrt", "nesoulad", "svatba", "pohřeb", "křtiny", "manipulace"],
+        "zvirata": ["porod", "nemoc", "výcvik"]
+      }
+    },
+    {
+      "id": "vyresila-jsem-2",
+      "name": "Vyřešila jsem 2",
+      "description": "Pokračování - další problémy, které lidé řeší",
+      "categories": {
+        "naucit_se": ["začít kreslit", "jazyk", "studium VŠ"],
+        "bydleni": ["vlastní", "hypotéka", "stěhování", "pronájem", "sousedé"],
+        "studium": ["jazyky", "zkoušky", "učební systém", "diplom", "certifikace", "ocenění", "pozvání", "odborné články"],
+        "vztahy": [],
+        "pohyb": ["cvičení", "výdrž"],
+        "pomoc": ["jednotlivci", "společnosti", "zorganizování", "přispění", "informovanost"],
+        "opravy_renovace": ["nábytek", "přístroje", "oblečení", "stavby"],
+        "stop": ["kouření", "alkohol", "drogy", "cukr", "přejídání", "kousání nehtů", "žárlivost", "nepořádnost", "hraní", "káva"],
+        "prace": ["změna", "postup", "workoholismus", "inovace", "home-office", "sladění s rodinou", "podnikání", "expanze", "úspěch", "zvýšení platu", "výpověď", "odchod na mateřskou", "odchod do důchodu"],
+        "prace_na_sobe": ["zhubnutí", "zvládání vzteku", "disciplína", "sebehodnota", "sebedůvěra", "sebereflexe", "sebeláska", "sebeovládání", "osamělost", "změna stravy"],
+        "penize": ["nedostatek", "pasivní příjem", "změna přístupu", "snížení výdajů", "investice", "zvýšení příjmů", "úspory", "dluhy", "dědictví"],
+        "stavba": ["dům", "bazén", "chatka", "pergola", "pískoviště"],
+        "zdravi": ["únava", "deprese", "panika", "nemoc", "omezení", "spánek", "potrat"],
+        "svoboda_rutina_stres": ["svoboda", "rutina", "stres"]
+      },
+      "note": "Které problémy lidé řeší? Co je rozčiluje, jaké mají komplikace, s čím jsou nespokojení, co chtějí změnit? Lidé obecně chtějí výsledky s malým úsilím. Co se Ti povedlo vyřešit? S čím jim můžeš pomoct?"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "co-na-sebe",
+  "name": "Co na sebe",
+  "description": "Oblečení, boty, doplňky a textil",
+  "icon": "shopping-bag",
+  "color": "#CDDC39",
+  "categories": {
+    "obleceni": {
+      "typy": ["sukně", "šaty", "oblek", "kalhoty", "halenka", "leginy", "kraťasy", "overal", "sako", "bunda", "kabát", "džíska", "džíny", "tričko", "masky", "kroj", "pyžamo", "prádlo", "plavky", "punčochy", "ponožky", "nahota"],
+      "styl": ["výstřední", "elegantní", "ležérní", "rockerské", "sportovní", "osobité", "kožené", "kožešiny", "erotické", "out door"],
+      "detske": [],
+      "damske": [],
+      "panske": []
+    },
+    "boty": {
+      "typy": ["lodičky", "polobotky", "mokasíny", "baleríny", "sandály", "žabky", "tenisky", "kozačky", "holínky", "kotníkové", "nad kotníky", "nad kolena", "pantofle", "bačkory", "naboso", "lyžáky", "brusle", "dřeváky"],
+      "material": ["kožené", "syntetické", "veganské", "gumové", "látkové", "s kovem"],
+      "typ_boty": ["společenské", "městské", "pracovní", "koupací", "taneční", "volnočasové", "sportovní", "turistické", "vojenské", "vycházkové", "zimní", "domácí", "zdravotní"],
+      "konstrukce": ["lakované", "malované", "vyšívané", "šněrovací", "na zip", "podpatek", "platforma", "klínek", "ručně šité", "barefooty", "designové"],
+      "detske": [],
+      "damske": [],
+      "panske": []
+    },
+    "doplnky": ["čepice", "šála", "šátek", "kšiltovka", "rukavice", "návleky", "kabelka", "batoh", "peněženka", "klíčenka", "ledvinka", "pouzdro", "obal", "pásek", "šperky", "klobouk", "brýle", "taška", "kufr"],
+    "ochranne_prostredky": ["rukavice", "roušky", "respirátory", "boty", "štíty", "brýle", "zástěry"],
+    "bytovy_textil": ["ložní prádlo", "závěsy", "spacáky", "polštářky", "taburetky", "ubrusy", "deky", "přehozy", "koberce", "karimatky"]
+  }
+}

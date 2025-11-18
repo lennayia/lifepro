@@ -1,0 +1,22 @@
+{
+  "id": "postoje-hodnoty",
+  "name": "Postoje a hodnoty",
+  "description": "Moje postoje, hodnoty a přesvědčení",
+  "icon": "compass",
+  "color": "#6A5ACD",
+  "categories": {
+    "slozky_postoju": {
+      "kognitivni": ["názory", "myšlenky", "informace", "poznávání", "rozum", "vědecký přístup", "síla"],
+      "emocionalni": ["citový vztah", "emoce", "hodnocení", "líbí/nelíbí", "mám ráda/nemám ráda", "cit", "hloubání", "filozofování"],
+      "behavioralni": ["chování", "jednání", "konání", "konání podle víry"]
+    },
+    "postoj_k": ["sobě", "věcem", "kultuře", "přírodě", "lidem", "hudbě", "mínění", "práci", "míru", "zdraví", "vlasti", "životnímu prostředí"],
+    "hodnoty_k_lidem": ["dochvilnost", "přátelskost", "obětavost", "upřímnost", "dobrosrdečnost", "úcta"],
+    "hodnoty_k_sobe": ["skromnost", "sebedůvěra"],
+    "hodnoticí_tendence": ["vědomé", "nevědomé", "zkušenostní", "převzaté", "odvozené"],
+    "typy_postoju": ["předsudky", "pověry", "přesvědčení", "ideologie", "záměr", "zásady"],
+    "ideologie": ["konzervatismus", "radikalismus", "liberalismus", "komunalismus", "individualismus", "etnocentrismus", "patriotismus"],
+    "sebelaska": ["mám se ráda", "respektuju se", "poznávám se", "přijímám se", "zasloužím si", "dokážu to", "mám na to"],
+    "dalsi_postoje": ["přímost", "bedlivost", "neoblomnost", "ústupnost", "souhlas", "chrabrost", "neohroženost", "ochota", "činorodost", "dobrovolnictví", "dávání", "emancipovanost", "korektnost", "poznávání", "poslušnost", "smysluplnost", "souznění", "svobodomyslnost", "specifikace", "ušlechtilost", "zisk", "pragmatičnost", "preciznost", "přesnost", "podrobnosti", "objektivita", "soutěživost", "anonymita", "bezpečnost", "benevolence", "vítězství"]
+  }
+}

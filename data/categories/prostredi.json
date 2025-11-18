@@ -1,0 +1,18 @@
+{
+  "id": "prostredi",
+  "name": "Prostředí",
+  "description": "Stavby a architektura",
+  "icon": "home",
+  "color": "#FF9800",
+  "categories": {
+    "drevene": ["chata", "chatka", "srub", "domeček", "dům", "přístřešek", "pergola"],
+    "cihlove": {
+      "soukrome": ["chalupa", "vila", "domeček", "domek", "dům"],
+      "statni": [],
+      "nadnarodni": []
+    },
+    "jine": ["panelové", "prosklené", "moderní", "industriální"],
+    "ostatni": ["mosty", "přehrady", "tunely", "továrny", "komplexy", "haly", "bunkry", "hangáry", "sklepení", "katakomby", "věže"],
+    "mobilni": ["mobilheim", "maringotka", "buňka", "kontejner", "přívěs", "stan"]
+  }
+}

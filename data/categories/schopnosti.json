@@ -1,0 +1,27 @@
+{
+  "id": "schopnosti",
+  "name": "Schopnosti",
+  "description": "Moje schopnosti a talenty",
+  "icon": "star",
+  "color": "#FFD700",
+  "note": "Zdroj: https://wikisofia.cz/wiki/Psychologie_pro_st%C5%99edn%C3%AD_%C5%A1koly/Osobnost_5._-_v%C3%BDkonov%C3%A9_vlastnosti%2C_inteligence",
+  "categories": {
+    "intelekt": ["důvtip", "chápavost", "bystrost", "učenlivost", "analytické myšlení", "hloubavost", "kritické myšlení", "koncentrace", "názor", "úsudek", "verbální projev", "interpretace", "pochopení", "chytrost", "improvizace", "instinkt", "meditace", "multipotencialita", "nadání", "specializace", "soběstačnost", "tajemnost", "talent", "uvědomělost", "nápaditost", "vynalézavost", "vyhraněnost", "zdatnost", "pozorování", "praktičnost", "prozíravost"],
+    "senzomotorika": {
+      "sport": ["běh", "lezení", "šplh", "skok"],
+      "cinnosti": ["psaní", "vyšívání", "hra na nástroj", "zapínání knoflíků", "pletení"],
+      "zdatnost": ["obratnost"]
+    },
+    "tvorivost": {
+      "originalita": ["tvůrčí řešení", "myšlenky (přijatelné, užitečné, neobvyklé, nové)", "novost", "původnost", "nevšeobecnost", "netypičnost"],
+      "uzitecnost": ["hodnota", "prospěšnost", "produktivita", "důmyslnost"],
+      "projevy": ["spontánnost", "inovace", "genialita", "nový postup", "nově využitelné řešení", "vynález", "objev", "ne-puntičkářství", "forma", "elegance"],
+      "vlastnosti": ["intuitivnost", "emfatičnost", "náladovost", "otevřenost", "vnímavost", "senzitivita", "představivost", "nekonvenčnost", "nekonformnost", "zvídavost", "inspirace", "široký záběr", "hravost"],
+      "techniky": ["přirovnání", "srovnání", "asociace", "atmosféra", "emoce", "imaginace", "rozmanitost", "alternativy"]
+    },
+    "umelecka": ["estetičnost", "design", "fantazie"],
+    "vedecko_technicka": ["systém", "naučené používat", "vyvozování"],
+    "pamet": [],
+    "ostatni": ["ochrana planety", "přejícnost", "slušnost", "hodný člověk", "pečlivost", "štědrost", "šlechetnost"]
+  }
+}

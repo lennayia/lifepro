@@ -1,0 +1,42 @@
+{
+  "id": "vlastnosti-velka-petka",
+  "name": "Vlastnosti - Velká pětka",
+  "description": "Big Five model osobnosti a typologie podle konstituční typologie",
+  "icon": "layers",
+  "color": "#32CD32",
+  "categories": {
+    "velka_5": {
+      "extroverze": {
+        "popis": "Rozdíly v sociabilitě a aktivitě lidí",
+        "vlastnosti": ["společenskost", "komunikativnost", "výmluvnost", "přátelskost", "sebejistota", "aktivita", "energičnost", "optimismus", "veselost", "přívětivost", "spontánnost"]
+      },
+      "otevrenost_zkusenosti": {
+        "popis": "Otevřenost vůči zkušenosti, citlivost na podněty",
+        "vlastnosti": ["citlivost na podněty estetické", "zvědavost", "originalita", "tvořivost", "intelekt", "liberalismus", "odvaha"]
+      },
+      "svědomitost": {
+        "popis": "Kontrola podnětů, sebekontrola, organizování",
+        "vlastnosti": ["sebekontrola", "organizování", "realizování", "dochvilnost", "spolehlivost", "výkonnost", "uspořádanost", "cílevědomost"]
+      },
+      "přívětivost": {
+        "popis": "Interpersonální chování",
+        "vlastnosti": ["pomoc druhým", "důvěřování", "spolupráce", "laskavost", "vlídnost", "příjemnost", "vřelost", "citlivost", "srdečnost", "soucitnost", "nesobeckost"]
+      },
+      "neuroticismus": {
+        "popis": "Prožívání negativních emocí",
+        "vlastnosti": ["smutek", "obavy", "vina", "hněv", "úzkostnost", "temperamentnost", "náladovost", "opatrnost", "neklid", "nejistota", "zranitelnost"]
+      }
+    },
+    "konstitucni_typologie": {
+      "pyknik": ["otevřenost", "srdečnost", "extrovert", "cyklothym"],
+      "astenik": ["uzavřenost", "chladná mysl", "složitá povaha", "schizothym"],
+      "atletik": ["klid", "spánek", "jídlo"],
+      "dysplastik": ["mezityp", "viskózní"],
+      "ektomorfni": [],
+      "endomorfni": [],
+      "mezomorfni": []
+    },
+    "socialni_rysy": ["vstřícnost", "tolerantnost", "kooperativnost", "altruismus", "citlivost", "otevřenost"],
+    "dalsí_dimenze": ["dominance vs submise", "aktivita vs pasivita", "smyslovost vs racionálnost", "zvyklosti/pravidla/návyky"]
+  }
+}

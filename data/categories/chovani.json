@@ -1,0 +1,170 @@
+{
+  "id": "chovani",
+  "name": "Chování",
+  "description": "Vzorce chování, zvyky, pudy, cíle a motivace",
+  "icon": "target",
+  "color": "#2E7D32",
+  "source": "https://cs.wikipedia.org/wiki/Psychick%C3%A1_vlastnost",
+  "components": [
+    "zvyk",
+    "pud",
+    "cíl",
+    "hodnoty",
+    "volní vlastnosti",
+    "ideály",
+    "zájmy",
+    "potřeby"
+  ],
+  "subcategories": [
+    {
+      "id": "zivotni-potreby",
+      "name": "Životní potřeby",
+      "description": "Základní životní potřeby a požadavky",
+      "items": [
+        "cestování",
+        "čas",
+        "demokracie",
+        "domov",
+        "dovolená",
+        "existence",
+        "finanční nezávislost",
+        "fokus",
+        "jídlo",
+        "pití",
+        "vzduch",
+        "teplo"
+      ]
+    },
+    {
+      "id": "kultura-vzdelani",
+      "name": "Kultura a vzdělání",
+      "description": "Kulturní a vzdělanostní aktivity",
+      "items": [
+        "hudba",
+        "historie",
+        "knihy",
+        "kultura",
+        "studium",
+        "vzdělání",
+        "věda",
+        "umění"
+      ]
+    },
+    {
+      "id": "mindset",
+      "name": "Mindset a myšlení",
+      "description": "Mentální nastavení a přístupy",
+      "items": [
+        "mindset",
+        "hojnost",
+        "jednota",
+        "kvalita",
+        "možnosti",
+        "vize",
+        "vesmír",
+        "záměr",
+        "nelpění",
+        "konzervatismus",
+        "přízeň"
+      ]
+    },
+    {
+      "id": "prace-kariera",
+      "name": "Práce a kariéra",
+      "description": "Profesní a pracovní orientace",
+      "items": [
+        "práce",
+        "profese",
+        "řemeslo",
+        "postavení",
+        "poslání",
+        "přidaná hodnota",
+        "tým"
+      ]
+    },
+    {
+      "id": "zdravi-pohoda",
+      "name": "Zdraví a pohoda",
+      "description": "Péče o tělo a duševní zdraví",
+      "items": [
+        "zdraví",
+        "pohyb",
+        "sport",
+        "spánek",
+        "sex",
+        "kondice",
+        "prevence",
+        "vyhnout se bolesti"
+      ]
+    },
+    {
+      "id": "osobni-rozvoj",
+      "name": "Osobní rozvoj",
+      "description": "Rozvoj osobnosti a seberealizace",
+      "items": [
+        "koníčky",
+        "relaxace",
+        "odpočinek",
+        "zábava",
+        "variabilita",
+        "forma",
+        "obsah"
+      ]
+    },
+    {
+      "id": "vztahy",
+      "name": "Vztahy",
+      "description": "Mezilidské vztahy a sliby",
+      "items": [
+        "vztahy",
+        "slib"
+      ]
+    },
+    {
+      "id": "hodnoty-idealy",
+      "name": "Hodnoty a ideály",
+      "description": "Osobní hodnoty a ideální stavy",
+      "items": [
+        "hodnoty",
+        "ideály",
+        "cíl",
+        "volní vlastnosti"
+      ]
+    },
+    {
+      "id": "zabezpeceni",
+      "name": "Zabezpečení a zázemí",
+      "description": "Bezpečnost a materiální zázemí",
+      "items": [
+        "zabezpečení",
+        "zaopatření",
+        "zázemí",
+        "ochrana",
+        "nezávislost"
+      ]
+    },
+    {
+      "id": "prostredi",
+      "name": "Prostředí",
+      "description": "Péče o prostředí a okolí",
+      "items": [
+        "prostředí",
+        "příroda",
+        "památky",
+        "úklid",
+        "omezení spotřeby"
+      ]
+    },
+    {
+      "id": "socialni",
+      "name": "Sociální oblast",
+      "description": "Společenské a politické zájmy",
+      "items": [
+        "mír",
+        "cesta",
+        "politika",
+        "ekonomie"
+      ]
+    }
+  ]
+}

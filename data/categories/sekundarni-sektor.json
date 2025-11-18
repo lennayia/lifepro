@@ -1,0 +1,13 @@
+{
+  "id": "sekundarni-sektor",
+  "name": "Sekundární sektor",
+  "description": "Výroba a průmysl",
+  "icon": "settings",
+  "color": "#607D8B",
+  "categories": {
+    "spotrebni_prumysl": {
+      "potravinarsky": ["lihoviny", "pivo", "víno", "ovocné nealko", "teplé nápoje", "minerálky", "voda"],
+      "textilni": ["textilní konfekce"]
+    }
+  }
+}

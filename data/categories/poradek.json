@@ -1,0 +1,25 @@
+{
+  "id": "poradek",
+  "name": "Pořádek",
+  "description": "Kde potřebuji udělat pořádek",
+  "icon": "check-square",
+  "color": "#6A5ACD",
+  "areas": [
+    "v životě",
+    "v práci",
+    "doma",
+    "v penězích",
+    "v papírech",
+    "v hlavě",
+    "v minulosti",
+    "ve vztazích",
+    "ve věcech",
+    "ve skříni",
+    "v kabelce",
+    "v autě",
+    "v garáži",
+    "v dílně",
+    "ve sklepě",
+    "na zahradě"
+  ]
+}

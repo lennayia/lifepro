@@ -1,0 +1,41 @@
+{
+  "id": "potrebuju",
+  "name": "Potřebuju",
+  "description": "Odměny, energie a motivace pro splnění snů",
+  "icon": "battery-charging",
+  "color": "#2196F3",
+  "subcategories": [
+    {
+      "id": "odmeny",
+      "name": "Odměny",
+      "description": "Jak se odměňuji za úspěchy",
+      "note": "Smutné je, když se za svoje úspěchy neumíme odměnit. Odměna je skvělá motivace.",
+      "categories": {
+        "volny_cas": ["procházka", "lenošení", "sport", "hry", "čas s rodinou", "pivo s přáteli", "kávička s kamarádkou"],
+        "cinnosti": ["divadlo", "koncert", "permice do fitka", "shopping", "kurzy", "kreativní činnost"],
+        "penize": ["jednorázové", "navazující", "pasivní", "dividendy"],
+        "materialni": ["nové auto", "nová rtěnka"],
+        "majetek": [],
+        "pocity": ["dětská radost", "jsem dobrý člověk", "pomohla jsem", "pochvala"],
+        "zazitky": ["výlet", "adrenalin", "párty", "hra s dětmi", "hra se zvířaty", "práce na zahradě", "luxusní večeře"]
+      }
+    },
+    {
+      "id": "energie",
+      "name": "Energie",
+      "description": "Jak dobíjím baterky",
+      "note": "Jak dobíjíš baterky a upevňuješ svoji víru ve splnění svého snu?",
+      "sources": {
+        "pocity": ["naplnění", "radost", "klid", "sdílení", "pozitivní očekávání", "důvěra"],
+        "koukani": ["do ohně", "do blba", "na měsíc", "na mraky", "na hvězdy", "do vody", "TV", "divadlo", "kino"],
+        "slova": ["citáty", "afirmace", "psaní", "čtení"],
+        "poslouchani": ["hudba", "šumění", "ticho", "cokoliv"],
+        "kochani": ["mandaly", "obrazy", "výstavy"],
+        "relax": ["vana", "sauna", "masáž", "kosmetika"],
+        "cinnosti": ["zábava", "cestování", "tvoření", "úklid", "nakupování", "5 minut něčeho", "hry"],
+        "ostatni": ["dýchání", "meditace", "studená sprcha", "rituály", "jízda v autě", "spánek", "vizualizace", "vůně", "káva", "energeťák"],
+        "plus": ["LIDÉ", "PŘÍRODA (les, květiny)", "VODA", "POHYB (fitko, jóga, běh, chůze)", "ZVÍŘATA", "JÍDLO", "ZAHRADA"]
+      }
+    }
+  ]
+}
