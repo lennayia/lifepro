@@ -14,6 +14,9 @@ export const supabase = createClient<Database>(supabaseUrl, supabaseAnonKey, {
     persistSession: true,
     autoRefreshToken: true,
   },
+  db: {
+    schema: 'lifepro',
+  },
 })
 
 // Server-side Supabase client (s service role pro admin operace)
@@ -24,6 +27,9 @@ export const supabaseAdmin = supabaseServiceRoleKey
       auth: {
         persistSession: false,
         autoRefreshToken: false,
+      },
+      db: {
+        schema: 'lifepro',
       },
     })
   : null

@@ -316,7 +316,7 @@ export interface CategoryStats {
 // ============================================
 
 export interface Database {
-  public: {
+  lifepro: {
     Tables: {
       lifepro_categories: {
         Row: Category
