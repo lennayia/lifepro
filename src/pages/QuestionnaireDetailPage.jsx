@@ -14,8 +14,12 @@ import {
   Chip,
   Divider,
   Paper,
+  TextField,
+  InputAdornment,
+  ToggleButtonGroup,
+  ToggleButton,
 } from '@mui/material';
-import { ArrowLeft, Heart, Save, CheckCircle } from 'lucide-react';
+import { ArrowLeft, Heart, Save, CheckCircle, Search, Filter } from 'lucide-react';
 import { supabase } from '@/lib/supabase/client';
 import { useNotification } from '@shared/context/NotificationContext';
 
@@ -32,6 +36,8 @@ const QuestionnaireDetailPage = () => {
   const [questions, setQuestions] = useState([]);
   const [responses, setResponses] = useState({});
   const [favorites, setFavorites] = useState(new Set());
+  const [searchQuery, setSearchQuery] = useState('');
+  const [filterMode, setFilterMode] = useState('all'); // 'all', 'unanswered', 'favorites'
 
   useEffect(() => {
     fetchUser();
@@ -317,9 +323,62 @@ const QuestionnaireDetailPage = () => {
         </Box>
       </Box>
 
+      {/* Search and Filter */}
+      <Card sx={{ p: 3, mb: 3 }}>
+        <Box display="flex" flexDirection={{ xs: 'column', md: 'row' }} gap={2} alignItems={{ md: 'center' }}>
+          <TextField
+            placeholder="Hledat v otázkách..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            size="small"
+            sx={{ flex: 1 }}
+            InputProps={{
+              startAdornment: (
+                <InputAdornment position="start">
+                  <Search size={20} />
+                </InputAdornment>
+              ),
+            }}
+          />
+
+          <ToggleButtonGroup
+            value={filterMode}
+            exclusive
+            onChange={(e, newMode) => newMode && setFilterMode(newMode)}
+            size="small"
+          >
+            <ToggleButton value="all">
+              Vše ({questions.length})
+            </ToggleButton>
+            <ToggleButton value="unanswered">
+              Nezodpovězené ({questions.filter(q => !responses[q.id] || responses[q.id].length === 0).length})
+            </ToggleButton>
+            <ToggleButton value="favorites">
+              Oblíbené ({favorites.size})
+            </ToggleButton>
+          </ToggleButtonGroup>
+        </Box>
+      </Card>
+
       {/* Sections and Questions */}
       {sections.map((section) => {
-        const sectionQuestions = questions.filter(q => q.section_id === section.id);
+        let sectionQuestions = questions.filter(q => q.section_id === section.id);
+
+        // Apply search filter
+        if (searchQuery.trim()) {
+          sectionQuestions = sectionQuestions.filter(q =>
+            q.question_text.toLowerCase().includes(searchQuery.toLowerCase())
+          );
+        }
+
+        // Apply mode filter
+        if (filterMode === 'unanswered') {
+          sectionQuestions = sectionQuestions.filter(q =>
+            !responses[q.id] || responses[q.id].length === 0
+          );
+        } else if (filterMode === 'favorites') {
+          sectionQuestions = sectionQuestions.filter(q => favorites.has(q.id));
+        }
 
         if (sectionQuestions.length === 0) return null;
 

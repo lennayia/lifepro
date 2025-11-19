@@ -13,9 +13,12 @@ import {
   Divider,
   Stack,
 } from '@mui/material';
-import { ArrowLeft, Heart, CheckCircle, TrendingUp, Target } from 'lucide-react';
+import { ArrowLeft, Heart, CheckCircle, TrendingUp, Target, FileDown } from 'lucide-react';
 import { supabase } from '@/lib/supabase/client';
 import { useNotification } from '@shared/context/NotificationContext';
+import { downloadPDFReport } from '@/utils/pdfExport';
+import CategoryRadarChart from '@/components/visualizations/CategoryRadarChart';
+import CategoryBarChart from '@/components/visualizations/CategoryBarChart';
 
 const ResultsPage = () => {
   const navigate = useNavigate();
@@ -32,6 +35,7 @@ const ResultsPage = () => {
   });
   const [categoryStats, setCategoryStats] = useState([]);
   const [favorites, setFavorites] = useState([]);
+  const [pdfData, setPdfData] = useState(null);
 
   useEffect(() => {
     fetchUser();
@@ -151,6 +155,48 @@ const ResultsPage = () => {
 
       setCategoryStats(categoryCompletion);
       setFavorites(favoritesData);
+
+      // Prepare data for PDF export
+      const pdfCategories = categoryCompletion.map(cat => {
+        const catSections = sections.filter(s => s.category_id === cat.id);
+        const sectionsWithAnswers = catSections.map(section => {
+          const sectionQuestions = questions.filter(q => q.section_id === section.id);
+          const sectionResponses = answeredQuestions.filter(r =>
+            sectionQuestions.some(q => q.id === r.question_id)
+          );
+
+          return {
+            ...section,
+            answeredQuestions: sectionResponses.map(r => ({
+              question_text: r.lifepro_questions?.question_text,
+              is_favorite: r.is_favorite,
+            })),
+          };
+        });
+
+        return {
+          ...cat,
+          sections: sectionsWithAnswers,
+        };
+      });
+
+      const favoritesWithDetails = favoritesData.map(fav => ({
+        question_text: fav.lifepro_questions?.question_text,
+        section_title: fav.lifepro_questions?.lifepro_sections?.title,
+        category_title: fav.lifepro_questions?.lifepro_sections?.lifepro_categories?.title,
+      }));
+
+      setPdfData({
+        userName: currentUser.user_metadata?.full_name || currentUser.email?.split('@')[0] || 'Uživatel',
+        categories: pdfCategories,
+        stats: {
+          totalQuestions: questions.length,
+          answeredQuestions: answeredQuestions.length,
+          progressPercentage: Math.round((answeredQuestions.length / questions.length) * 100),
+          favoriteCount: favoritesData.length,
+          favorites: favoritesWithDetails,
+        },
+      });
     } catch (err) {
       console.error('Error fetching results:', err);
       showError('Chyba', 'Nepodařilo se načíst výsledky');
@@ -178,17 +224,42 @@ const ResultsPage = () => {
     ? (stats.answeredQuestions / stats.totalQuestions) * 100
     : 0;
 
+  const handleExportPDF = () => {
+    if (!pdfData) {
+      showError('Chyba', 'Data pro export nejsou k dispozici');
+      return;
+    }
+
+    try {
+      const timestamp = new Date().toISOString().split('T')[0];
+      downloadPDFReport(pdfData, `lifepro-vysledky-${timestamp}.pdf`);
+    } catch (error) {
+      console.error('Error generating PDF:', error);
+      showError('Chyba', 'Nepodařilo se vygenerovat PDF');
+    }
+  };
+
   return (
     <Container maxWidth="lg" sx={{ py: 4 }}>
       {/* Header */}
       <Box mb={4}>
-        <Button
-          startIcon={<ArrowLeft size={20} />}
-          onClick={() => navigate('/dashboard')}
-          sx={{ mb: 2 }}
-        >
-          Zpět na dashboard
-        </Button>
+        <Box display="flex" justifyContent="space-between" alignItems="flex-start" mb={2}>
+          <Button
+            startIcon={<ArrowLeft size={20} />}
+            onClick={() => navigate('/dashboard')}
+          >
+            Zpět na dashboard
+          </Button>
+
+          <Button
+            variant="contained"
+            startIcon={<FileDown size={20} />}
+            onClick={handleExportPDF}
+            disabled={!pdfData || stats.answeredQuestions === 0}
+          >
+            Stáhnout PDF
+          </Button>
+        </Box>
 
         <Typography variant="h3" gutterBottom>
           Výsledky
@@ -323,6 +394,20 @@ const ResultsPage = () => {
           ))}
         </Stack>
       </Card>
+
+      {/* Visualizations */}
+      {categoryStats.length > 0 && stats.answeredQuestions > 0 && (
+        <>
+          <Grid container spacing={3} mb={4}>
+            <Grid item xs={12} lg={6}>
+              <CategoryRadarChart categories={categoryStats} />
+            </Grid>
+            <Grid item xs={12} lg={6}>
+              <CategoryBarChart categories={categoryStats} />
+            </Grid>
+          </Grid>
+        </>
+      )}
 
       {/* Favorites */}
       {favorites.length > 0 && (

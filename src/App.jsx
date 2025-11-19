@@ -1,17 +1,33 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
+import { ThemeProvider, createTheme, CssBaseline, Box, CircularProgress } from '@mui/material';
 import { NotificationProvider } from '@shared/context/NotificationContext';
-import { useState, useMemo } from 'react';
+import { useState, useMemo, lazy, Suspense } from 'react';
 
-// Pages
+// Eager load auth pages (needed immediately)
 import LoginPage from '@pages/LoginPage';
 import RegisterPage from '@pages/RegisterPage';
-import DashboardPage from '@pages/DashboardPage';
-import QuestionnairePage from '@pages/QuestionnairePage';
-import QuestionnaireDetailPage from '@pages/QuestionnaireDetailPage';
-import ResultsPage from '@pages/ResultsPage';
-import ProfilePage from '@pages/ProfilePage';
-import AdminPage from '@pages/AdminPage';
+
+// Lazy load other pages for better performance
+const DashboardPage = lazy(() => import('@pages/DashboardPage'));
+const QuestionnairePage = lazy(() => import('@pages/QuestionnairePage'));
+const QuestionnaireDetailPage = lazy(() => import('@pages/QuestionnaireDetailPage'));
+const ResultsPage = lazy(() => import('@pages/ResultsPage'));
+const ProfilePage = lazy(() => import('@pages/ProfilePage'));
+const AdminPage = lazy(() => import('@pages/AdminPage'));
+
+// Loading fallback component
+const LoadingFallback = () => (
+  <Box
+    sx={{
+      minHeight: '100vh',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }}
+  >
+    <CircularProgress />
+  </Box>
+);
 
 // Theme
 const getTheme = (mode) => createTheme({
@@ -62,24 +78,26 @@ function App() {
       <CssBaseline />
       <NotificationProvider>
         <BrowserRouter>
-          <Routes>
-            {/* Auth Routes */}
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/register" element={<RegisterPage />} />
+          <Suspense fallback={<LoadingFallback />}>
+            <Routes>
+              {/* Auth Routes */}
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="/register" element={<RegisterPage />} />
 
-            {/* Protected Routes */}
-            <Route path="/dashboard" element={<DashboardPage />} />
-            <Route path="/questionnaire" element={<QuestionnairePage />} />
-            <Route path="/questionnaire/:categorySlug" element={<QuestionnaireDetailPage />} />
-            <Route path="/results" element={<ResultsPage />} />
-            <Route path="/profile" element={<ProfilePage />} />
+              {/* Protected Routes */}
+              <Route path="/dashboard" element={<DashboardPage />} />
+              <Route path="/questionnaire" element={<QuestionnairePage />} />
+              <Route path="/questionnaire/:categorySlug" element={<QuestionnaireDetailPage />} />
+              <Route path="/results" element={<ResultsPage />} />
+              <Route path="/profile" element={<ProfilePage />} />
 
-            {/* Admin Routes */}
-            <Route path="/admin" element={<AdminPage />} />
+              {/* Admin Routes */}
+              <Route path="/admin" element={<AdminPage />} />
 
-            {/* Default redirect */}
-            <Route path="/" element={<Navigate to="/login" replace />} />
-          </Routes>
+              {/* Default redirect */}
+              <Route path="/" element={<Navigate to="/login" replace />} />
+            </Routes>
+          </Suspense>
         </BrowserRouter>
       </NotificationProvider>
     </ThemeProvider>
