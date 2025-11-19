@@ -14,6 +14,7 @@ const QuestionnaireDetailPage = lazy(() => import('@pages/QuestionnaireDetailPag
 const ResultsPage = lazy(() => import('@pages/ResultsPage'));
 const ProfilePage = lazy(() => import('@pages/ProfilePage'));
 const AdminPage = lazy(() => import('@pages/AdminPage'));
+const HelpPage = lazy(() => import('@pages/HelpPage'));
 
 // Loading fallback component
 const LoadingFallback = () => (
@@ -90,6 +91,7 @@ function App() {
               <Route path="/questionnaire/:categorySlug" element={<QuestionnaireDetailPage />} />
               <Route path="/results" element={<ResultsPage />} />
               <Route path="/profile" element={<ProfilePage />} />
+              <Route path="/help" element={<HelpPage />} />
 
               {/* Admin Routes */}
               <Route path="/admin" element={<AdminPage />} />
