@@ -1,264 +1,442 @@
-# LifePro - Aplikace pro nalezení životního poslání
+# LifePro - React + Vite Edition
 
-Moderní webová aplikace pro mapování osobnosti a objevení práce snů.
+**Profesionální aplikace pro osobní rozvoj a sebehodnocení**
 
-## 🎯 Vlastnosti
+[![React](https://img.shields.io/badge/React-18.2-blue)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-5.0-purple)](https://vitejs.dev/)
+[![Material-UI](https://img.shields.io/badge/MUI-5.14-blue)](https://mui.com/)
+[![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-green)](https://supabase.com/)
 
-- ✅ **Kompletní databáze otázek** - flexibilní systém kategorií, sekcí a otázek
-- ✅ **Admin rozhraní** - snadná správa obsahu bez programování
-- ✅ **Modulární vyplňování** - uživatel si vybírá, co vyplní
-- ✅ **AI analýza** - inteligentní vyhodnocení odpovědí
-- ✅ **Vizuální výsledky** - přehledné zobrazení osobnostní DNA
-- ✅ **Progresivní disclosure** - postupné odhalování bez přetížení
-- ✅ **Real-time ukládání** - žádná ztráta dat
+---
 
-## 🛠 Tech Stack
+## 📋 Obsah
 
-- **Frontend**: Next.js 14 (App Router), TypeScript, Tailwind CSS
-- **Backend**: Supabase (PostgreSQL, Auth, Realtime)
-- **AI**: Claude API (Anthropic)
-- **Deployment**: Vercel
+- [O Projektu](#o-projektu)
+- [Funkce](#funkce)
+- [Technologie](#technologie)
+- [Instalace](#instalace)
+- [Spuštění](#spuštění)
+- [Struktura Projektu](#struktura-projektu)
+- [Databáze](#databáze)
+- [Deployment](#deployment)
 
-## 📁 Struktura projektu
+---
 
-```
-lifepro-app/
-├── app/                      # Next.js App Router
-│   ├── (auth)/              # Auth pages (login, register)
-│   ├── (user)/              # User pages (dashboard, questionnaire)
-│   ├── (admin)/             # Admin pages (content management)
-│   └── api/                 # API routes
-├── components/
-│   ├── admin/               # Admin komponenty
-│   ├── user/                # User komponenty
-│   └── ui/                  # Sdílené UI komponenty
-├── lib/
-│   ├── supabase/            # Supabase client & helpers
-│   ├── ai/                  # AI analýza
-│   └── utils/               # Utility funkce
-├── types/
-│   └── database.ts          # TypeScript typy
-├── supabase-schema.sql      # Databázové schéma
-└── README.md
-```
+## 🎯 O Projektu
 
-## 🚀 Instalace a setup
+LifePro je komplexní aplikace pro osobní rozvoj, která pomáhá uživatelům:
+- Vyhodnotit své silné a slabé stránky
+- Sledovat pokrok v různých oblastech života
+- Získat personalizované insights pomocí AI
+- Exportovat výsledky do profesionálních PDF reportů
 
-### 1. Naklonovat projekt
+### Migrace z Next.js
 
+Tento projekt byl úspěšně migrován z Next.js na React + Vite pro:
+- ⚡ Rychlejší development build (10x rychlejší HMR)
+- 📦 Menší production bundle
+- 🔧 Jednodušší konfigurace
+- 🚀 Lepší performance
+
+---
+
+## ✨ Funkce
+
+### ✅ Implementováno (v2.0.0)
+
+#### 1. **User Authentication**
+- Registrace a přihlášení přes Supabase Auth
+- Email verifikace
+- Password reset
+- Session management
+
+#### 2. **Questionnaire System**
+- 65 kategorií osobního rozvoje
+- 237 sekcí
+- 1054 otázek
+- Auto-save odpovědí
+- Progress tracking
+- Favorite marking
+- **Search & Filter** - Fulltext vyhledávání + 3 filtry
+
+#### 3. **Admin Interface**
+- CRUD operace pro kategorie
+- CRUD operace pro sekce
+- CRUD operace pro otázky
+- Slug auto-generování
+- Filtering a search
+- Publikování/skrývání obsahu
+
+#### 4. **Results & Analytics**
+- Celkové statistiky
+- Pokrok po kategoriích
+- **Radar chart** vizualizace
+- **Bar chart** porovnání
+- Seznam oblíbených odpovědí
+- **PDF export**
+
+#### 5. **Help & Documentation**
+- Kompletní FAQ stránka
+- 10 detailních návodů
+- Quick links na hlavní témata
+- Kontaktní formulář
+
+#### 6. **Performance**
+- React.lazy code splitting
+- Suspense loading states
+- Optimized bundle size
+- Lazy loading routes
+
+### 🚧 V Plánu (v3.0.0)
+
+- 🤖 AI Analýza (Claude API)
+- 📧 Email notifikace
+- 📊 Progress tracking over time
+- 🌙 Dark mode toggle
+- 🌍 Multi-language (EN, SK)
+
+---
+
+## 🛠️ Technologie
+
+### Frontend
+- **React 18.2** - UI framework
+- **Vite 5.0** - Build tool & dev server
+- **Material-UI 5.14** - Component library
+- **React Router 6.20** - Client-side routing
+- **Recharts 2.15** - Charts & visualizations
+- **jsPDF 2.5** - PDF generation
+- **Lucide React 0.294** - Icons
+
+### Backend
+- **Supabase** - Backend as a Service
+  - PostgreSQL database
+  - Authentication
+  - Row Level Security
+  - Real-time subscriptions
+
+### Development
+- **ESLint** - Code linting
+- **Vite plugins** - React, Path aliases
+
+---
+
+## 📦 Instalace
+
+### Požadavky
+- Node.js 18+
+- npm nebo yarn
+- Supabase účet
+
+### 1. Clone repository
 ```bash
-cd lifepro-app
+git clone https://github.com/lennayia/lifepro.git
+cd lifepro
+```
+
+### 2. Install dependencies
+```bash
 npm install
 ```
 
-### 2. Nastavit Supabase
+### 3. Environment Setup
 
-1. Vytvořte účet na [supabase.com](https://supabase.com)
-2. Vytvořte nový projekt
-3. V SQL Editoru spusťte obsah souboru `supabase-schema.sql`
-4. Zkopírujte API klíče (Settings → API)
-
-### 3. Environment variables
-
-Vytvořte `.env.local`:
+Vytvořte `.env` soubor v root složce:
 
 ```env
-# Supabase
-NEXT_PUBLIC_SUPABASE_URL=your-project-url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
-SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
-
-# Claude AI (optional for MVP)
-ANTHROPIC_API_KEY=your-claude-api-key
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 
-### 4. Vytvořit admin uživatele
+### 4. Database Setup
 
-Po registraci prvního uživatele, v Supabase SQL Editoru:
+Spusťte SQL skripty v Supabase SQL Editor:
 
 ```sql
--- Nahraďte YOUR_USER_ID skutečným ID
-INSERT INTO admin_users (user_id, role, permissions)
-VALUES ('YOUR_USER_ID', 'super_admin', ARRAY['all']);
+-- 1. Vytvoření tabulek
+CREATE TABLE lifepro_categories (...);
+CREATE TABLE lifepro_sections (...);
+CREATE TABLE lifepro_questions (...);
+CREATE TABLE lifepro_user_responses (...);
+
+-- 2. Row Level Security
+ALTER TABLE lifepro_categories ENABLE ROW LEVEL SECURITY;
+-- ... atd.
 ```
 
-### 5. Spustit development server
+### 5. Import Categories
 
+```bash
+npm run import:categories
+```
+
+Tento příkaz naimportuje 65 kategorií z `categories-data.json`.
+
+---
+
+## 🚀 Spuštění
+
+### Development Mode
 ```bash
 npm run dev
 ```
+Aplikace běží na `http://localhost:5173`
 
-Otevřete [http://localhost:3000](http://localhost:3000)
-
-## 📝 Jak používat Admin rozhraní
-
-### Přidání kategorie
-
-1. Přejděte na `/admin/categories`
-2. Klikněte na "Nová kategorie"
-3. Vyplňte:
-   - **Slug**: `ja-jsem` (lowercase, no spaces)
-   - **Název**: `Já jsem`
-   - **Popis**: `Kdo jsem v současnosti`
-   - **Ikona**: `🎭` (emoji)
-   - **Období**: `present` / `past` / `future`
-   - **Pořadí**: `1`
-4. Uložte
-
-### Přidání sekce
-
-1. V kategorii klikněte "Nová sekce"
-2. Vyplňte podobně jako kategorii
-3. Sekce se automaticky přiřadí ke kategorii
-
-### Přidání otázky
-
-1. V sekci klikněte "Nová otázka"
-2. Vyplňte:
-   - **Text otázky**: `Momentálně jsem...`
-   - **Nápověda**: `Např: na mateřské, OSVČ...`
-   - **Typ**: Vyberte z:
-     - `text` - krátký text
-     - `textarea` - dlouhý text
-     - `checkbox` - vícenásobný výběr
-     - `radio` - jeden výběr
-     - `select` - dropdown
-     - `slider` - posuvník 1-10
-   - **Povolit srdcovku**: ✓
-   - **Max srdcoček**: `3`
-
-### Rychlé přidání možností
-
-Pro otázky typu `checkbox`, `radio`, `select`:
-
-1. Otevřete otázku
-2. V sekci "Možnosti" klikněte "+ Přidat"
-3. Napište např: `materska` (value) → `na mateřské` (label)
-4. Stiskněte Enter pro další
-
-**Tip**: Můžete přidat více možností najednou oddělených čárkou:
+### Production Build
+```bash
+npm run build
 ```
-materska,osvc,zamestnanec,student
+Build se vytvoří v `dist/` složce.
+
+### Preview Production Build
+```bash
+npm run preview
 ```
 
-## 🎨 Jak vypadá user flow
+---
 
-### 1. Registrace / Přihlášení
+## 📁 Struktura Projektu
+
 ```
-/login → Email + heslo → Dashboard
-```
-
-### 2. Dashboard (přehled)
-```
-┌──────────────────────────────┐
-│ Můj profil: 35% dokončeno    │
-├──────────────────────────────┤
-│ 🎭 Já jsem          ████░░ 80%│
-│ 💪 Umím             ██░░░░ 40%│
-│ 🎓 Vím              █░░░░░ 20%│
-│ ❤️ Mám rád/a       ░░░░░░  0%│
-│ 👶 Bavilo mě        ░░░░░░  0%│
-│ 🚀 Chci             ░░░░░░  0%│
-│                              │
-│ [Pokračovat]                 │
-│ [Zobrazit výsledky]          │
-└──────────────────────────────┘
-```
-
-### 3. Vyplňování sekce
-```
-🎭 Já jsem → Role v životě
-
-Momentálně jsem... ⭐
-☑ na mateřské
-☐ OSVČ
-☑ student/ka
-☐ zaměstnanec
-
-[3/15 otázek] ████░░░░░░░░░░░░
-```
-
-### 4. Výsledky
-```
-🎯 TVOJE DNA
-┌────────────────────────┐
-│ Hlavní hodnoty:        │
-│ • Pomoc druhým         │
-│ • Kreativita           │
-│ • Svoboda              │
-└────────────────────────┘
-
-💡 TOP 3 SMĚRY
-1. Life Coach
-   ✓ Empatie + komunikace
-   ! Potřebuješ: certifikaci
-
-2. UX Designer
-   ✓ Kreativita + řešení problémů
-   ! Potřebuješ: portfolio
-
-3. Social Media Manager
-   ✓ Kreativita + práce s lidmi
-   ! Potřebuješ: praxe
+lifepro/
+├── public/              # Static assets
+├── src/
+│   ├── components/      # React komponenty
+│   │   ├── admin/       # Admin CRUD komponenty
+│   │   └── visualizations/  # Charts & grafy
+│   ├── lib/
+│   │   └── supabase/    # Supabase client
+│   ├── pages/           # Page komponenty
+│   │   ├── LoginPage.jsx
+│   │   ├── RegisterPage.jsx
+│   │   ├── DashboardPage.jsx
+│   │   ├── QuestionnairePage.jsx
+│   │   ├── QuestionnaireDetailPage.jsx
+│   │   ├── ResultsPage.jsx
+│   │   ├── ProfilePage.jsx
+│   │   ├── AdminPage.jsx
+│   │   └── HelpPage.jsx
+│   ├── shared/          # Shared komponenty
+│   │   └── context/     # React contexts
+│   ├── utils/           # Utility funkce
+│   │   └── pdfExport.js # PDF generování
+│   ├── App.jsx          # Root komponenta
+│   └── main.jsx         # Entry point
+├── scripts/             # Build & utility skripty
+├── FEATURES_DOCUMENTATION.md  # Detailní dokumentace
+├── SESSION_CONTEXT.md   # Kontext pro další session
+├── .env                 # Environment variables
+├── vite.config.js       # Vite konfigurace
+└── package.json
 ```
 
-## 🔒 Bezpečnost
+---
 
-- Row Level Security (RLS) zapnuto na všech tabulkách
-- Uživatelé vidí jen své vlastní odpovědi
-- Admini mají přístup ke správě obsahu
-- API klíče v environment variables
-- HTTPS only v produkci
+## 💾 Databáze
 
-## 📊 Databázové schéma
+### Schema Overview
 
-Viz `supabase-schema.sql` pro kompletní schéma.
+```
+lifepro_categories (65 záznamů)
+  └── lifepro_sections (237 záznamů)
+      └── lifepro_questions (1054 záznamů)
+          └── lifepro_user_responses (dynamic)
+```
 
-Hlavní tabulky:
-- `categories` - Hlavní kategorie
-- `sections` - Podsekce
-- `questions` - Otázky
-- `question_options` - Možnosti odpovědí
-- `user_responses` - Odpovědi uživatelů
-- `user_progress` - Progress tracking
-- `ai_analyses` - AI analýzy
-- `admin_users` - Admin uživatelé
+### lifepro_categories
+```sql
+CREATE TABLE lifepro_categories (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  title TEXT NOT NULL,
+  slug TEXT UNIQUE NOT NULL,
+  description TEXT,
+  icon TEXT,
+  "order" INTEGER DEFAULT 0,
+  is_published BOOLEAN DEFAULT true,
+  created_at TIMESTAMP DEFAULT NOW(),
+  updated_at TIMESTAMP DEFAULT NOW()
+);
+```
 
-## 🤖 AI Analýza
+### lifepro_user_responses
+```sql
+CREATE TABLE lifepro_user_responses (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  user_id UUID REFERENCES auth.users(id) ON DELETE CASCADE,
+  question_id UUID REFERENCES lifepro_questions(id) ON DELETE CASCADE,
+  answer_multiple TEXT[],
+  is_favorite BOOLEAN DEFAULT false,
+  created_at TIMESTAMP DEFAULT NOW(),
+  updated_at TIMESTAMP DEFAULT NOW(),
+  UNIQUE(user_id, question_id)
+);
+```
 
-AI analýza probíhá když uživatel:
-1. Vyplní minimálně 30% otázek
-2. Klikne na "Analyzovat odpovědi"
+### Row Level Security
 
-AI hledá:
-- **Vzorce** v odpovědích (hodnoty, dovednosti, zájmy)
-- **Propojení** mezi různými sekcemi
-- **Blind spots** (co možná přehlížíte)
-- **Doporučení** konkrétních směrů
+```sql
+-- Users mohou číst pouze své vlastní odpovědi
+CREATE POLICY "Users can view own responses"
+  ON lifepro_user_responses FOR SELECT
+  USING (auth.uid() = user_id);
+```
 
-## 🎯 Roadmap
+---
 
-### MVP (2 měsíce)
-- [x] Databázové schéma
-- [x] TypeScript typy
-- [ ] Auth (Supabase)
-- [ ] Admin CRUD operations
-- [ ] User questionnaire
-- [ ] Basic AI analysis
-- [ ] Results visualization
+## 🚢 Deployment
 
-### V2 (budoucnost)
-- [ ] Export do PDF
-- [ ] Vizuální mindmap
-- [ ] Gamifikace (odznaky, progress)
-- [ ] Komunitní funkce
-- [ ] Propojení s job boardy
-- [ ] Matching s mentory
+### Vercel (Doporučeno)
 
-## 📞 Podpora
+1. Push do GitHub repository
+2. Import projektu do Vercel
+3. Nastavte Environment Variables:
+   - `VITE_SUPABASE_URL`
+   - `VITE_SUPABASE_ANON_KEY`
+4. Deploy
 
-Pro dotazy a podporu kontaktujte admin aplikace.
+### Netlify
 
-## 📜 License
+```bash
+npm run build
+netlify deploy --prod --dir=dist
+```
 
-Proprietary - All rights reserved
+---
+
+## 📝 Scripts
+
+```json
+{
+  "dev": "vite",                    // Dev server
+  "build": "vite build",            // Production build
+  "preview": "vite preview",        // Preview build
+  "lint": "eslint .",              // Linting
+  "import:categories": "node scripts/importCategories.js"
+}
+```
+
+---
+
+## 📚 Dokumentace
+
+### Hlavní dokumenty:
+
+- **FEATURES_DOCUMENTATION.md** - Detailní popis všech funkcí
+- **SESSION_CONTEXT.md** - Kontext pro další development session
+- **README.md** - Tento dokument
+
+### In-App Nápověda:
+
+- `/help` - Kompletní FAQ a návody
+- 10 detailních průvodců funkcemi
+- Quick links na hlavní témata
+
+---
+
+## 🗺️ Roadmap
+
+### v2.0.0 ✅ (Current - 2025-11-19)
+- ✅ Admin Interface
+- ✅ PDF Export
+- ✅ Advanced Visualizations (Radar, Bar charts)
+- ✅ Search & Filter
+- ✅ Performance Optimizations
+- ✅ Help/FAQ Page
+
+### v3.0.0 🚧 (Plánováno)
+- 🤖 AI Analysis (Claude API)
+- 📧 Email Notifications
+- 📊 Progress Tracking Over Time
+- 🌙 Dark Mode
+- 🌍 Internationalization
+
+### v4.0.0 💭 (Budoucnost)
+- 📱 Mobile App (React Native)
+- 👥 Team Sharing & Collaboration
+- 🎯 Goal Setting & Tracking
+- 📈 Advanced Analytics Dashboard
+
+---
+
+## 📊 Performance Metriky
+
+### Build Statistics (po optimalizaci):
+```
+dist/assets/index.js                638.68 kB │ gzip: 195.49 kB (main)
+dist/assets/ResultsPage.js          789.69 kB │ gzip: 244.41 kB (lazy)
+dist/assets/AdminPage.js             57.45 kB │ gzip:  15.44 kB (lazy)
+dist/assets/QuestionnaireDetail.js   18.76 kB │ gzip:   6.66 kB (lazy)
+dist/assets/DashboardPage.js         19.43 kB │ gzip:   6.70 kB (lazy)
+dist/assets/HelpPage.js              ~12.00 kB │ gzip:  ~4.00 kB (lazy)
+```
+
+### Optimalizace:
+- ✅ Code splitting pomocí React.lazy
+- ✅ Lazy loading všech stránek kromě auth
+- ✅ Suspense loading states
+- ✅ Initial bundle z 765 kB → 638 kB
+
+---
+
+## 🔐 Bezpečnost
+
+### Implementováno:
+- ✅ Supabase Auth s email verifikací
+- ✅ Row Level Security (RLS) na všech tabulkách
+- ✅ HTTPS komunikace
+- ✅ User-specific data queries
+- ✅ Auth check na každé protected page
+
+### TODO:
+- ❌ Admin role check
+- ❌ Rate limiting pro API calls
+- ❌ Input sanitization
+
+---
+
+## 🤝 Contributing
+
+Příspěvky jsou vítány! Prosím dodržujte tyto kroky:
+
+1. Fork projektu
+2. Vytvořte feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit změny (`git commit -m 'Add some AmazingFeature'`)
+4. Push do branch (`git push origin feature/AmazingFeature`)
+5. Otevřete Pull Request
+
+---
+
+## 👥 Autoři
+
+- **Lenka** - Product Owner
+- **Claude (Anthropic AI)** - Development Assistant
+
+---
+
+## 📄 License
+
+Tento projekt je privátní. Všechna práva vyhrazena.
+
+---
+
+## 📞 Kontakt
+
+Pro otázky nebo podporu:
+- Email: support@lifepro.cz
+- In-App Help: `/help`
+
+---
+
+## 🙏 Poděkování
+
+- Material-UI team za skvělou knihovnu
+- Supabase za backend infrastructure
+- Vite team za nejrychlejší build tool
+- Recharts za krásné grafy
+
+---
+
+**Built with ❤️ using React + Vite**
+
+**Poslední aktualizace:** 2025-11-19
+**Verze:** 2.0.0

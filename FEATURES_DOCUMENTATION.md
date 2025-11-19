@@ -813,6 +813,54 @@ Po optimalizaci:
 
 ---
 
+### 📖 Help & FAQ Page
+
+**Status:** ✅ Kompletní a funkční
+
+**Implementované soubory:**
+- `src/pages/HelpPage.jsx` - Kompletní nápověda a FAQ
+
+**Funkce:**
+- ✅ 10 detailních FAQ s odpověďmi
+- ✅ Quick links na hlavní témata
+- ✅ Accordion interface pro snadnou navigaci
+- ✅ Kontaktní formulář
+- ✅ Responsive design
+
+**Přístup:** `/help`
+
+**Obsah FAQ:**
+
+1. **Jak začít s LifePro?** - Krok-za-krokem průvodce
+2. **Jak funguje vyplňování dotazníku?** - Auto-save, checkboxy, oblíbené
+3. **Co znamenají oblíbené otázky?** - Použití a filtro vání
+4. **Jak používat vyhledávání a filtry?** - Search + 3 filtry
+5. **Jak číst výsledky a statistiky?** - Grafy, progress, metriky
+6. **Jak exportovat do PDF?** - Krok-za-krokem návod
+7. **Co je Admin rozhraní?** - CRUD operace, publikování
+8. **Bezpečnost dat** - RLS, auth, HTTPS
+9. **Změna/smazání odpovědí** - Úpravy a smazání účtu
+10. **Dashboard vs Výsledky** - Rozdíly a kdy použít
+
+**Quick Links karty:**
+- 🎯 Začínáme
+- ✅ Vyplňování dotazníku
+- 📊 Výsledky a statistiky
+- 📄 Export do PDF
+
+**Integrace:**
+- ✅ Help button v DashboardPage
+- ✅ Route `/help` v App.jsx
+- ✅ Lazy loading pro performance
+
+**UI Komponenty:**
+- Material-UI Accordion pro FAQ
+- Quick links jako Card komponenty
+- Contact section s mailto linkem
+- Responsive layout (mobile-friendly)
+
+---
+
 ## 📞 Support & Kontakt
 
 **Issues:**

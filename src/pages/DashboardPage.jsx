@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Box, Container, Typography, Grid, CircularProgress, Card, LinearProgress, Chip } from '@mui/material';
-import { BookOpen, TrendingUp, User, Settings, Heart, Target, CheckCircle } from 'lucide-react';
+import { BookOpen, TrendingUp, User, Settings, Heart, Target, CheckCircle, HelpCircle } from 'lucide-react';
 import { supabase } from '@/lib/supabase/client';
 import { useNotification } from '@shared/context/NotificationContext';
 import WelcomeScreen from '@shared/components/WelcomeScreen';
@@ -101,6 +101,13 @@ const DashboardPage = () => {
       icon: <User size={32} />,
       onClick: () => navigate('/profile'),
       backTitle: 'Upravit profil',
+    },
+    {
+      title: 'Nápověda',
+      subtitle: 'FAQ a návody k použití aplikace',
+      icon: <HelpCircle size={32} />,
+      onClick: () => navigate('/help'),
+      backTitle: 'Zobrazit nápovědu',
     },
   ];
 
